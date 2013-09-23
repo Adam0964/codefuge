@@ -1,0 +1,579 @@
+
+/* bootCustom.css */
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    
+.headers {
+ width: auto;
+ height: auto;
+ position: relative;
+ margin-top: -20px;
+ margin-left: 0;
+ margin-right: 0;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ background-color: #8B0000;
+}
+
+.headers h2 {
+  font-family: Droid Serif, serif;
+  font-size: 20pt;
+  color: white;
+  text-align: center;
+}
+
+.headers p {
+  width: 420px;
+  height: 300px;
+  margin:auto;
+  font-family: Droid Serif, serif;
+  font-size: 16px;
+  line-height: 2.5em;
+  color: white;
+  display:none;
+  text-align: center;
+}
+
+.advert  img {
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.advert  img:hover {
+  border: 5px solid #008080;
+}
+
+.thumbnail2 {
+  width: 270px;
+  display: block;
+  padding: 5px;
+  margin-top: 20px;
+  line-height: 1;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.ads1 {
+  width: 265px;
+  height: 250px;
+  display: inline-block;
+  /*padding-right: 2px;*/
+  position: relative;
+  border: solid 2px white;
+  background-image: url(bgd/bgd33.png);
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.ads1:hover {
+ opacity: .5;
+}
+
+.ads1 h2 {
+  text-align: center;
+  color: white;
+  margin-top: 30%;
+}
+
+.ads1 p {
+  position: relative;
+  text-align: center;
+  font-family:  Droid Serif, Serif;
+  font-size: 12pt;
+  color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.ads2 {
+  width: 265px;
+  height: 250px;
+  display: inline-block;
+  position: relative;
+  border: solid 2px white;
+  background-image: url(bgd/bgd41.png);
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.ads2:hover {
+ opacity: .5;
+}
+
+.ads2 a:hover {
+  text-decoration: none;
+}
+
+.ads2 h2 {
+  text-align: center;
+  color: white;
+  margin-top: 30%;
+}
+
+.ads2 p {
+  position: relative;
+  text-align: center;
+  font-family:  Droid Serif, Serif;
+  font-size: 12pt;
+  color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.ads3 {
+  width: 265px;
+  height: 250px;
+  display: inline-block;
+  position: relative;
+  border: solid 2px white;
+  background-image: url(bgd/bgd37.jpg);
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.ads3:hover {
+ opacity: .5;
+}
+
+.ads3 a:hover {
+  text-decoration: none;
+}
+
+.ads3 h2 {
+  text-align: center;
+  color: white;
+  margin-top: 30%;
+}
+
+.ads3 p {
+  position: relative;
+  text-align: center;
+  font-family:  Droid Serif, Serif;
+  font-size: 12pt;
+  color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.ads4 {
+  width: 265px;
+  height: 250px;
+  display: inline-block;
+  position: relative;
+  border: solid 2px white;
+  background-image: url(bgd/bgd27.jpg);
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.ads4:hover {
+ opacity: .5;
+}
+
+.ads4 a:hover {
+  text-decoration: none;
+}
+
+.ads4 h2 {
+  text-align: center;
+  color: white;
+  margin-top: 30%;
+}
+
+.ads4 p {
+  position: relative;
+  text-align: center;
+  font-family:  Droid Serif, Serif;
+  font-size: 12pt;
+  color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* FOOTER SECTION */
+
+.wrapper {
+  width: 100%;
+  height: 450px;
+  margin-top: 55px;
+  margin-bottom: 15px;
+  background-color: #000;
+   -moz-border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+
+.footer-topper {
+  width: 260px;
+  height: 22px;
+  position: relative;
+  padding: 25px 9px 12px 9px;
+  margin-left: -8px;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  border: solid white 1px;
+  background-image: url(bgd47.jpg);
+}
+
+.footer-links {
+  width: 250px;
+  height: 380px;
+  padding: 3px;
+  position: relative;
+   -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.footer-links h4 {
+  font-family: Droid Serif, Serif;
+  text-align: center;
+  color: #F8F8FF;
+  margin-top: 2%;
+}
+
+.footer-links > link {
+  font-family: Droid Serif, Serif;
+  color: white;
+  float: left;
+}
+
+.footer-links ul {
+  list-style-type:none;
+  margin-left: 30px;
+}
+
+.footer-links li span {
+  font-family: Droid Serif, Serif;
+  display:inline-block;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.footer-links img:hover {
+  -webkit-transform: rotate(360deg) scale(1.5);
+  -webkit-transition: all 0.5s linear;
+  -moz-transform: rotate(360deg) scale(1.5);
+  -moz-transition: all 0.5s linear;
+  -o-transform: rotate(360deg) scale(1.5);
+  -o-transition: all 0.5s linear;
+  transform: rotate(360deg) scale(1.5);
+  transition: all 0.5s linear;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.social-wrapper  {
+  width: 2547px;
+  height: 60px;
+  display: inline;
+  margin-top: 100px;
+  margin-left: 1220px;
+  padding-top: 25px;
+  background-image: url(bgd/bgd32.jpg);
+  border: solid 5px red;
+}
+
+#icons {
+  width: 300px;
+  height: auto;
+  margin-left: 35%;
+  margin-top: -10px;
+  padding-left: 50px;
+  padding-top: -15px;
+  /*border: solid 5px green;*/
+}
+
+
+#icons h3 {
+  font-family: Droid Serif, Serif;
+  color: white;
+}
+
+#icons img {
+  width: 50px;
+  height:50px;
+  /*padding: 6px;*/
+  /*border-radius: 90px;*/
+  /*background-color: #473C8B;*/
+  /*margin-top: 30px;*/
+  margin-left: 4px;
+  opacity: .4;
+}
+
+#icons img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  -ms-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+
+.signature-wrapper {
+  width: 2575px;
+  height: 25px;
+  display: inline;
+  margin-top: 20px;
+  margin-bottom: -40px;
+  margin-left: -720px;
+  padding-top: 50px;
+  background-image: url(bgd/bgd36.jpg);
+}
+
+.signature-wrapper p {
+  text-align: center;
+}
+

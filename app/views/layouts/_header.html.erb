@@ -1,0 +1,38 @@
+<header>
+	<div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+	        <div class="navbar navbar-inverse">
+	            <div class="navbar-inner">
+	            	<!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+		            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
+		            <a class="brand" href="home">KodeFuge</a>
+		            <div class="nav-collapse collapse">
+	                <ul class="nav">
+			                          <li><%= link_to_unless_current 'ABOUT', 'about',           :class => 'navtitle' %></li>
+			                          <li class="divider-vertical"></li>
+			                          <li><%= link_to_unless_current 'BLOG', 'blog',             :class => 'navtitle' %></li>
+			                          <li class="divider-vertical"></li>
+			                          <li><%= link_to_unless_current 'BOOKSHELF', 'bookshelf',   :class => 'navtitle' %></li>
+			                          <li class="divider-vertical"></li>
+			                          <li><%= link_to_unless_current 'VIDEOSHELF', 'videoshelf', :class => 'navtitle' %></li>
+			                          <li class="divider-vertical"></li>
+			                          <li> <%= link_to_unless_current 'PORTFOLIO', 'portfolio',  :class => "navtitle" %></li>
+			                          <li class="divider-vertical"></li>
+			                          <li> <%= link_to_unless_current 'LOGIN', 'login',          :class => "navtitle" %></li>
+			                          <li class="divider-vertical"></li>
+	                </ul>
+	            </div>
+	            </div>
+	          </div>
+	        </div>
+        </div> 
+    </div>
+</header>

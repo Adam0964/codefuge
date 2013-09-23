@@ -1,0 +1,332 @@
+<% provide(:title, 'Home' ) %>
+
+
+
+    
+    <!-- <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png"> -->
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="da-slider" class="da-slider">
+              <div class="da-slide">
+                          <h2>Welcome to KodeFuge</h2>
+                          <p>
+                            We are a small team of developers who thrive to be the best they can be at we do. We’re all full-stack developers that don’t believe in the separation ...
+                                          </p>
+                          <%= button_to('Click here for More   ', 'about', :class => 'bigbutton')%><i class="icon-share icon-white"></i>
+                          <div class="da-img">
+                            <%= image_tag('coffee.png', :alt => 'image1') %>
+                          </div>
+                        </div>
+                        <div class="da-slide">
+                          <h2> Responsive Design</h2>
+                          <p>
+                            Rather than creating disconnected designs, each tailored to a particular device or browser, we should instead treat them as ...
+                          </p>
+                          <!-- <a href="#" class="da-link">Read more</a> -->
+                          <!-- <a href="#" class="bigbutton2">Click here for More <i class="icon-share icon-white"></i></a> -->
+                          <%= button_to('Click here for More   ', 'responsive', :class => 'bigbutton2')%><i class="icon-share icon-white"></i>
+                          <div class="da-img">
+                            <%= image_tag('rdesign.png', :alt => 'image2') %>
+                          </div>
+                        </div>
+                        <div class="da-slide">
+                          <h2> Frontend Development</h2>
+                          <p>
+                            Thucydides wrote once: 'Knowledge without understanding is useless'. We subscribe to this line of reasoning. That’s to say, we know our ...
+                          </p>
+                          <!-- <a href="#" class="da-link">Read more</a> -->
+                          <%= button_to('Click here for More   ', 'frontend', :class => 'bigbutton3')%><i class="icon-share icon-white"></i>
+                          <div class="da-img">
+                          <%= image_tag('front2.png', :alt => 'image2') %> 
+                          </div>
+                        </div>
+                        <div class="da-slide">
+                          <h2>Backend Development</h2>
+                          <p>
+                            We are equally committed to the backend as we are to the frontend development. While, as the old saying goes “People see your face first”, once you ...
+                                          </p>
+                          <%= button_to('Click here for More   ', 'backend', :class => 'bigbutton4')%><i class="icon-share icon-white"></i>
+                          <div class="da-img">
+                            <%= image_tag('ruby.png', :alt => 'image3') %>
+                          </div>
+                        </div>
+                        <div class="da-slide">
+                          <h2>Software Testing</h2>
+                          <p>
+                            Debugging sucks and testing rocks. That’s why we believe in continuous testing. We practice BDD/TDD using Cucumber/capybara and Rspec.
+                          </p>
+                          <!-- <a href="#" class="da-link">Read more</a> -->
+                          <%= button_to('Click here for More   ', 'testing', :class => 'bigbutton')%><i class="icon-share icon-white"></i>
+                          <div class="da-img">
+                            <%= image_tag('traffic.png', :alt => 'image5') %>
+
+                          </div>
+              </div>
+              <!-- <div class="da-slide">
+                <h2>Mobile Development</h2>
+                <p>
+                  Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                </p>
+                <!-<a href="#" class="da-link">Read more</a> -->
+                <%#<%= button_to('Click here for More   ', 'mobile', :class => 'bigbutton')%>
+                <!-- <i class="icon-share icon-white"></i> -->
+                <!-- <div class="da-img"> -->
+                  <%#<%= image_tag('mobile.png', :alt => 'image5') %>
+
+                <!-- </div> -->
+              <!-- </div>  -->
+              <nav class="da-arrows">
+                <span class="da-arrows-prev"></span>
+                <span class="da-arrows-next"></span>
+              </nav>
+    </div>
+             <div class='headers'>
+                        <h2> 
+                              <%= image_tag('bsmith.png', :size => '100x100') %> Tools We use
+                        </h2>
+                        <p><br />
+                              These are some of the tools we have been using and that we’ve come to like. We’re not advertising them here because we're getting paid for doing so, which we're not, but because of the huge difference they make in our day to day tasks while we are developing. By displaying them here, we only wish to inform and, perhaps, inspire.
+                        </p>
+            </div>
+    </div>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+        <ul class="thumbnails">
+              <li class="span3">
+                <div class="thumbnail">
+                  <div class="advert">
+                    <%= link_to image_tag('github2.png', :alt => ""), 'http://github.com', :target => '_blank' %> 
+                  </div>
+                   <div class="caption">
+                                 <h4>
+                                    Github is our code's Hub
+                                 </h4>
+                                 <br />
+                                  <p>
+                                     Of all the version control systems, we prefer Github because it’s efficient, easy to use, not to mention free. Additionally, we use it to share our concerns and views on a variety of issues related to tools, gems that we use. Often times, we get instant feedback from their owners. 
+
+                                  </p>
+                  </div>
+                </div>
+              </li>
+                 <li class="span3">
+                <div class="thumbnail">
+                  <div class="advert">
+                    <%= link_to image_tag('travis.jpg', :alt => ""), 'http://travis-ci.org', :target => '_blank' %> 
+                  </div>
+                  <div class="caption">
+                                <h4>
+                                   Travis is our test environment
+                                </h4>
+                                <br />
+                                  <p>
+                                     Though we do our own integration tests, there are misses here and there. That’s where Travis-Ci comes in. Once you hook up your Github repos and soon as you do your  first push to git, it takes it from there and alerts you of what went wrong, if any. All of this for free.
+
+                                  </p>
+                        </div>
+              </div>
+              </li>
+                <li class="span3">
+                  <div class="thumbnail">
+                        <div class="advert">
+                             <%= link_to image_tag('trello_icon.png', :alt => ""), 'http://trello.com', :target => '_blank' %>  
+                        <div class="caption">
+                          <h4>Trello is our collaboration platform.</h4><br />
+                                <p>
+                                  Trello is a free collaboration tool that uses a very simple and intuitive interface that allows us to organize our projects into boards to tell the stories. That way, we can keep track of what's being worked on, by whom, what’s currently in process and what's done.  
+                          </p>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="span3">
+                    <div class="thumbnail">
+                      <div class="advert">
+                      <%= link_to image_tag('heroku.png', :alt => ""), 'https://www.heroku.com', :target => '_blank' %>                                 
+                        <div class="caption">
+                            <h4>Heroku is our primary deployment platform</h4><br />
+                                  <p>
+                                    With Heroku, deploying our apps has almost always been a breeze. It is as easy as ‘git push heroku master.’  And voila! You app goes 'live' in minutes. The service is free as long as long as you don’t feel the need to purchase extras.
+
+                                  </p>
+                        </div>
+                     </div>
+                    </div>
+                </li>   
+      </ul>  
+        <hr class="featurette-divider">
+      <ul class="thumbnails">
+            <li class="span3">
+                <div class="thumbnail">      
+                  <div class="advert">    
+                    <%= link_to image_tag("stack.jpg", :alt => ""), 'http://stackoverflow.com', :target => '_blank' %> 
+
+                      <div class="caption">
+                                  <h4>
+                                      Stackoverflow is our Friend
+                                  </h4>
+                                  <br />
+                                    <p>
+                                       When we have an issue we can’t resolve, we seek help from the community on Stackoverflow. When no one comes up with an answer and we do, we post it for the benefit for everyone. Moreover, we  answer some of the  questions posted by the community.
+                                    </p>
+                            </div>
+                </div>
+            </li>
+            <li class="span3">
+                  <div class="thumbnail">
+                   <div class="advert">
+                     <%= link_to image_tag('bitbucket.png', :size => '280x280', :alt => ""), 'http://bitbucket.org', :target => '_blank' %> 
+                       <div class="caption">
+                                       <h4>
+                                             Bitbucket is our codes's bucket
+                                       </h4>
+                                       <br />
+                                      <p>
+                                         Both BitBucket & Github offer public and private repos, but while public ones are free on both, only Bitbucket offers free private repos. We don’t have any code on it yet  because we like being open-source, but, we might use it if we feel some of our code needs to be private.
+
+                                      </p>
+                          </div>
+                  </div>
+            </li>
+            <li class="span3">
+                  <div class="thumbnail">
+                        <div class="advert">
+                             <%= link_to image_tag('openshift.png', :alt => ""), 'http://www.linode.com', :target => '_blank' %> 
+                            <div class="caption">
+                              <h4>Openshift is another of our deloyment platforms</h4><br />
+                                  <p>
+                                      Host your applications and scale them in the public cloud. OpenShift Online, made by Redhat,  automates the provisioning, management and scaling of applications so that you can focus on development and creativity.
+                                         </p>
+                    </div>
+                  </div>
+                </li>
+
+            <li class="span3">
+                  <div class="thumbnail">
+                        <div class="advert">
+                           <%= link_to image_tag('aws.png', :alt => ""), 'http://newrelic.com', :target => '_blank' %> 
+                        <div class="caption">
+                                <h4>AWS is our hosting platform</h4><br />
+                                <p>
+                                    We like AWS because of 4 things: EC2, S3, AWS Elastic Beanstalk and its seamless integration with Git. But, there are other goodies that can sweeten the deal if you know how to fiddle with them,  not to mention the free basic hosting for a year for new comers.
+                                </p>
+                        </div>
+                  </div>
+                </li>     
+      </ul>
+      <hr class="featurette-divider">
+      <ul class="thumbnails">
+                  <li class="span3">
+                <div class="thumbnail2">       
+                  <div class='ads1'>
+                      <h2><%= link_to 'Zeus', 'https://github.com/burke/zeus', :target => '_blank' %></h2><br />    
+                      <p> We use zeus to speed up tasks, such as firing up our server, opening our console or running some rake taks. </p>
+                   </div> 
+              </div>
+            </li>
+
+              <li class="span3">
+                <div class="thumbnail2">
+                      <div class="ads2">
+                        <h2><%= link_to 'Ami Responsive', 'http://ami.responsivedesign.is ', :target => '_blank' %></h2><br />
+                         <p> 
+                            This tool tests the status quo of your (responsive) website layout and offers you to drag, drop, slide and copy the CSS needed to make your web design truly responsive.
+                         </p>
+                        
+                      </div>
+                </div>
+              </li>
+              <li class="span3">
+                <div class="thumbnail2">
+                    <div class="ads3">
+                      <h2><%= link_to 'Bootstrap', 'http://bootstrap-code.tumblr.com', :target => '_blank' %></h2><br />
+                      <p> This is a Sleek, intuitive, and powerful front-end framework for faster and easier web development.</p>
+                    </div>
+              </div>
+              </li>
+        
+            <li class="span3">
+                  <div class="thumbnail2">
+                     <div class="ads4">
+                      <h2><%= link_to 'Foundation', 'http://foundation.zurb.com', :target => '_blank' %></h2><br />
+                         <p> With this tool, you can build for small devices first. Then, as devices get larger and larger, layer in more complexity.
+                         </p>
+                     </div>
+                  </div>
+            </li>     
+      </ul>
+      <hr class="featurette-divider">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
+        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
+        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
+        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+  </body>
+</html>
