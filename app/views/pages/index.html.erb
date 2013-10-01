@@ -1,80 +1,60 @@
 <% provide(:title, 'Home' ) %>
 
-
-
-    
-    <!-- <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
-    
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="../assets/ico/favicon.png"> -->
-
-
-    <!-- Carousel
+    <!-- =============================================
+    |                    cslider                     |
     ================================================== -->
     <div id="da-slider" class="da-slider">
+             <div class="da-slide">
+                    <h2>Welcome to KodeFuge</h2>
+                    <p>
+                      We are a small team of developers who thrive to be the best they can be at we do. We’re all full-stack developers that don’t believe in the separation ...
+                    </p>
+                    <%= button_to('Click here for More   ', 'about', :class => 'bigbutton')%>
+                    <div class="da-img">
+                      <%= image_tag('coffee.png', :alt => 'image1') %>
+                    </div>
+              </div>
               <div class="da-slide">
-                          <h2>Welcome to KodeFuge</h2>
-                          <p>
-                            We are a small team of developers who thrive to be the best they can be at we do. We’re all full-stack developers that don’t believe in the separation ...
-                                          </p>
-                          <%= button_to('Click here for More   ', 'about', :class => 'bigbutton')%><i class="icon-share icon-white"></i>
-                          <div class="da-img">
-                            <%= image_tag('coffee.png', :alt => 'image1') %>
-                          </div>
-                        </div>
-                        <div class="da-slide">
-                          <h2> Responsive Design</h2>
-                          <p>
-                            Rather than creating disconnected designs, each tailored to a particular device or browser, we should instead treat them as ...
-                          </p>
-                          <!-- <a href="#" class="da-link">Read more</a> -->
-                          <!-- <a href="#" class="bigbutton2">Click here for More <i class="icon-share icon-white"></i></a> -->
-                          <%= button_to('Click here for More   ', 'responsive', :class => 'bigbutton2')%><i class="icon-share icon-white"></i>
-                          <div class="da-img">
-                            <%= image_tag('rdesign.png', :alt => 'image2') %>
-                          </div>
-                        </div>
-                        <div class="da-slide">
-                          <h2> Frontend Development</h2>
-                          <p>
-                            Thucydides wrote once: 'Knowledge without understanding is useless'. We subscribe to this line of reasoning. That’s to say, we know our ...
-                          </p>
-                          <!-- <a href="#" class="da-link">Read more</a> -->
-                          <%= button_to('Click here for More   ', 'frontend', :class => 'bigbutton3')%><i class="icon-share icon-white"></i>
-                          <div class="da-img">
-                          <%= image_tag('front2.png', :alt => 'image2') %> 
-                          </div>
-                        </div>
-                        <div class="da-slide">
-                          <h2>Backend Development</h2>
-                          <p>
-                            We are equally committed to the backend as we are to the frontend development. While, as the old saying goes “People see your face first”, once you ...
-                                          </p>
-                          <%= button_to('Click here for More   ', 'backend', :class => 'bigbutton4')%><i class="icon-share icon-white"></i>
-                          <div class="da-img">
-                            <%= image_tag('ruby.png', :alt => 'image3') %>
-                          </div>
-                        </div>
-                        <div class="da-slide">
-                          <h2>Software Testing</h2>
-                          <p>
-                            Debugging sucks and testing rocks. That’s why we believe in continuous testing. We practice BDD/TDD using Cucumber/capybara and Rspec.
-                          </p>
-                          <!-- <a href="#" class="da-link">Read more</a> -->
-                          <%= button_to('Click here for More   ', 'testing', :class => 'bigbutton')%><i class="icon-share icon-white"></i>
-                          <div class="da-img">
-                            <%= image_tag('traffic.png', :alt => 'image5') %>
-
-                          </div>
+                    <h2> Responsive Design</h2>
+                    <p>
+                      Rather than creating disconnected designs, each tailored to a particular device or browser, we should instead treat them as ...
+                    </p>
+                    <%= button_to('Click here for More   ', 'responsive', :class => 'bigbutton2')%><i class="icon-share icon-white"></i>
+                    <div class="da-img">
+                      <%= image_tag('rdesign.png', :alt => 'image2') %>
+                    </div>
+              </div>
+              <div class="da-slide">
+                      <h2> Frontend Development</h2>
+                      <p>
+                        Thucydides wrote once: 'Knowledge without understanding is useless'. We subscribe to this line of reasoning. That’s to say, we know our ...
+                      </p>
+                      <!-- <a href="#" class="da-link">Read more</a> -->
+                      <%= button_to('Click here for More   ', 'frontend', :class => 'bigbutton3')%><i class="icon-share icon-white"></i>
+                      <div class="da-img">
+                      <%= image_tag('front2.png', :alt => 'image2') %> 
+                      </div>
+              </div>
+              <div class="da-slide">
+                      <h2>Backend Development</h2>
+                      <p>
+                        We are equally committed to the backend as we are to the frontend development. While, as the old saying goes “People see your face first”, once you ...
+                                      </p>
+                      <%= button_to('Click here for More   ', 'backend', :class => 'bigbutton4')%><i class="icon-external-link"></i>
+                      <div class="da-img">
+                        <%= image_tag('ruby.png', :alt => 'image3') %>
+                      </div>
+              </div>
+              <div class="da-slide">
+                      <h2>Software Testing</h2>
+                      <p>
+                        Debugging sucks and testing rocks. That’s why we believe in continuous testing. We practice BDD/TDD using Cucumber/capybara and Rspec
+                      </p>
+                      <!-- <a href="#" class="da-link">Read more</a> -->
+                      <%= button_to('Click here for More   ', 'testing', :class => 'bigbutton')%><i class="icon-share icon-white"></i>
+                      <div class="da-img">
+                        <%= image_tag('traffic.png', :alt => 'image5') %>
+                      </div>
               </div>
               <!-- <div class="da-slide">
                 <h2>Mobile Development</h2>
@@ -98,13 +78,14 @@
                         <h2> 
                               <%= image_tag('bsmith.png', :size => '100x100') %> Tools We use
                         </h2>
-                        <p><br />
+                        <p>
                               These are some of the tools we have been using and that we’ve come to like. We’re not advertising them here because we're getting paid for doing so, which we're not, but because of the huge difference they make in our day to day tasks while we are developing. By displaying them here, we only wish to inform and, perhaps, inspire.
-                        </p>
+                        </p><br />
             </div>
     </div>
 
-    <!-- Marketing messaging and featurettes
+    <!-- =============================================
+    |   Marketing messaging and featurettes          |
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
@@ -234,7 +215,7 @@
       </ul>
       <hr class="featurette-divider">
       <ul class="thumbnails">
-                  <li class="span3">
+            <li class="span3">
                 <div class="thumbnail2">       
                   <div class='ads1'>
                       <h2><%= link_to 'Zeus', 'https://github.com/burke/zeus', :target => '_blank' %></h2><br />    
@@ -242,27 +223,25 @@
                    </div> 
               </div>
             </li>
-
-              <li class="span3">
-                <div class="thumbnail2">
-                      <div class="ads2">
-                        <h2><%= link_to 'Ami Responsive', 'http://ami.responsivedesign.is ', :target => '_blank' %></h2><br />
-                         <p> 
-                            This tool tests the status quo of your (responsive) website layout and offers you to drag, drop, slide and copy the CSS needed to make your web design truly responsive.
-                         </p>
-                        
-                      </div>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail2">
-                    <div class="ads3">
-                      <h2><%= link_to 'Bootstrap', 'http://bootstrap-code.tumblr.com', :target => '_blank' %></h2><br />
-                      <p> This is a Sleek, intuitive, and powerful front-end framework for faster and easier web development.</p>
+            <li class="span3">
+              <div class="thumbnail2">
+                    <div class="ads2">
+                      <h2><%= link_to 'Ami Responsive', 'http://ami.responsivedesign.is ', :target => '_blank' %></h2><br />
+                       <p> 
+                          This tool tests the status quo of your (responsive) website layout and offers you to drag, drop, slide and copy the CSS needed to make your web design truly responsive.
+                       </p>
+                      
                     </div>
               </div>
-              </li>
-        
+            </li>
+            <li class="span3">
+              <div class="thumbnail2">
+                  <div class="ads3">
+                    <h2><%= link_to 'Bootstrap', 'http://bootstrap-code.tumblr.com', :target => '_blank' %></h2><br />
+                    <p> This is a Sleek, intuitive, and powerful front-end framework for faster and easier web development.</p>
+                  </div>
+            </div>
+            </li>
             <li class="span3">
                   <div class="thumbnail2">
                      <div class="ads4">
@@ -276,24 +255,24 @@
       <hr class="featurette-divider">
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
+          <div class="span4">
+              <img class="img-circle" data-src="holder.js/140x140">
+              <h2>Heading</h2>
+              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div><!-- /.span4 -->
+          <div class="span4">
+              <img class="img-circle" data-src="holder.js/140x140">
+              <h2>Heading</h2>
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div><!-- /.span4 -->
+          <div class="span4">
+              <img class="img-circle" data-src="holder.js/140x140">
+              <h2>Heading</h2>
+              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+          </div><!-- /.span4 -->
       </div><!-- /.row -->
 
 
@@ -302,25 +281,24 @@
       <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
-        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
+          <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
 
       <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
+          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
-
       <hr class="featurette-divider">
-
+      
       <div class="featurette">
-        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
-        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
+          <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
 
       <hr class="featurette-divider">
@@ -328,5 +306,4 @@
       <!-- /END THE FEATURETTES -->
 
     </div><!-- /.container -->
-  </body>
-</html>
+

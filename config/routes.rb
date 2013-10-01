@@ -1,5 +1,28 @@
 Kodefuge::Application.routes.draw do
 
+  resources :videos
+
+
+  devise_for :admins, :controllers => { :sessions => "admins/sessions" }
+  devise_for :users, :path => "auth", :path_names => { :sign_in      => 'login', 
+                                                       :sign_out     => 'logout', 
+                                                       :password     => 'secret', 
+                                                       :confirmation => 'verification', 
+                                                       :unlock       => 'unblock', 
+                                                       :registration => 'register', 
+                                                       :sign_up      => 'cmon_let_me_in' 
+                                                      }
+   devise_for :users, :controllers => {:registrations  => 'registrations'}
+
+   authenticated :user do
+     root :to => 'posts#index'
+  end 
+
+  resources :books
+
+  resources :posts
+
+
   match '/home',         :to => 'pages#index'
   match '/about',        :to => 'pages#about'
   match '/bookshelf',    :to => 'books#index'
@@ -12,20 +35,65 @@ Kodefuge::Application.routes.draw do
   match '/testing',      :to => 'pages#testing'
   match '/mobile',       :to => 'pages#mobile'
 
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
+   # routes from posts as a root
+   match "/posts/home(.:format)"        => "pages#index",         :as     => :home
+   match "/posts/about(.:format)"       => "pages#about",         :as     => :about
+   match "/posts/bookshelf(.:format)"   => "books#index",         :as     => :bookshelf
+   match "/posts/blog(.:format)"        => "posts#index",         :as     => :blog
+   match "/posts/videoshelf(.:format)"  => "pages#videoshelf",    :as     => :videoshelf
+   match "/posts/portfolio(.:format)"   => "pages#portfolio",     :as     => :portfolio
+   match "/posts/frontend(.:format)"    => "pages#frontend",      :as     => :frontend
+   match "/posts/backend(.:format)"     => "pages#backend",       :as     => :backend
+   match "/posts/responsive(.:format)"  => "pages#responsive",    :as     => :responsive
+   match "/posts/testing(.:format)"     => "pages#testing",       :as     => :testing
+   match "/posts/mobile(.:format)"      => "pages#mobile",        :as     => :mobile
 
-  # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
-  # Keep in mind you can assign values other than :controller and :action
+   # oustside routing
+   match "/posts/https://twitter.com/adam0964(.:format)"              => "pages#https://twitter.com/adam0964",     :as => :twitter
+   match "/posts/https://github.com/Adam0964(.:format)"               => "pages#https://github.com/Adam0964",      :as => :github
+   match "/posts/https://www.linkedin.com/in/adam0964(.:format)"      => "pages#https://linkedin.com/in/adam0964", :as => :linkedin
+   
+   # match "/posts/:id", :to => redirect("/posts/%{id}s")
+   
+  devise_scope :user do 
+     match "/login",         :to => 'devise/sessions#new'
+     match '/logout',        :to => 'devise/sessions#destroy'
+     match '/signup',        :to => 'devise/registrations#create'
+     match "/posts/login",   :to => "devise/sessions#new"
+     match "/posts/logout",  :to => "devise/sessions#destroy"
+     match "/posts/signup",  :to => "devise/sessions#create"
+  end
+  
+
+  # match '/login2',                        :to => 'sessions#new', :as => :login
+  # match '/auth/:provider/callback',       :to => 'sessions#create'
+  # match '/auth/failure',                  :to => 'sessions#failure'
+  # match '/posts/login2',                  :to => 'sessions#new', :as => :login
+  # match '/posts/auth/:provider/callback', :to => 'sessions#create'
+  # match '/callback',                      :to => 'sessions#create'
+  
+  # match '/auth/:service/callback'      => 'services#create' 
+  # match "/posts/auth/:service/callback" => 'services#create' 
+  
+   # devise_scope :users do
+   #    root :to => "users#new"
+   # end
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
+  # resources :services, :only => [:index, :create, :destroy]
+  
+  # resources :activities
+  resources :pages
+  resources :books
+  resources :users 
+  resources :videos
+  resources :posts do
+      resources :comments
+  end
   # Sample resource route with options:
   #   resources :products do
   #     member do
@@ -52,6 +120,8 @@ Kodefuge::Application.routes.draw do
   #     end
   #   end
 
+
+  
   # Sample resource route within a namespace:
   #   namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController
@@ -59,13 +129,19 @@ Kodefuge::Application.routes.draw do
   #     resources :products
   #   end
 
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-   root :to => 'pages#index'
+  # namespace :posts do
+  #   resources :sites_pages
+  # end
 
+  # You can have the root of your site routed with "root"
+  #
+  #just remember to delete public/index.html.
+   root :to => 'pages#index'
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+
+   # mount Flog::Engine, :at => "/flog"
 end

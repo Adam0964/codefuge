@@ -25,4 +25,7 @@ class PagesController < ApplicationController
 
   def mobile
   end
+
+  def bookshelf
+  end
 end

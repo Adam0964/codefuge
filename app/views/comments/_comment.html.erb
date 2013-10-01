@@ -1,0 +1,32 @@
+<% provide(:title, 'Comment' ) %>
+
+<div class="container">   
+            <div class="span3">                
+                    <div class="signup">
+                        <div class='sup2'> 
+                        	<br />							    
+									<div class='comment'>
+										<div class='topbar'>
+											<h4> 
+											 	Comment made by: <%= comment.commenter %> <%= time_ago_in_words(comment.created_at, true) %> ago 
+											 <h4> 
+											 <!-- <div class='star'> -->
+										</div>
+										    <p>								  
+									            <%= comment.body.html_safe %>
+									        </p>
+								    </div>	
+								    <%#<%= link_to 'Edit', edit_post_comment_path(@post, comment) %> 				
+									<% if current_user.try(:admin?)  %>
+									           <%= button_to 'Destroy Comment', [comment.post, comment],
+									               :confirm => 'Are you sure?',
+									               :method => :delete, :class =>'btn btn-danger btn-block', :class => 'comment' %>
+									<% else %>
+									<% end %>
+									<br /><br />
+							    	 <!-- <hr class='horizontal' /> -->
+                        </div>
+
+                   </div>
+            </div>
+</div>

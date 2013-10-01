@@ -1,0 +1,14 @@
+<%= form_for([@post, @post.comments.build]) do |f| %>
+  <div class="field">
+    <%= f.label      :commenter %>
+    <%= f.text_field :commenter %>
+  </div>
+  <div class="field">
+    <%= f.text_area :body, :id => "markItUp", :rows => 40, :cols => 60 %>
+  </div>
+  <div class="actions2">
+    <%= f.submit :class =>'btn btn-primary btn large' %>
+  </div>
+<% end %>
+
+

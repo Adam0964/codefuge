@@ -1,3 +1,8 @@
+if RUBY_VERSION =~ /1.9/ 
+  Encoding.default_external = Encoding::UTF_8
+  Encoding.default_internal = Encoding::UTF_8
+end
+
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
@@ -10,7 +15,6 @@ gem 'kaminari'
 gem 'active_link_to'
 gem "paperclip"     
 gem "sunspot_rails" 
-gem "capistrano"    
 gem 'commands'
 gem "mechanize", "~> 2.6.0"
 gem "devise"
@@ -48,6 +52,8 @@ group :development do
   gem 'sunspot_solr'
   gem 'nokogiri', '1.6.0'
   gem 'rb-fsevent'
+  gem "capistrano"    
+  gem 'capistrano-rails'
 end
 
 # Gems used only for assets and not required
@@ -59,7 +65,6 @@ group :assets do
   gem 'bootstrap-sass'
   gem 'twitter-bootstrap-rails' 
   gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-  gem 'therubyracer'
   gem 'jquery-rails'
   gem 'uglifier'
   gem 'turbo-sprockets-rails3'
@@ -67,4 +72,18 @@ end
 
 group :production do
   gem 'pg'
+end
+
+group :production, :staging do
+  gem 'execjs'
+  gem 'therubyracer'
+  gem 'god'
+  gem 'elif' # For Scout RoR plugin
+  gem 'request-log-analyzer'
+end
+ 
+group :console do
+  gem 'hirb' 
+  gem 'wirble'
+  gem 'awesome_print'
 end

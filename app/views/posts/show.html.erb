@@ -1,0 +1,72 @@
+<% provide(:title, 'Show' ) %>
+
+<div class="container"> 
+     <div class="row">  
+            <div class="span3">                
+                    <div class="signup">
+                        <div class='sup2'> 
+								<!-- p id="notice">
+									         <%= notice %>
+								</p> -->
+							    <div class='blog'>
+									    <h2>
+									  	  <%= @post.title %>
+									    </h2><br />
+									    <div id='postDate'>
+									  	    <%= @post.created_at.in_time_zone.strftime("PUBLISHED ON %a  %b %d, %Y @ %I:%M %p") %>
+									  	    <br />
+									  	    BY <h4><%= @post.name %></h4>
+									    </div>
+		                                <hr /><br />
+									         <p> 
+									         	<%= @post.content.html_safe %>
+									         </p>
+									     <div>
+									     	<br /><br />
+									         <div class='postDate'><br />
+
+										 	     <!-- <h5>
+										 	     	    <i><%= @post.comments.count %> 
+										 	     	       <% if @post.comments.count == 1 %> 
+										 	     	                 comment
+										 	     	       <% else %> 
+										 	     	                 comments
+										 	     	       <% end %>
+										 	     	    </i>
+										 	     </h5> -->
+	   										     <!-- <h4 class='rating'>
+
+					   										     <span class="rateit">
+					   										     	&nbsp&nbsp<i>Rate this article</i>&nbsp&nbsp
+																</span>
+												 </h4> -->
+										    </div>
+									    </div> <br />
+									    <div id='blog2'>
+									        <%= render @post.comments %>
+							                <% if user_signed_in? %>
+												<%= render "comments/form" %>
+												<p>To embed code, please use the the 'pre' tags</p>
+												<p>If you want to use the fomatting we used, insert [class='markitup'] inside the 'pre' tags.</p>
+									        <% else %>
+										            <p>
+											  		    <%= link_to 'Log in', '/login' %> <i> to leave a comment</i>
+											  	    </p>
+												  	<p>
+												  		<%= link_to 'Back to Posts', posts_path %> 
+												 	</p>
+									        <% end %>
+									        <% if current_user.try(:admin?)  %>
+									            <%= link_to 'Edit Post', edit_post_path(@post) %>
+									        <% else %>
+									        <% end %> 
+									    </div>
+									    <%#<%= link_to 'Back to Posts', posts_path %> 
+								</div>
+                        </div>
+                   </div>
+            </div>
+     </div>
+</div>
+
+

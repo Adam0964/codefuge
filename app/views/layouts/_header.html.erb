@@ -1,38 +1,79 @@
 <header>
 	<div class="navbar-wrapper">
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-        <div class="container">
-	        <div class="navbar navbar-inverse">
-	            <div class="navbar-inner">
-	            	<!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-		            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		              <span class="icon-bar"></span>
-		              <span class="icon-bar"></span>
-		              <span class="icon-bar"></span>
-		              <span class="icon-bar"></span>
-		              <span class="icon-bar"></span>
-		              <span class="icon-bar"></span>
-		            </button>
-		            <a class="brand" href="home">KodeFuge</a>
-		            <div class="nav-collapse collapse">
-	                <ul class="nav">
-			                          <li><%= link_to_unless_current 'ABOUT', 'about',           :class => 'navtitle' %></li>
-			                          <li class="divider-vertical"></li>
-			                          <li><%= link_to_unless_current 'BLOG', 'blog',             :class => 'navtitle' %></li>
-			                          <li class="divider-vertical"></li>
-			                          <li><%= link_to_unless_current 'BOOKSHELF', 'bookshelf',   :class => 'navtitle' %></li>
-			                          <li class="divider-vertical"></li>
-			                          <li><%= link_to_unless_current 'VIDEOSHELF', 'videoshelf', :class => 'navtitle' %></li>
-			                          <li class="divider-vertical"></li>
-			                          <li> <%= link_to_unless_current 'PORTFOLIO', 'portfolio',  :class => "navtitle" %></li>
-			                          <li class="divider-vertical"></li>
-			                          <li> <%= link_to_unless_current 'LOGIN', 'login',          :class => "navtitle" %></li>
-			                          <li class="divider-vertical"></li>
-	                </ul>
+        <div class='row-fluid'>
+	            <div class="navbar navbar-inverse">
+	                <div class="navbar-inner">
+			            	<!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+				            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					              <span class="icon-bar"></span>
+					              <span class="icon-bar"></span>
+					              <span class="icon-bar"></span>
+					              <span class="icon-bar"></span>
+					              <span class="icon-bar"></span>
+					              <span class="icon-bar"></span>
+				            </button>
+				            <a class="brandy" href="home">KodeFuge</a>
+				            <div class="nav-collapse collapse">
+					                <ul class="nav">
+					                   
+					                	  <li>
+					                	  	    <%= link_to('home') do %>
+							                	  	  <span class='logo' style='color:navy'>
+		                                                <span style='color:orangered'>[</span>K<span style='color:orangered'>]</span></span>
+		                                              </span>&nbsp&nbsp&nbsp 
+                                                 <% end %>
+                                          </li>
+                                 
+					                	  <li><h4><%= link_to_unless_current 'kodefuge', 'home',     :class => 'brand' %></h4></li>
+					                	  <!-- <li class="divider-vertical"></li> -->
+				                          <li><%= link_to_unless_current 'ABOUT', 'about',           :class => 'navtitle' %></li>
+				                          <li class="divider-vertical"></li>
+				                          <li><%= link_to_unless_current 'BLOG', 'blog',             :class => 'navtitle' %></li>
+				                          <li class="divider-vertical"></li>
+				                          <li><%= link_to_unless_current 'BOOKSHELF', 'bookshelf',   :class => 'navtitle' %></li>
+				                          <li class="divider-vertical"></li>
+				                          <li><%= link_to_unless_current 'VIDEOSHELF', 'videoshelf', :class => 'navtitle' %></li>
+				                          <li class="divider-vertical"></li>
+				                          <li> <%= link_to_unless_current 'PORTFOLIO', 'portfolio',  :class => "navtitle" %></li>
+				                          <li class="divider-vertical"></li>
+				                          <% if user_signed_in? %>    
+		                                      <li><%= link_to_unless_current 'LOGOUT', 'logout',     :class => 'navtitle' %></li> 
+		                                  <% else %>         
+		                                      <li><%= link_to_unless_current 'LOGIN', 'login',       :class => 'navtitle'  %></li>
+		                                  <% end %>
+					                </ul>
+
+			                </div>
+	                 </div>
 	            </div>
-	            </div>
-	          </div>
-	        </div>
-        </div> 
+	    </div>  
     </div>
+    <!-- <div class='alternate-nav'>
+			     <div class="navbar navbar-inverse navbar-fixed-top">
+			      <div class="navbar-inner">
+			        <div class="container-fluid">
+			          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			          </button>
+			          <a class="brand" href="#">Project name</a>
+			          <div class="nav-collapse collapse">
+			            <p class="navbar-text pull-right">
+			              Logged in as <a href="#" class="navbar-link">Username</a>
+			            </p>
+			            <ul class="nav">
+			              <li class="active"><a href="#">Home</a></li>
+			              <li><a href="#about">About</a></li>
+			              <li><a href="#contact">Contact</a></li>
+			            </ul>
+			          </div><!--/.nav-collapse 
+			        </div>
+			      </div>
+			    </div>
+	</div> -->
 </header>
+
+
+

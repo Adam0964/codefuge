@@ -12,8 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= prettify
+//= require prettify
 //= require jquery.cslider
 //= require jquery.gallery
 //= require twitter/bootstrap
+//= require modernizr.2.6.2
+//= require markitup
+//= require markitup/sets/xbbcode/set
 //= require_tree .

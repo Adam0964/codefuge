@@ -1,4 +1,8 @@
-// kodefuge.js
+/**
+--------------------------------------------------
+|           kodefuge.js                          |
+--------------------------------------------------
+**/
 
 $(document).ready(function(){
 	$('.headers' ).on('mouseenter', 'h2', function(){

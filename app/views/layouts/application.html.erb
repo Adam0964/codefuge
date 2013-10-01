@@ -7,21 +7,19 @@
 	    <meta name="description" content="">
   		<title>Kodefuge</title>
 
-        <%= stylesheet_link_tag    "application", :media => "all" %>
-        <%= javascript_include_tag "application" %>
-        <%= csrf_meta_tags %>
-        <%= render 'layouts/shim' %>
+      <%= csrf_meta_tags %>
+      <%= render 'layouts/shim' %>
 </head>
 <body>
 
-         <%= yield %>
-         <%= render :partial => 'layouts/header' %>       
-         <%= render :partial => 'layouts/footer' %>
+      <%= yield %>
+      <%= render :partial => 'layouts/header' %>       
+      <%= render :partial => 'layouts/footer' %>
 
-		 <%= javascript_include_tag "application" %> 
-         <%= stylesheet_link_tag    "application" %> 
+		  <%= stylesheet_link_tag    "application", :media => "all" %>
+      <%= javascript_include_tag "application" %>
 
-        <script>
+      <script>
 	      // !function ($) {
 	      //   $(function(){
 	      //     // carousel demo
@@ -30,22 +28,22 @@
 	      // }(window.jQuery)
 	    </script> 
 
-	    <script type="text/javascript">
+	    <script type="text/javascript"> // homepage
                   $(function() {                  
                     $('#da-slider').cslider({
                       autoplay: true
                     });                   
-                  });
+                  }); 
         </script> 
 
-        <script>
+        <script> // bookshelf
             $(function() {
               $('#dg-container').gallery({
                  autoplay: true
               });
             });
         </script> 
-        <script type="text/javascript" >
+        <script type="text/javascript" > //markitup editor
              $(document).ready(function() {
                 $("textarea").markItUp(mySettings);
                 // $('#html').markItUp(myHtmlSettings);
