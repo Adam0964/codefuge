@@ -1,7 +1,7 @@
 # PG version 9.x
 #   gem install postgresql
 #
-#   Ensure the postgres 3 gem is defined in your Gemfile
+#   Ensure the postgres gem is defined in your Gemfile
 #   gem 'postgresql'
 
 encoding: utf-8
