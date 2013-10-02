@@ -245,7 +245,7 @@ body {
     --------------------------------------------------
     **/
 
-   .bigbutton {
+  .bigbutton {
   margin-top: 290px; /*depends on p height*/
   margin-left: 250px;
   -moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
@@ -267,12 +267,14 @@ body {
   padding:12px 20px;
   text-decoration:none;
   text-shadow:1px 1px 0px #ffee66;
-}.bigbutton:hover {
+}
+.bigbutton:hover {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64) );
   background:-moz-linear-gradient( center top, #ffab23 5%, #ffec64 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64');
   background-color:#ffab23;
-}.bigbutton:active {
+}
+.bigbutton:active {
   position:relative;
   top:1px;
 }
@@ -299,12 +301,14 @@ body {
   padding:12px 20px;
   text-decoration:none;
   text-shadow:1px 1px 0px #98231a;
-}.bigbutton2:hover {
+}
+.bigbutton2:hover {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d34639), color-stop(1, #fa665a) );
   background:-moz-linear-gradient( center top, #d34639 5%, #fa665a 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d34639', endColorstr='#fa665a');
   background-color:#d34639;
-}.bigbutton2:active {
+}
+.bigbutton2:active {
   position:relative;
   top:1px;
 }
@@ -331,12 +335,14 @@ body {
   padding:12px 20px;
   text-decoration:none;
   text-shadow:1px 1px 0px #b115cd;
-}.bigbutton3:hover {
+}
+.bigbutton3:hover {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b51ed0), color-stop(1, #da3df6) );
   background:-moz-linear-gradient( center top, #b51ed0 5%, #da3df6 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b51ed0', endColorstr='#da3df6');
   background-color:#b51ed0;
-}.bigbutton3:active {
+}
+.bigbutton3:active {
   position:relative;
   top:1px;
 }
@@ -363,7 +369,8 @@ body {
   padding:12px 20px;
   text-decoration:none;
   text-shadow:1px 1px 0px #aade7c;
-}.bigbutton4:hover {
+}
+.bigbutton4:hover {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
   background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
@@ -395,12 +402,14 @@ body {
   padding:12px 20px;
   text-decoration:none;
   text-shadow:1px 1px 0px #1570cd;
-}.bigbutton5:hover {
+}
+.bigbutton5:hover {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
   background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
   background-color:#1e62d0;
-}.bigbutton5:active {
+}
+.bigbutton5:active {
   position:relative;
   top:1px;
 }
@@ -427,12 +436,14 @@ body {
   padding:12px 20px;
   text-decoration:none;
   text-shadow:1px 1px 0px #ffffff;
-}.bigbutton6:hover {
+}
+.bigbutton6:hover {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #f7ff05) );
   background:-moz-linear-gradient( center top, #dfdfdf 5%, #f7ff05 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#f7ff05');
   background-color:#dfdfdf;
-}.bigbutton6:active {
+}
+.bigbutton6:active {
   position:relative;
   top:1px;
 }
@@ -492,51 +503,51 @@ body {
 */
     
 
-    /* MARKETING CONTENT
-    -------------------------------------------------- */
+/* MARKETING CONTENT
+-------------------------------------------------- */
 
-    /* Center align the text within the three columns below the carousel */
-    .marketing .span4 {
-      text-align: center;
-    }
-    .marketing h2 {
-      font-weight: normal;
-    }
-    .marketing .span4 p {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
+/* Center align the text within the three columns below the carousel */
+.marketing .span4 {
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .span4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 
     /* Featurettes
     -----------------------------------------------*/
 
-    .featurette-divider {
-      margin: 20px 0; /* Space out the Bootstrap <hr> more */
-    }
-    .featurette {
-      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-      overflow: hidden; /* Vertically center images part 2: clear their floats. */
-    }
-    .featurette-image {
-      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-    }
+.featurette-divider {
+  margin: 20px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
 
-    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-    .featurette-image.pull-left {
-      margin-right: 40px;
-    }
-    .featurette-image.pull-right {
-      margin-left: 40px;
-    }
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
 
-    /* Thin out the marketing headings */
-    .featurette-heading {
-      font-size: 50px;
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -1px;
-    }
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
 
 
 
@@ -545,80 +556,80 @@ body {
 
  @media (max-width: 979px) {
 
-      .container.navbar-wrapper {
-        margin-bottom: 0;
-        width: auto;
-      }
-      .navbar-inner {
-        border-radius: 0;
-        margin: -20px 0;
-      }
+  .container.navbar-wrapper {
+    margin-bottom: 0;
+    width: auto;
+  }
+  .navbar-inner {
+    border-radius: 0;
+    margin: -20px 0;
+  }
 
-      .carousel .item {
-        height: 500px;
-      }
-      .carousel img {
-        width: auto;
-        height: 500px;
-      }
+  .carousel .item {
+    height: 500px;
+  }
+  .carousel img {
+    width: auto;
+    height: 500px;
+  }
 
-      .featurette {
-        height: auto;
-        padding: 0;
-      }
-      .featurette-image.pull-left,
-      .featurette-image.pull-right {
-        display: block;
-        float: none;
-        max-width: 40%;
-        margin: 0 auto 20px;
-      }
-    }
+  .featurette {
+    height: auto;
+    padding: 0;
+  }
+  .featurette-image.pull-left,
+  .featurette-image.pull-right {
+    display: block;
+    float: none;
+    max-width: 40%;
+    margin: 0 auto 20px;
+  }
+}
 
 
 @media (max-width: 767px) {
 
-      .navbar-inner {
-        margin: -20px;
-      }
+  .navbar-inner {
+    margin: -20px;
+  }
 
-      .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-      }
-      .carousel .container {
+  .carousel {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .carousel .container {
 
-      }
-      .carousel .item {
-        height: 300px;
-      }
-      .carousel img {
-        height: 300px;
-      }
-      .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
-        margin-top: 100px;
-      }
-      .carousel-caption h1 {
-        font-size: 30px;
-      }
-      .carousel-caption .lead,
-      .carousel-caption .btn {
-        font-size: 18px;
-      }
+  }
+  .carousel .item {
+    height: 300px;
+  }
+  .carousel img {
+    height: 300px;
+  }
+  .carousel-caption {
+    width: 65%;
+    padding: 0 70px;
+    margin-top: 100px;
+  }
+  .carousel-caption h1 {
+    font-size: 30px;
+  }
+  .carousel-caption .lead,
+  .carousel-caption .btn {
+    font-size: 18px;
+  }
 
-      .marketing .span4 + .span4 {
-        margin-top: 40px;
-      }
+  .marketing .span4 + .span4 {
+    margin-top: 40px;
+  }
 
-      .featurette-heading {
-        font-size: 30px;
-      }
-      .featurette .lead {
-        font-size: 18px;
-        line-height: 1.5;
-      }
+  .featurette-heading {
+    font-size: 30px;
+  }
+  .featurette .lead {
+    font-size: 18px;
+    line-height: 1.5;
+  }
 
 }
     
@@ -928,6 +939,7 @@ body {
 }
 
 .ads2 h2 {
+  font-family: Droid Serif, Serif;
   text-align: center;
   color: white;
   margin-top: 30%;
