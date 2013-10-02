@@ -1176,9 +1176,9 @@ body {
   background:-moz-linear-gradient( center top, #ffec64 5%, #ffab23 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23');
   background-color:#ffec64;
-  -moz-border-radius: 0 5px 5px 0;
+  -moz-border-radius:   0 5px 5px 0;
   -webkit-border-radius:0 5px 5px 0;
-  border-radius:0 5px 5px 0;
+  border-radius:        0 5px 5px 0;
   display:inline-block;
   color:#333333;
   font-family: 'Palatino', sans-serif;
@@ -1568,8 +1568,7 @@ body {
   background-image: url(bgd/bgd44.png);
   -webkit-border-radius: 6px 6px 0 0;
   -moz-border-radius: 6px 6px 0 0;
-  border-radius: ;
-  /*border-radius: 6px 6px 0 0;*/
+  border-radius: 6px 6px 0 0;
 }
 
 .media-unit h3 {
@@ -1601,7 +1600,7 @@ body {
   background-image: url(bgd/bgd1.jpg);
   -webkit-border-radius: 0 0 7px 7px;
   -moz-border-radius: 0 0 7px 7px;
-  /*border-radius: 0 0 7px 7px;*/
+  border-radius: 0 0 7px 7px;
 }
 
 
@@ -1622,10 +1621,10 @@ body {
   width: 260px;
   height: auto;
   /*background: white;*/
-  border: solid white 1px;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
+  border: solid 1px white;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  border-radius: 7px 7px 7px 7px;
 }
 
 .movie:hover {
@@ -1669,9 +1668,9 @@ body {
   height: auto;
   border: solid #ababab 0.5px;
   padding: 45px;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  border-radius: 7px 7px 7px 7px;
   background-color:#ababab;
   /*background-position: center;*/
   background-image: -moz-linear-gradient(90deg, #ababab, #e6e4e1 35px);
