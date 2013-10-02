@@ -17,16 +17,16 @@
 				            <div class="nav-collapse collapse">
 					                <ul class="nav">
 					                   
-					                	  <li>
+					                	  <!-- <li>
 					                	  	    <%= link_to('home') do %>
 							                	  	  <span class='logo' style='color:navy'>
 		                                                <span style='color:orangered'>[</span>K<span style='color:orangered'>]</span></span>
 		                                              </span>&nbsp&nbsp&nbsp 
                                                  <% end %>
-                                          </li>
+                                          </li> -->
                                  
-					                	  <li><h4><%= link_to_unless_current 'kodefuge', 'home',     :class => 'brand' %></h4></li>
-					                	  <!-- <li class="divider-vertical"></li> -->
+					                	  <li><%= link_to_unless_current 'kodefuge', 'home',     :class => 'brand' %></li> 
+					                	  <li class="divider-vertical"></li>
 				                          <li><%= link_to_unless_current 'ABOUT', 'about',           :class => 'navtitle' %></li>
 				                          <li class="divider-vertical"></li>
 				                          <li><%= link_to_unless_current 'BLOG', 'blog',             :class => 'navtitle' %></li>

@@ -12,10 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require prettify
+//= require twitter/bootstrap
 //= require jquery.cslider
 //= require jquery.gallery
-//= require twitter/bootstrap
+//= require prettify
 //= require modernizr.2.6.2
 //= require markitup
 //= require markitup/sets/xbbcode/set

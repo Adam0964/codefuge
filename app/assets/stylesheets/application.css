@@ -9,12 +9,12 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require bootCustom
- *= require normalize
  *= require cslider
- *= require prettify
  *= require gallery
  *= require markitup/skins/markitup/style
  *= require markitup/sets/xbbcode/style
+ *= require normalize
+ *= require prettify
  *= require_self
  *= require_tree .
  */
