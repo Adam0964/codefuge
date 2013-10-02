@@ -19,6 +19,19 @@ body {
  color: #5a5a5a;
  overflow-x: hidden;
 }
+ a:hover,
+ a:focus {
+  color:none;
+  text-decoration: none;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus {
+  /*border-color: #0088cc;*/
+  -/*webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+     -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+          box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);*/
+}
 
 .span22 {
   width: 100%;
@@ -202,7 +215,7 @@ body {
 /* rules for iPad in landscape orientation */
 @media only screen and (device-width: 768px) and (orientation: landscape) {
   .navbar .nav {
-  padding-left: 13%;
+  padding-left: 27%;
   }
 }
 
@@ -1638,11 +1651,11 @@ body {
   border-radius: 7px 7px 7px 7px;
 }
 
-.movie:hover {
+/*.movie:hover {
   -webkit-box-shadow: -1px -4px 20px rgba(118, 123, 134, 0.47);
   -moz-box-shadow:    -1px -4px 20px rgba(118, 123, 134, 0.47);
   box-shadow:         -1px -4px 20px rgba(118, 123, 134, 0.47);
-}
+}*/
 
 .videos .caption p {
  font-family: Droid Serif, serif;
@@ -1733,7 +1746,7 @@ body {
 .wrapper {
   width: 100%;
   height: 450px;
-  margin-top: 55px;
+  margin-top: auto;
   margin-bottom: 15px;
   background-color: #000;
    -moz-border-radius: 3px 3px 0 0;

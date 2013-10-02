@@ -43,7 +43,11 @@
                                     <div class='photos'>
                                 <% end %>
                                        <table cellspacing="0">
-                                          <% @books.in_groups_of(9, false).each do |books| %>  
+                                          <%#<% if browser.ipad? %>
+                                              <%#<% @books.in_groups_of(5, false).each do |books| %>  
+                                          <%#<% else %>
+                                              <% @books.in_groups_of(9, false).each do |books| %>  
+                                          <%#<%  end %>
                                                   <tr> 
                                                     <% for book in books %>
                                                         <td>
