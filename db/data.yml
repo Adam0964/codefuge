@@ -1,0 +1,613 @@
+
+---
+books:
+  columns:
+  - id
+  - title
+  - author
+  - pubDate
+  - cover
+  - description
+  - created_at
+  - updated_at
+  records: 
+  - - '92'
+    - Agile Web Development With Rails
+    - Dave Thomas and David Heinemeier Hansson
+    - '2011'
+    - agile.jpg
+    - 
+    - '2013-09-27 03:01:35.350418'
+    - '2013-09-27 03:01:35.350418'
+  - - '93'
+    - Rails 3 in Action
+    - Ryan Bigg and Yehuda Katz
+    - '2011'
+    - rails_3_in_action.jpg
+    - 
+    - '2013-09-27 03:01:35.701381'
+    - '2013-09-27 03:01:35.701381'
+  - - '94'
+    - Rails Antipatterns
+    - Tammer Saleh and Chad Pytel
+    - '2010'
+    - rails_antipatterns.jpg
+    - 
+    - '2013-09-27 03:01:35.707874'
+    - '2013-09-27 03:01:35.707874'
+  - - '95'
+    - Rails Recipes
+    - Chad Fowler
+    - '2012'
+    - rails_recipes_3_edition.jpg
+    - 
+    - '2013-09-27 03:01:35.713836'
+    - '2013-09-27 03:01:35.713836'
+  - - '96'
+    - Rails 3 Way
+    - Obie Fernandez
+    - '2010'
+    - rails3way.jpg
+    - 
+    - '2013-09-27 03:01:35.719749'
+    - '2013-09-27 03:01:35.719749'
+  - - '97'
+    - Objects On Rails
+    - Avdi Grimm
+    - '2012'
+    - railsobj.jpg
+    - 
+    - '2013-09-27 03:01:35.726192'
+    - '2013-09-27 03:01:35.726192'
+  - - '98'
+    - Ruby on Rails 3 Tutorial
+    - Michael Hart
+    - '2012'
+    - ruby_on_rails_tutorial_2nd_edition.jpg
+    - 
+    - '2013-09-27 03:01:35.732228'
+    - '2013-09-27 03:01:35.732228'
+  - - '99'
+    - Programming Ruby
+    - Thomas, Chad Fowler, Andy Hunt
+    - '2004'
+    - ruby.jpg
+    - 
+    - '2013-09-27 03:01:35.737909'
+    - '2013-09-27 03:01:35.737909'
+  - - '100'
+    - The Rails View
+    - John Athayde, Bruce Williams
+    - '2012'
+    - rails_view.jpg
+    - 
+    - '2013-09-27 03:01:35.744454'
+    - '2013-09-27 03:01:35.744454'
+  - - '101'
+    - Learning Rails 3
+    - Simon St. Laurent, et al
+    - '2012'
+    - learning_rails_3.jpg
+    - 
+    - '2013-09-27 03:01:35.750256'
+    - '2013-09-27 03:01:35.750256'
+  - - '102'
+    - Learning Ruby
+    - Michael James Fitzgerald
+    - '2007'
+    - learning_ruby.jpg
+    - 
+    - '2013-09-27 03:01:35.756477'
+    - '2013-09-27 03:01:35.756477'
+  - - '103'
+    - Crafting Rails Applications
+    - Jose Valim
+    - '2011'
+    - crafting_rails_applications.jpg
+    - 
+    - '2013-09-27 03:01:35.763303'
+    - '2013-09-27 03:01:35.763303'
+  - - '104'
+    - Crafting Rails 4 Applications
+    - Jose Valim
+    - '2013'
+    - crafting_rails4.jpg
+    - 
+    - '2013-09-27 03:01:35.769285'
+    - '2013-09-27 03:01:35.769285'
+  - - '105'
+    - Advanced Rails Recipes
+    - Mike Clarck
+    - '2008'
+    - advanced_rails.jpg
+    - 
+    - '2013-09-27 03:01:35.822412'
+    - '2013-09-27 03:01:35.822412'
+  - - '106'
+    - Rest In Practice
+    - Jim Webber, Savas Parastatidis, et al
+    - '2010'
+    - rest_in_practice.jpg
+    - 
+    - '2013-09-27 03:01:35.828553'
+    - '2013-09-27 03:01:35.828553'
+  - - '107'
+    - Restful Web Serices
+    - Leonard Richardson, Sam Ruby
+    - '2007'
+    - restful_web_services.jpg
+    - 
+    - '2013-09-27 03:01:35.834651'
+    - '2013-09-27 03:01:35.834651'
+  - - '108'
+    - The Rspec Book
+    - David Chelimsky, Dave Astels, et al
+    - '2010'
+    - rspec.jpg
+    - 
+    - '2013-09-27 03:01:35.841432'
+    - '2013-09-27 03:01:35.841432'
+  - - '109'
+    - The Cucumber Book
+    - Matt Wynne, Aslak Hellesoy
+    - '2012'
+    - cucumber_book.jpg
+    - 
+    - '2013-09-27 03:01:35.847618'
+    - '2013-09-27 03:01:35.847618'
+  - - '110'
+    - Ruby, MongoDB Web Development
+    - Gautam Rege
+    - '2012'
+    - ruby_and_mongodb_web_development.jpg
+    - 
+    - '2013-09-27 03:01:35.854689'
+    - '2013-09-27 03:01:35.854689'
+  - - '111'
+    - Service Oriented Design With RoR
+    - Paul Dix
+    - '2010'
+    - service_oriented_design.jpg
+    - 
+    - '2013-09-27 03:01:35.861064'
+    - '2013-09-27 03:01:35.861064'
+  - - '112'
+    - Smashing CSS
+    - Eric Meyer
+    - '2010'
+    - smashing_css.jpg
+    - 
+    - '2013-09-27 03:01:35.867788'
+    - '2013-09-27 03:01:35.867788'
+  - - '113'
+    - The Book of CSS 3
+    - Peter Gasston
+    - '2010'
+    - the_book_of_css3.jpg
+    - 
+    - '2013-09-27 03:01:35.881002'
+    - '2013-09-27 03:01:35.881002'
+  - - '114'
+    - Twitter Bootstrap Web Development
+    - David Chocran
+    - '2012'
+    - twitter_bootstrap_web_development_how-to.jpg
+    - 
+    - '2013-09-27 03:01:35.886979'
+    - '2013-09-27 03:01:35.886979'
+  - - '115'
+    - Typography Best Practices
+    - Smashing Magazine
+    - '2013'
+    - typography.jpg
+    - 
+    - '2013-09-27 03:01:35.893225'
+    - '2013-09-27 03:01:35.893225'
+  - - '116'
+    - Values, Units and Colors
+    - Eric eyer
+    - '2012'
+    - values_units_and_colors.jpg
+    - 
+    - '2013-09-27 03:01:35.899454'
+    - '2013-09-27 03:01:35.899454'
+  - - '117'
+    - Web Design For Developers
+    - Brian P. Hogan
+    - '2010'
+    - web_design_for_developers.jpg
+    - 
+    - '2013-09-27 03:01:35.906523'
+    - '2013-09-27 03:01:35.906523'
+  - - '118'
+    - Building Web Apps With SVG
+    - David Dailey, Jon Frost, et al
+    - '2012'
+    - building_web_applications_with_svg.jpg
+    - 
+    - '2013-09-27 03:01:35.913075'
+    - '2013-09-27 03:01:35.913075'
+  - - '119'
+    - CSS and Documents
+    - Eric Meyer
+    - '2012'
+    - css_and_documents.jpg
+    - 
+    - '2013-09-27 03:01:35.918975'
+    - '2013-09-27 03:01:35.918975'
+  - - '120'
+    - Deploying Rails
+    - Tom Copeland
+    - '2012'
+    - deploying_rails.jpg
+    - 
+    - '2013-09-27 03:01:35.925052'
+    - '2013-09-27 03:01:35.925052'
+  - - '121'
+    - Responsive Web Design
+    - Nathan Marcotte
+    - '2012'
+    - responsive_design1.jpg
+    - 
+    - '2013-09-27 03:01:35.931047'
+    - '2013-09-27 03:01:35.931047'
+  - - '122'
+    - CSS For Web Designers
+    - Dan Cederholm
+    - '2010'
+    - css_for_web_designers.jpg
+    - 
+    - '2013-09-27 03:01:35.936815'
+    - '2013-09-27 03:01:35.936815'
+  - - '123'
+    - Elastic Beanstalk
+    - Jurg van Vliet, Flavia Paganelli, et al
+    - '2011'
+    - elastic_beanstalk.jpg
+    - 
+    - '2013-09-27 03:01:35.943424'
+    - '2013-09-27 03:01:35.943424'
+  - - '124'
+    - Eloquent Ruby
+    - Russ Olsen
+    - '2011'
+    - eloquent_ruby.jpg
+    - 
+    - '2013-09-27 03:01:35.950777'
+    - '2013-09-27 03:01:35.950777'
+  - - '125'
+    - ember.js App Development How-To
+    - Marc Bodmer
+    - '2013'
+    - ember_application_how_to.jpg
+    - 
+    - '2013-09-27 03:01:35.95697'
+    - '2013-09-27 03:01:35.95697'
+  - - '126'
+    - ember.js In Action
+    - Joachim Haagen Skeie
+    - '2013'
+    - ember_in_action.jpg
+    - 
+    - '2013-09-27 03:01:35.976553'
+    - '2013-09-27 03:01:35.976553'
+  - - '127'
+    - Designing For Emotion
+    - Aaron Walter
+    - '2011'
+    - design_for_emotion.jpg
+    - 
+    - '2013-09-27 03:01:35.982614'
+    - '2013-09-27 03:01:35.982614'
+  - - '128'
+    - Distributed VC With Git
+    - Lars Vogel
+    - '2013'
+    - distributed_git.png
+    - 
+    - '2013-09-27 03:01:35.987923'
+    - '2013-09-27 03:01:35.987923'
+  - - '129'
+    - Mobile First
+    - Luke Wroblewski
+    - '2012'
+    - mobile_first.jpg
+    - 
+    - '2013-09-27 03:01:35.99313'
+    - '2013-09-27 03:01:35.99313'
+  - - '130'
+    - ! 'Git: VC For Everyone'
+    - Ravishankar Somasundaram
+    - '2013'
+    - git_for_everyone.jpg
+    - 
+    - '2013-09-27 03:01:35.997961'
+    - '2013-09-27 03:01:35.997961'
+  - - '131'
+    - ! 'HTML and CSS: The Good Parts'
+    - Ben Henrick
+    - '2010'
+    - html__css_the_good_parts.jpg
+    - 
+    - '2013-09-27 03:01:36.002931'
+    - '2013-09-27 03:01:36.002931'
+  - - '132'
+    - HTML5 For Web Designers
+    - Jeremy Keith
+    - '2012'
+    - html5_for_web_designers.jpg
+    - 
+    - '2013-09-27 03:01:36.007982'
+    - '2013-09-27 03:01:36.007982'
+  - - '133'
+    - Engineering Software As A Service
+    - Armando Fox & David Patterson
+    - '2012'
+    - saas.jpg
+    - 
+    - '2013-09-27 03:01:36.012507'
+    - '2013-09-27 03:01:36.012507'
+  - - '134'
+    - HTML Boilerplate
+    - Dyvia Manian
+    - '2012'
+    - html5_boilerplate_web_development.jpg
+    - 
+    - '2013-09-27 03:01:36.017347'
+    - '2013-09-27 03:01:36.017347'
+  - - '135'
+    - Interactive Data Visualization
+    - Scott Murray
+    - '2013'
+    - interactive_data_visualization_for_the_web.jpg
+    - 
+    - '2013-09-27 03:01:36.02219'
+    - '2013-09-27 03:01:36.02219'
+  - - '136'
+    - Smashing jQuery
+    - Jake Rutter
+    - '2011'
+    - jquery.jpg
+    - 
+    - '2013-09-27 03:01:36.028018'
+    - '2013-09-27 03:01:36.028018'
+  - - '137'
+    - JRuby Cookbook
+    - Justin Edelson
+    - '2008'
+    - jruby_cookbook.jpg
+    - 
+    - '2013-09-27 03:01:36.032843'
+    - '2013-09-27 03:01:36.032843'
+  - - '138'
+    - Lucene In Action
+    - Michael McCandless, Erik Hatcher, et al
+    - '2010'
+    - lucene_in_action_2nd_edition.jpg
+    - 
+    - '2013-09-27 03:01:36.037558'
+    - '2013-09-27 03:01:36.037558'
+  - - '139'
+    - Mobile Design Pattern Gallery
+    - Theresa Neil
+    - '2012'
+    - mobile_design_pattern_gallery.jpg
+    - 
+    - '2013-09-27 03:01:36.042338'
+    - '2013-09-27 03:01:36.042338'
+  - - '140'
+    - Multitenency With Rails
+    - Ryan Bigg
+    - '2013'
+    - multitenancy_with_rails.jpg
+    - 
+    - '2013-09-27 03:01:36.047076'
+    - '2013-09-27 03:01:36.047076'
+  - - '141'
+    - Pro CSS For High Traffic Websites
+    - Anthony kennedy
+    - '2011'
+    - pro_css_for_high_traffic_websites.jpg
+    - 
+    - '2013-09-27 03:01:36.051528'
+    - '2013-09-27 03:01:36.051528'
+  - - '142'
+    - Pro CSS Animation
+    - Dudley Sorey
+    - '2012'
+    - pro_css3_animation.jpg
+    - 
+    - '2013-09-27 03:01:36.056295'
+    - '2013-09-27 03:01:36.056295'
+  - - '143'
+    - Professional Design V I
+    - Smashing Magazine
+    - '2010'
+    - professional_design1.jpg
+    - 
+    - '2013-09-27 03:01:36.061402'
+    - '2013-09-27 03:01:36.061402'
+  - - '144'
+    - Professional Design V II
+    - Smashing Magazine
+    - '2011'
+    - professional_design2.jpg
+    - 
+    - '2013-09-27 03:01:36.066253'
+    - '2013-09-27 03:01:36.066253'
+  - - '145'
+    - Programming Amazon EC2
+    - Jurg van Vliet, Flavia Paganelli
+    - '2011'
+    - programming_amazon_ec2.jpg
+    - 
+    - '2013-09-27 03:01:36.071492'
+    - '2013-09-27 03:01:36.071492'
+  - - '146'
+    - Programming The Mobile Web
+    - Maximiliano Firtman
+    - '2010'
+    - programming_the_mobile_web.jpg
+    - 
+    - '2013-09-27 03:01:36.076663'
+    - '2013-09-27 03:01:36.076663'
+  - - '147'
+    - Designing With Progressive Enhancement
+    - Todd Parker, Scott Jehl, et al
+    - '2010'
+    - design_with_progressive_enhancement.jpg
+    - 
+    - '2013-09-27 03:01:36.082945'
+    - '2013-09-27 03:01:36.082945'
+  - - '148'
+    - Prototype AND Scriptaculous
+    - Andrew Dupont
+    - '2008'
+    - prototype_and_scriptaculous.jpg
+    - 
+    - '2013-09-27 03:01:36.08838'
+    - '2013-09-27 03:01:36.08838'
+  - - '149'
+    - Rails 4.0 Guide
+    - Stefan Wintermeyer
+    - '2013'
+    - rails4.jpg
+    - 
+    - '2013-09-27 03:01:36.09335'
+    - '2013-09-27 03:01:36.09335'
+  - - '150'
+    - Content Strategy For Mobile
+    - Karen McGrane
+    - '2012'
+    - content_strategy_for_mobile.jpg
+    - 
+    - '2013-09-27 03:01:36.097913'
+    - '2013-09-27 03:01:36.097913'
+  - - '151'
+    - Metaprogramming Ruby
+    - Paolo Perrotta
+    - '2010'
+    - metaprogramming.jpg
+    - 
+    - '2013-09-27 03:01:36.10232'
+    - '2013-09-27 03:01:36.10232'
+  - - '152'
+    - RubyMotion
+    - ! 'Clay Allsopp '
+    - '2012'
+    - rubymotion.jpg
+    - 
+    - '2013-09-27 03:01:36.1071'
+    - '2013-09-27 03:01:36.1071'
+  - - '153'
+    - The dRuby Book
+    - Masatoshi Seki
+    - '2012'
+    - druby_book.jpg
+    - 
+    - '2013-09-27 03:01:36.156748'
+    - '2013-09-27 03:01:36.156748'
+  - - '154'
+    - Speaking In Style
+    - Jason Cranford Teague
+    - '2009'
+    - speaking_in_style.jpg
+    - 
+    - '2013-09-27 03:01:36.161911'
+    - '2013-09-27 03:01:36.161911'
+  - - '155'
+    - Search Patterns
+    - Peter Morville, Jeffery Callender
+    - '2010'
+    - search_patterns.jpg
+    - 
+    - '2013-09-27 03:01:36.16696'
+    - '2013-09-27 03:01:36.16696'
+  - - '156'
+    - AngularJS Web Application Development
+    - Peter Bacon Darwin, Pawel Kozlowski
+    - '2013'
+    - angular_web_development.jpg
+    - 
+    - '2013-09-27 03:01:36.172289'
+    - '2013-09-27 03:01:36.172289'
+  - - '157'
+    - Apache Solr 3
+    - David Smiley, Eric Pugh
+    - '2011'
+    - apache_solr 3.jpg
+    - 
+    - '2013-09-27 03:01:36.177018'
+    - '2013-09-27 03:01:36.177018'
+  - - '158'
+    - Apache Solr 4 Cookbook
+    - Rafal Kuc
+    - '2013'
+    - apache_solr 4.jpg
+    - 
+    - '2013-09-27 03:01:36.182623'
+    - '2013-09-27 03:01:36.182623'
+  - - '159'
+    - CoffeeScript Programming
+    - Michael Erasmus
+    - '2012'
+    - coffeescript_programming_with_jquery_rails_and_node.js.jpg
+    - 
+    - '2013-09-27 03:01:36.187089'
+    - '2013-09-27 03:01:36.187089'
+
+---
+posts:
+  columns:
+  - id
+  - name
+  - title
+  - content
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - Adam Raouki
+    - Hello
+    - ! "Sunspot is a Ruby library for expressive, powerful interaction with the Solr
+      search engine. Sunspot is built on top of the RSolr library, which provides
+      a low-level interface for Solr interaction; Sunspot provides a simple, intuitive,
+      expressive DSL backed by powerful features for indexing objects and searching
+      for them.\r\n"
+    - '2013-09-26 23:29:24.320596'
+    - '2013-09-26 23:29:24.320596'
+
+---
+users:
+  columns:
+  - id
+  - name
+  - created_at
+  - updated_at
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - admin
+  records: 
+  - - '1'
+    - Chris Savage
+    - '2013-09-28 23:47:57.361463'
+    - '2013-09-29 00:22:33.915721'
+    - csavage@kodefuge.com
+    - $2a$10$IFJaLUaq/6OyQnS5cUXbM.hyCxZ9y9GXFUGOlWkHbj3.tfdUTe3GK
+    - 
+    - 
+    - 
+    - '2'
+    - '2013-09-29 00:22:33.914933'
+    - '2013-09-28 23:47:57.462427'
+    - 127.0.0.1
+    - 127.0.0.1
+    - false

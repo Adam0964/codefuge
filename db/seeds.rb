@@ -85,17 +85,17 @@ books = Book.create(
 
 posts = Post.create(
 	                        [
-	                        	{name: "Kyle Roberts", title: "First Blog",      content:   "The purpose of seed data is to bootstrap your database. For example, if you have a users table where you track users' 
-	                        														        city and state, you may want to seed a related table with U.S. state names and abbreviations before creating the first user.
-																					        Likewise, you may also want to seed things like administrative accounts, or other data that's necessary to run your application 
-																					        for the first time. As a general rule, you shouldn't add anything to a seeds.rb file that isn't necessary to bootstrap your database or its relations."},
-							    {name: "Mike Murphy",  title: "About Capistrano", content:  "This will log into your server and do a series of “mkdir” calls. Note, though, that if you aren’t using sudo (e.g., you set use_sudo to false, 
-							    	                                                        in your deploy.rb), you’ll need to make sure the permissions on your deploy_to directory are okay. If they aren’t, deploy:setup will fail. To fix 
-                               															    the permissions, you’ll need to log into your server and do a few invocations of “chown” to set the permissions. (What they need to be set to depends 
-                               															    greatly on your configuration, so if you aren’t sure how to do this, feel free to ask on the Capistrano mailing list.)
+	                        	{name: "Kyle Roberts", title: "First Blog",         content:   "The purpose of seed data is to bootstrap your database. For example, if you have a users table where you track users' 
+	                        														           city and state, you may want to seed a related table with U.S. state names and abbreviations before creating the first user.
+																					           Likewise, you may also want to seed things like administrative accounts, or other data that's necessary to run your application 
+																					           for the first time. As a general rule, you shouldn't add anything to a seeds.rb file that isn't necessary to bootstrap your database or its relations."},
+							    {name: "Mike Murphy",  title: "About Capistrano",   content:  "This will log into your server and do a series of “mkdir” calls. Note, though, that if you aren’t using sudo (e.g., you set use_sudo to false, 
+							    	                                                           in your deploy.rb), you’ll need to make sure the permissions on your deploy_to directory are okay. If they aren’t, deploy:setup will fail. To fix 
+                               															       the permissions, you’ll need to log into your server and do a few invocations of “chown” to set the permissions. (What they need to be set to depends 
+                               															       greatly on your configuration, so if you aren’t sure how to do this, feel free to ask on the Capistrano mailing list.)
 
-																							Even if you are using sudo (or, maybe especially if you are using sudo), you may need to fix the permissions on the directories that deploy:setup creates. 
-																							Make sure the directories have the right permissions for whichever user you are deploying as to write to them."}                          
+																							   Even if you are using sudo (or, maybe especially if you are using sudo), you may need to fix the permissions on the directories that deploy:setup creates. 
+																							   Make sure the directories have the right permissions for whichever user you are deploying as to write to them."}                          
 
 
 	                        ]
