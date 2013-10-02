@@ -215,7 +215,7 @@ a.thumbnail:focus {
 /* rules for iPad in landscape orientation */
 @media only screen and (device-width: 768px) and (orientation: landscape) {
   .navbar .nav {
-  padding-left: 30%;
+  padding-left: 28%;
   }
 }
 
