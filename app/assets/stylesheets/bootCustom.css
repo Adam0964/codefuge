@@ -1790,6 +1790,26 @@ a.thumbnail:focus {
    }
 }
 
+/* rules for iPad in landscape orientation */
+@media only screen and (device-width: 768px) and (orientation: landscape) {
+  .navbar .nav {
+   padding-left: 28%;
+  }
+  .thumbnail2 {
+    width: 200px;
+  }
+  .footer-links {
+    width: 210px;
+  }
+  #footer-topper {
+    width: 190px;
+  }
+  .ads1, .ads2, .ads3, .ads4 {
+    width: 200px;
+  }
+}
+
+
 .footer-links h4 {
   font-family: Droid Serif, Serif;
   text-align: center;
