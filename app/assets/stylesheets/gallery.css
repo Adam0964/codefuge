@@ -14,6 +14,15 @@
   	background: linear-gradient(357deg, rgb(255, 116, 0) 60%, rgb(0, 0, 56) 100%);
 	/*border: solid 5px green;*/
 }
+
+/* rules for iPad in landscape orientation */
+@media only screen and (device-width: 768px) and (orientation: landscape) {
+	.dg-container {
+		width: auto;
+		margin-left: 90px;
+    }
+}
+
 .dg-wrapper{
 	width: 250px;
 	height: 280px;
@@ -30,6 +39,7 @@
 	-o-perspective: 1000px;
 	-ms-perspective: 1000px;
 	perspective: 1000px;
+	/*border: solid 5px green;*/
 }
 
 .dg-wrapper a {

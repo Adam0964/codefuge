@@ -215,7 +215,7 @@ a.thumbnail:focus {
 /* rules for iPad in landscape orientation */
 @media only screen and (device-width: 768px) and (orientation: landscape) {
   .navbar .nav {
-  padding-left: 28%;
+  padding-left: 30%;
   }
 }
 
@@ -952,7 +952,6 @@ a.thumbnail:focus {
 }
 
 .ads2 h2 {
-  font-family: Droid Serif, Serif;
   text-align: center;
   color: white;
   margin-top: 30%;
@@ -1453,7 +1452,7 @@ a.thumbnail:focus {
 
 .container2 {
   width: 100%;
-  margin-left: -700px;
+  margin-left: auto;
   margin-top: 400px;
   margin-right: auto;
   *zoom: 1;
@@ -1547,13 +1546,12 @@ a.thumbnail:focus {
 
 .container3 {
   width: 1600px;
-  margin: 570px auto;
+  margin: 190px auto;
   *zoom: 1;
   background-image: url(bgd/bgd8.jpg);
   -webkit-box-shadow: -1px -4px 20px rgba(118, 123, 134, 0.47);
   -moz-box-shadow:    -1px -4px 20px rgba(118, 123, 134, 0.47);
   box-shadow:         -1px -4px 20px rgba(118, 123, 134, 0.47);
-  /*border: solid 5px black;*/
 }  
 
 .hrline {
