@@ -19,7 +19,7 @@
 @media only screen and (device-width: 768px) and (orientation: landscape) {
 	.dg-container {
 		width: auto;
-		margin-left: 50px;
+		margin-left: 0px;
     }
 }
 
@@ -44,7 +44,8 @@
 
 .dg-wrapper a {
 	width: 220px;
-	height: 700px;
+	height: 350px;
+	margin-left: -289px;
 	display: block;
 	position: absolute;
 	left: 0;
@@ -88,12 +89,12 @@
 
 }
 
-.dg-wrapper img:hover {
+/*.dg-wrapper img:hover {
 	
 	-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-}
+}*/
 
 .dg-wrapper a div{
 	font-style: italic;
