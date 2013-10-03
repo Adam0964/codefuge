@@ -1453,7 +1453,7 @@ a.thumbnail:focus {
 .container2 {
   width: 100%;
   margin-left: auto;
-  margin-top: 400px;
+  margin-top: 590px;
   margin-right: auto;
   *zoom: 1;
   background: rgb(255, 116, 0);
@@ -1546,7 +1546,7 @@ a.thumbnail:focus {
 
 .container3 {
   width: 1600px;
-  margin: 190px auto;
+  margin: 400px auto;
   *zoom: 1;
   background-image: url(bgd/bgd8.jpg);
   -webkit-box-shadow: -1px -4px 20px rgba(118, 123, 134, 0.47);

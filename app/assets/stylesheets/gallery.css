@@ -1,9 +1,9 @@
 .dg-container{
-	width: 62.9%;
+	width: 63%;
 	height: 500px;
 	margin-top: 90px;
-	margin-left: -215px;
-	margin-bottom: 700px;
+	margin-left: 472px;
+	/*margin-bottom: 700px;*/
 	position: absolute;
 	top: 0;
 	background: rgb(255, 116, 0);
@@ -19,7 +19,7 @@
 @media only screen and (device-width: 768px) and (orientation: landscape) {
 	.dg-container {
 		width: auto;
-		margin-left: 90px;
+		margin-left: 50px;
     }
 }
 
