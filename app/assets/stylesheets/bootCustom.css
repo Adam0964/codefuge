@@ -1695,6 +1695,27 @@ a.thumbnail:focus {
  color: white;
 }
 
+@media only screen and (device-width: 768px) and (orientation: landscape) {
+  .videos iframe {
+    width:  200px;
+  }
+  .videos .thumbnail {
+    width:  200px;
+    margin-left: 110px;
+  }
+  .media-unit h3 {
+    margin-left: 100px;
+  }
+  .media-unit .caption p {
+    margin-left: 70px;
+    padding-right: 25px;
+  }
+  #video-frame {
+    visibility: hidden;
+    display: none;
+  }
+}
+
 .portfolio .caption p {
  font-family: Droid Serif, serif;
  color: white;
