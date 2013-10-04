@@ -867,6 +867,7 @@ a.thumbnail:focus {
 
 .gallery {
   background-image: url(bgd/bg32.jpg);
+  margin-left: 50px;
 }
 
 .gallery img {
@@ -891,16 +892,32 @@ a.thumbnail:focus {
 }
 
 .gallery img:hover {
-  -webkit-transform: scale(3.5);
-  -moz-transform: scale(3.5);
+  -webkit-transform: scale(2.5);
+  -moz-transform: scale(2.5);
   -o-transform: scale(2.5);
-  transform: scale(3.5);
+  transform: scale(2.5);
   margin-top: -750px;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
 }
+
+@media only screen and (device-width: 768px) and (orientation: landscape) {
+  .gallery img:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    margin-top: -350px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+}
+
+/* end @media */
 
 .ads1 {
   width: 265px;
