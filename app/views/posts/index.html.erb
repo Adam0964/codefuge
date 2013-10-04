@@ -13,12 +13,11 @@
                                   <% end %>
                             </div>
                             <br />
-                             <div class='blog'>
+                             <div class='blog-container'>
                                 <% @posts.each do |post| %>
-                                      <div  id='postDate'>
+                                      <div  id='post-container'>
                                             <h1><%= post.title%></h1><br />
-                                            <%= post.created_at.strftime("PUBLISHED ON %a %b %d, %Y  %I:%M%p") %><br />
-                                            BY<br /> 
+                                            <p><%= post.created_at.strftime("PUBLISHED ON %a %b %d, %Y  %I:%M%p BY" ) %></p><br />
                                             <h4><%= post.name %></h4><br />
                                             <!-- <hr class='dotted_line'/><br /><br /> -->
                                             <p><%= raw post.content.split[0..50].join(" ") %></p>

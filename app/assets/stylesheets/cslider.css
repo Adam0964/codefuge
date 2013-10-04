@@ -10,7 +10,7 @@
 	height: 530px;
 	margin-top: 1px;
 	position: relative;
-	/*margin: 90px auto 15px;	*/
+	/*margin: 90px auto 15px;*/
 	overflow: hidden;
 	/*background: transparent url(carbon.png) repeat 0% 0%; */
 	/* border-top: 8px solid #efc34a;
@@ -86,7 +86,8 @@
 						  to(rgba(255,255,255,0.2)));
 }
 
-@media only screen and (max-width:480px) {
+/* iPhone, Android rules here */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	.da-slide h2 {
 		/*margin-left: -6.6%;*/
 	    font-size: 8pt;

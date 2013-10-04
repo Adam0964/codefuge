@@ -1,8 +1,5 @@
 Kodefuge::Application.routes.draw do
 
-  resources :videos
-
-
   devise_for :admins, :controllers => { :sessions => "admins/sessions" }
   devise_for :users, :path => "auth", :path_names => { :sign_in      => 'login', 
                                                        :sign_out     => 'logout', 
@@ -21,6 +18,8 @@ Kodefuge::Application.routes.draw do
   resources :books
 
   resources :posts
+
+  resources :videos
 
 
   match '/home',         :to => 'pages#index'

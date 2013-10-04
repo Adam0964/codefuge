@@ -8,11 +8,11 @@
 								<!-- p id="notice">
 									         <%= notice %>
 								</p> -->
-							    <div class='blog'>
+							    <div class='blog-container'>
 									    <h2>
 									  	  <%= @post.title %>
 									    </h2><br />
-									    <div id='postDate'>
+									    <div id='post-container'>
 									  	    <%= @post.created_at.in_time_zone.strftime("PUBLISHED ON %a  %b %d, %Y @ %I:%M %p") %>
 									  	    <br />
 									  	    BY <h4><%= @post.name %></h4>
@@ -23,7 +23,7 @@
 									         </p>
 									     <div>
 									     	<br /><br />
-									         <div class='postDate'><br />
+									         <div class='post-container'><br />
 
 										 	     <!-- <h5>
 										 	     	    <i><%= @post.comments.count %> 
@@ -42,7 +42,7 @@
 												 </h4> -->
 										    </div>
 									    </div> <br />
-									    <div id='blog2'>
+									    <div id='blog-container2'>
 									        <%= render @post.comments %>
 							                <% if user_signed_in? %>
 												<%= render "comments/form" %>
