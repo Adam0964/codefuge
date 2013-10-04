@@ -251,7 +251,7 @@ a.thumbnail:focus {
     margin-left: -300px;
   }
 }
-
+/* end @media */
     /**
     --------------------------------------------------
     |          FRONTPAGE CSLIDER                     |
@@ -645,7 +645,9 @@ a.thumbnail:focus {
   }
 
 }
-    
+
+/* end @media */
+
 .headers {
    width: auto;
    height: auto;
@@ -681,8 +683,9 @@ a.thumbnail:focus {
   .headers p {
     height: auto;
   }
-
 }
+
+/* end @media */
 
 .advert img {
   -webkit-border-radius: 5px 5px 5px 5px;
@@ -822,6 +825,7 @@ a.thumbnail:focus {
   }
 }
 
+/* end @media */
 
 .kaption ul li {
   font-family: Droid serif, sans-serif;
@@ -1120,24 +1124,22 @@ a.thumbnail:focus {
   margin-right: 25px;
 }
 
+@media only screen and (device-width: 768px) and (orientation: landscape) {
+   .gallery {
+     margin-left: 50px;
+   }
+   .thmbnail2 {
+     width: 200px;
+   }
+   .ads5,
+   .ads6,
+   .ads7 {
+     width: 180px;
+     height: auto;
+   } 
+}
 
-/* videoshelf page */
-
-/*.videos {
-  width: auto;
-  height: auto;
-  position: relative;
-  display: inline-block;
-  margin-top: auto;
-  margin-left: auto;
-  padding: 35px 5px 15px 5px;
-  border: solid 2px red;
-  background-image: url(bgd/bgd1.jpg);
-  -webkit-border-radius: 0 0 7px 7px;
-  -moz-border-radius: 0 0 7px 7px;
-  border-radius: 0 0 7px 7px;
-}*/
-
+/* end @media */
 
 /**
 ------------------------------------------------------------
@@ -1257,15 +1259,10 @@ a.thumbnail:focus {
    margin-left: -210px;
    padding: 20px 130px 20px;
   }
-  /*.blog-container h2 {
-    margin-left: -210px;
-  }
-  .blog-container p {
-    margin-left: -180px;
-    padding: 20px 120px 20px;
-  }*/
-
 }
+
+/* end @media */
+
 
 .search-container.search-query :-moz-placeholder {
   color: #eeeeee;
@@ -1574,6 +1571,8 @@ a.thumbnail:focus {
   }
 }
 
+/* end @media */
+
 .container3 {
   width: 1600px;
   margin: 400px auto;
@@ -1701,7 +1700,7 @@ a.thumbnail:focus {
 }
 
 @media only screen and (device-width: 768px) and (orientation: landscape) {
-  .videos p iframe {
+  .videos  iframe {
     width:  200px;
   }
   .videos .thumbnail {
@@ -1709,18 +1708,13 @@ a.thumbnail:focus {
     height: auto;
     margin-left: 110px;
   }
-  .media-unit h3 {
-    margin-left: 100px;
-  }
-  .media-unit .caption {
-    margin-left: 70px;
-    padding-right: 45px;
-  }
   #video-frame {
     visibility: hidden;
     display: none;
   }
 }
+
+/* end @media */
 
 .portfolio .caption p {
  font-family: Droid Serif, serif;
@@ -1753,6 +1747,8 @@ a.thumbnail:focus {
   }
   .media-unit p {
     margin-left: 70px;
+    padding-right: 50px;
+
   }
   #login-image {
     visibility: hidden;
@@ -1760,6 +1756,7 @@ a.thumbnail:focus {
   }
 }
 
+/* end @media */
 
 
 /** 
@@ -1893,6 +1890,7 @@ a.thumbnail:focus {
   }
 }
 
+/* end @media */
 
 .footer-links h4 {
   font-family: Droid Serif, Serif;
@@ -1904,7 +1902,7 @@ a.thumbnail:focus {
 .footer-links > link {
   font-family: Droid Serif, Serif;
   float: left;
-  color: white;
+  color: blue;
 }
 
 .footer-links ul {
@@ -1912,9 +1910,9 @@ a.thumbnail:focus {
   margin-left: 30px;
 }
 
-.footer-links > span {
+.footer-links > li > span {
   font-family: Droid Serif, Serif;
-  color: #F8F8FF;
+  color: blue;
   display:inline-block;
   margin-left: 15px;
   vertical-align: middle;
