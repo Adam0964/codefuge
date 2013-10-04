@@ -1655,6 +1655,11 @@ a.thumbnail:focus {
   border-radius: 0 0 7px 7px;
 }
 
+.videos iframe {
+  width: 260px;
+  height: 215px;
+}
+
 
 .portfolio {
   width: 1492px;
@@ -1701,14 +1706,15 @@ a.thumbnail:focus {
   }
   .videos .thumbnail {
     width:  200px;
+    height: auto;
     margin-left: 110px;
   }
   .media-unit h3 {
     margin-left: 100px;
   }
-  .media-unit .caption p {
+  .media-unit .caption {
     margin-left: 70px;
-    padding-right: 25px;
+    padding-right: 45px;
   }
   #video-frame {
     visibility: hidden;
@@ -1739,6 +1745,7 @@ a.thumbnail:focus {
   }
   .portfolio .thumbnail {
     width:  200px;
+    height: auto;
     margin-left: 110px;
   }
   .media-unit h3 {
