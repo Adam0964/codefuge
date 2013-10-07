@@ -2,20 +2,25 @@
 <html>
 <head lang="en">
 
-		<meta charset="utf-8">
-	    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+		  <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
       <meta name="HandheldFriendly" content="true" /> 
       <meta name="apple-touch-fullscreen" content="yes" />
 	    <meta name="description" content="">
 
-  	<title>Kodefuge</title>
-    <%= favicon_link_tag       "favicon.ico" %>
+  	  <title>Kodefuge</title>
+      <%= favicon_link_tag       "favicon.ico" %>
+
+      <%= stylesheet_link_tag   "http://fonts.googleapis.com/css?family=Parisienne" %>
 
       <%= csrf_meta_tags %>
       <%= render 'layouts/shim' %>
 </head>
 <body>
+
+      <% flash.each do |name, message| %>
+          <%= content_tag :div, message, :id => "flash_#{name}" %>
+          <% end %>
 
       <%= yield %>
       <%= render :partial => 'layouts/header' %>       
@@ -23,14 +28,6 @@
 
 		  <%= stylesheet_link_tag    "application", :media => "all" %>
       <%= javascript_include_tag "application" %>
-
-      <script>
-	      // !function ($) {
-	      //   $(function(){
-	      //     // carousel demo
-	      //     $('#myCarousel').carousel()
-	      //   })
-	      // }(window.jQuery)
 	    </script> 
 
 	    <script> // homepage cslider
@@ -39,20 +36,20 @@
                       autoplay: true
                     });                   
                   }); 
-        </script> 
+      </script> 
 
-        <script> // bookshelf
+      <script> // bookshelf
             $(function() {
               $('#dg-container').gallery({
                  autoplay: true
               });
             });
-        </script> 
-        <script> //markitup editor
+      </script> 
+      <script> //markitup editor
              $(function() {
                 $("textarea").markItUp(mySettings);
                 // $('#html').markItUp(myHtmlSettings);
              });
-        </script> 
+      </script> 
 </body>
 </html>

@@ -2,10 +2,8 @@
 
 <!-- <div class="container">  -->
   <div class="container marketing">
-      search<div class="row">  
+      <div class="row">  
             <div class="span10">                
-                  <!-- <div class="signup"> -->
-                        <div class='blog-container'> 
                             <div class='search-container'>
                                   <%= form_tag posts_path, :method => :get do %>
                                   <%= text_field_tag :search, params[:search], :class => "search-query", :placeholder => '' %>
@@ -15,14 +13,12 @@
                             <br />
                              <div class='blog-container'>
                                 <% @posts.each do |post| %>
-                                      <div  id='post-container'>
                                             <h1><%= post.title%></h1><br />
-                                            <p><%= post.created_at.strftime("PUBLISHED ON %a %b %d, %Y  %I:%M%p BY" ) %></p><br />
+                                            <p><%= post.created_at.strftime("PUBLISHED ON %a %b %d, %Y  %I:%M%p BY" ) %></p>
                                             <h4><%= post.name %></h4><br />
                                             <!-- <hr class='dotted_line'/><br /><br /> -->
                                             <p><%= raw post.content.split[0..50].join(" ") %></p>
                                             <br />
-                                            <%#<p><%= link_to 'CONTINUE READING', post, :id => 'readButton' %>
                                             <%= button_to'CONTINUE READING', post, :method => "get", :id => 'readButton' %>
                                             <h5>
                                                 <i><%= post.comments.count %> 
@@ -41,20 +37,12 @@
                                                  <% else %>
                                                  <% end %>
                                             </div>
-                                                 <!-- <hr class='straightLine'/> -->
-                                             <!-- <tr><td> <%= image_tag('bgd6.png') %> </td> </tr> -->
                                   <% end %> 
                                             <br />
                                             <% if current_user.try(:admin?)  %>
                                                     <%= link_to 'New Post', new_post_path %>
                                             <% else %>
                                             <% end %>
-                                
-                                      </div>
-                              </div>
-                        <!-- </div> -->
                   </div>
-            <!-- </div> -->
-      <!-- </div> -->
 </div>
 </div>

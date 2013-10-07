@@ -67,7 +67,7 @@ books = Book.create(
 					          {title: 'Programming Amazon EC2',                 author: 'Jurg van Vliet, Flavia Paganelli',          pubDate: '2011', cover: 'programming_amazon_ec2.jpg'}, 
 					          {title: 'Programming The Mobile Web',             author: 'Maximiliano Firtman',                       pubDate: '2010', cover: 'programming_the_mobile_web.jpg'},
 					          {title: 'Designing With Progressive Enhancement', author: 'Todd Parker, Scott Jehl, et al',            pubDate: '2010', cover: 'design_with_progressive_enhancement.jpg'},
-					          {title: 'Prototype AND Scriptaculous',            author: 'Andrew Dupont',                             pubDate: '2008', cover: 'prototype_and_scriptaculous.jpg'}, 
+					          {title: 'Prototype and Scriptaculous',            author: 'Andrew Dupont',                             pubDate: '2008', cover: 'prototype_and_scriptaculous.jpg'}, 
 					          {title: 'Rails 4.0 Guide',                        author: 'Stefan Wintermeyer',                        pubDate: '2013', cover: 'rails4.jpg'}, 
 					          {title: 'Content Strategy For Mobile',            author: 'Karen McGrane',                             pubDate: '2012', cover: 'content_strategy_for_mobile.jpg'},
 					          {title: 'Metaprogramming Ruby',                   author: 'Paolo Perrotta',                            pubDate: '2010', cover: 'metaprogramming.jpg'}, 
@@ -83,23 +83,23 @@ books = Book.create(
 						    ]
 					)
 
-posts = Post.create(
-	                        [
-	                        	{name: "Kyle Roberts", title: "First Blog",         content:   "The purpose of seed data is to bootstrap your database. For example, if you have a users table where you track users' 
-	                        														           city and state, you may want to seed a related table with U.S. state names and abbreviations before creating the first user.
-																					           Likewise, you may also want to seed things like administrative accounts, or other data that's necessary to run your application 
-																					           for the first time. As a general rule, you shouldn't add anything to a seeds.rb file that isn't necessary to bootstrap your database or its relations."},
-							    {name: "Mike Murphy",  title: "About Capistrano",   content:  "This will log into your server and do a series of “mkdir” calls. Note, though, that if you aren’t using sudo (e.g., you set use_sudo to false, 
-							    	                                                           in your deploy.rb), you’ll need to make sure the permissions on your deploy_to directory are okay. If they aren’t, deploy:setup will fail. To fix 
-                               															       the permissions, you’ll need to log into your server and do a few invocations of “chown” to set the permissions. (What they need to be set to depends 
-                               															       greatly on your configuration, so if you aren’t sure how to do this, feel free to ask on the Capistrano mailing list.)
+# posts = Post.create(
+# 	                        [
+# 	                        	{name: "Kyle Roberts", title: "First Blog",         content:   "The purpose of seed data is to bootstrap your database. For example, if you have a users table where you track users' 
+# 	                        														           city and state, you may want to seed a related table with U.S. state names and abbreviations before creating the first user.
+# 																					           Likewise, you may also want to seed things like administrative accounts, or other data that's necessary to run your application 
+# 																					           for the first time. As a general rule, you shouldn't add anything to a seeds.rb file that isn't necessary to bootstrap your database or its relations."},
+# 							    {name: "Mike Murphy",  title: "About Capistrano",   content:  "This will log into your server and do a series of “mkdir” calls. Note, though, that if you aren’t using sudo (e.g., you set use_sudo to false, 
+# 							    	                                                           in your deploy.rb), you’ll need to make sure the permissions on your deploy_to directory are okay. If they aren’t, deploy:setup will fail. To fix 
+#                                															       the permissions, you’ll need to log into your server and do a few invocations of “chown” to set the permissions. (What they need to be set to depends 
+#                                															       greatly on your configuration, so if you aren’t sure how to do this, feel free to ask on the Capistrano mailing list.)
 
-																							   Even if you are using sudo (or, maybe especially if you are using sudo), you may need to fix the permissions on the directories that deploy:setup creates. 
-																							   Make sure the directories have the right permissions for whichever user you are deploying as to write to them."}                          
+# 																							   Even if you are using sudo (or, maybe especially if you are using sudo), you may need to fix the permissions on the directories that deploy:setup creates. 
+# 																							   Make sure the directories have the right permissions for whichever user you are deploying as to write to them."}                          
 
 
-	                        ]
-	                )
+# 	                        ]
+# 	                )
 # videos = Video.create(
 # 	                        [
 # 	                          {title: 'BerkeleyX: CS169.1x Software as a Service'},                       {url: '//www.youtube.com/embed/Fr-B4xHZRzY'},                                         {caption: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus."},

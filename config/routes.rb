@@ -15,13 +15,8 @@ Kodefuge::Application.routes.draw do
      root :to => 'posts#index'
   end 
 
-  resources :books
-
-  resources :posts
-
-  resources :videos
-
-
+  # match "/posts/:id", :to => redirect("/posts/%{id}s")
+  
   match '/home',         :to => 'pages#index'
   match '/about',        :to => 'pages#about'
   match '/bookshelf',    :to => 'books#index'
