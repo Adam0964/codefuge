@@ -260,6 +260,6 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = '/my_engine/users/auth'
   #
   # authenticate through Github
-  config.omniauth :github, '9d2e08dcf52c79b6fca9', '1d28f9da57bdf31d46aca643e4951865f7995cbe', :scope => 'user,public_repo'
+  # config.omniauth :github, '9d2e08dcf52c79b6fca9', '1d28f9da57bdf31d46aca643e4951865f7995cbe', :scope => 'user,public_repo'
 
 end
