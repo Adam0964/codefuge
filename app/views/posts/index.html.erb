@@ -13,9 +13,9 @@
                             <br />
                              <div class='blog-container'>
                                 <% @posts.each do |post| %>
-                                            <h1><%= post.title%></h1><br />
-                                            <p><%= post.created_at.strftime("PUBLISHED ON %a %b %d, %Y  %I:%M%p BY" ) %></p>
-                                            <h4><%= post.name %></h4><br />
+                                            <h1><%= post.title%></h1>
+                                            <h6><%= post.created_at.strftime("PUBLISHED ON %a %b %d, %Y  %I:%M%p BY" ) %></h6>
+                                            <h4><%= post.name %></h4>
                                             <!-- <hr class='dotted_line'/><br /><br /> -->
                                             <p><%= raw post.content.split[0..50].join(" ") %></p>
                                             <br />

@@ -83,6 +83,66 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 533px){
+  .title span > h2 {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 535px) and (max-width: 600px) {
+  .title span > h2 {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title span > h2 {
+    margin-right: -240px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+  .title span > h2 {
+    margin-right: -280px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .title span > h2 {
+    margin-right: -260px;
+  }
+}
+
+@media only screen and (min-width: 1026px) and (max-width: 1280px) {
+  .title span > h2 {
+    margin-right: -200px;
+  }
+}
+
+@media only screen and (min-width: 1282px) and (max-width: 1366px) {
+  .title span > h2 {
+    margin-right: -210px;
+  }
+}
+
+@media only screen and (min-width: 1368px) and (max-width: 1440px) {
+  .title span > h2 {
+    margin-right: -180px;
+  }
+}
+
+@media only screen and (min-width: 1442px) and (max-width: 1600px) {
+  .title span > h2 {
+    margin-right: -150px;
+  }
+}
+
+@media only screen and (min-width: 1680px) and (max-width: 1920px) {
+  .title span > h2 {
+    margin-right: -130px;
+  }
+}
+
 .title h4 {
   margin-bottom: 10px;
   padding-top: 27px;
@@ -204,37 +264,45 @@ body {
 }
 
 /* rules for iPad in landscape orientation */
-@media only screen and (max-width: 768px) and (orientation: landscape) {
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
   .navbar .nav {
-  padding-left: 30%;
+    padding-left: 30%;
   }
 }
 
 /* rules for iPad in portrait orientation */
-@media only screen and (min-device-width: 768px) and (orientation: portrait) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .navbar-wrapper {
-    width: 165%;
-    
+    width: 1230;
+    margin-left: -100px;
+  }
+  .navbar .nav {
+    padding-left: 200px;
   }
   .nav {
     width: 1250px;
     background-color: blue;
-    margin-top: -50px;
   }
-
   .nav > li > a {
-    margin-top: 5px;
-    display: inline;
+    margin-top: 15px;
+    display: block;
     padding-left: 10px;
-    padding-right: 00px;
+    padding-right: 20px;
+    font-size: 6pt;
   }
-  
 }
 
 /* end @media */
 
+/* rules for Nexus in landscape orientation */
+@media only screen and (max-width: 603px) {
+  .navbar .nav {
+  padding-left: 10%;
+  }
+}
+
 /* iPhone, Android rules here */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
   .navbar .brandy {
     visibility: visible;
   }
@@ -463,6 +531,12 @@ body {
 .bigbutton6:active {
   position:relative;
   top:1px;
+}
+
+@media only screen and (max-width: 768px) {
+  .da-slide .button_to {
+    margin-left: -170px;
+  }
 }
 
 
@@ -1358,8 +1432,12 @@ body {
 .blog-container p {
   font-family: Droid Serif, sans-serif;
   font-size: 1.1em;
-  text-align: center;
   line-height: 150%
+}
+
+.blog-container h6 {
+  font-family: Droid Serif, Serif;
+  text-align: center;
 }
 
 .blog-container h4  {
@@ -1372,6 +1450,103 @@ body {
   color: gray;
   font-family: Droid Serif, Serif;
   float: right;
+}
+
+@media only screen and (max-width: 176px) {
+  .blog-container {
+    width:9.8em;
+    margin-left: -5px;
+    padding: 2px;
+  }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 320px) {
+  .blog-container {
+    width:15.8em;
+    margin-left: -5px;
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 485px) and (max-width: 538px) {
+  .blog-container {
+    width: 29.8em;
+    margin-left: -5px;
+    padding: 21px;
+  }
+}
+
+@media only screen and (min-width: 535px) and (max-width: 600px) {
+  .blog-container {
+    width:39.8em;
+    margin-left: -5px;
+    padding: 21px;
+  }
+}
+
+@media only screen and (min-width: 605px) and (max-width: 768px) {
+  .blog-container {
+    width: 54.8em;
+    margin-left: -5px;
+  }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 800px) {
+  .blog-container {
+    width: 55.8em;
+    margin-left: -25px;
+    padding: 21px;
+  }
+}
+
+@media only screen and (min-width: 805px) and (max-width: 1024px) {
+  .blog-container {
+    width: 73.8em;
+    margin-left: -25px;
+    padding: 5px;
+  }
+  .blog-container h1 {
+    font-size: 1.6em;
+    font-family: Droid Serif;
+  }
+  .blog-container p {
+    padding: 25px;
+    font-family: Droid Serif, sans-serif;
+    font-size: 1.1em;
+    line-height: 150%
+  }
+}
+
+@media only screen and (min-width: 1026px) and (max-width: 1280px) {
+  .blog-container {
+    width:85.8em;
+    margin-left: -25px;
+    padding: 21px;
+  }
+}
+
+@media only screen and (min-width: 1285px) and (max-width: 1366px) {
+  .blog-container {
+    width:90.8em;
+    margin-left: -25px;
+    padding: 21px;
+  }
+}
+
+@media only screen and (min-width: 1368px) and (max-width: 1440px) {
+  .blog-container {
+    width:95.8em;
+    margin-left: -35px;
+    padding: 21px;
+  }
+}
+
+@media only screen and (min-width: 1442px) and (max-width: 1600px) {
+  .blog-container {
+    width:100.8em;
+    margin-left: -65px;
+    padding: 21px;
+  }
 }
 
 .straightLine {
@@ -1498,8 +1673,8 @@ body {
   position: relative;
 }
 
-.lib-header  p {
-  width: 1448px;
+.lib-header p {
+  width: 100%;
   height: auto;
   display:inline-block;
   background: rgb(123, 53, 0);
@@ -1516,19 +1691,42 @@ body {
   font-style: italic;
 }
 
-@media only screen and (device-width: 768px) and (orientation: landscape) {
+@media only screen and (min-width: 605px) and (max-width: 768px) {
+  .container3 {
+    padding-left: -20px;
+  }
   .lib-header p {
-    width: 873px;
+    width: 635px;
+    margin-left: -25px;
+    padding-left: 15px;
   }
 }
 
-@media only screen and (device-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 770px) and (max-width: 800px)  {
   .lib-header p {
-    width: 935px;
-    padding-right: 50px;
+    
+    padding-left: 10px;
+    padding-right: 75px;
   }
 }
 
+@media only screen and (max-width: 1680px) {
+  .lib-header p {
+    width: 1450px;
+  }
+}
+
+@media only screen and (max-width: 1920px)  {
+  .lib-header p {
+    width: 1450px;
+  }
+}
+
+@media only screen and (min-width: 1925px)  {
+  .lib-header p {
+    width: 1450px;
+  }
+}
 /* end @media */
 
 .container3 {
@@ -1718,24 +1916,40 @@ body {
 **/
 
 .sup {
+  width: 700px;
+  height: auto;
   margin-top: 120px;
   margin-bottom: 20px;
   margin-left: 125px;
   position: relative;
-  width: 700px;
-  height: auto;
   border: solid #ababab 0.5px;
   padding: 45px;
   -webkit-border-radius: 7px 7px 7px 7px;
   -moz-border-radius: 7px 7px 7px 7px;
   border-radius: 7px 7px 7px 7px;
   background-color:#ababab;
-  /*background-position: center;*/
   background-image: -moz-linear-gradient   (90deg, #ababab, #e6e4e1 35px);
   background-image: -webkit-linear-gradient(90deg, #ababab, #e6e4e1 35px);
   background-image: -o-linear-gradient     (90deg, #ababab, #e6e4e1 35px);
   background-image: -ms-linear-gradient    (90deg, #ababab, #e6e4e1 35px);
   background-image: linear-gradient        (90deg, #ababab, #e6e4e1 35px);
+}
+
+@media only screen and (max-width: 1024px) {
+  .sup {
+    margin-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sup {
+    width: 350px;
+    margin-left: 130px;
+  }
+  .sup .sign-header {
+    width: 438px;
+    height: 80px;
+  }
 }
 
 
@@ -1747,8 +1961,6 @@ body {
   margin-bottom: 25px;
   padding-top: 20px;
   padding-bottom: 5px;
-  /*padding-left: 60px;*/
-  /*border: solid 5px blue;*/
   -webkit-border-radius: 7px 7px  0 0;
   -moz-border-radius: 7px 7px  0 0;
   border-radius: 7px 7px  0 0;
@@ -1829,47 +2041,67 @@ body {
 }
 
 /* rules for iPad in landscape orientation */
-@media only screen and (device-width: 768px) and (orientation: landscape) {
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
   .navbar .nav {
    padding-left: 28%;
   }
   .thumbnail2 {
     width: 200px;
-    /*padding-right: 15px;*/
+    padding-right: 15px;
   }
   .footer-links {
     width: 210px;
   }
   #footer-topper {
-    width: 190px;
-    /*margin-left: 18px;*/
-  }
-  .ads1, .ads2, .ads3, .ads4 {
     width: 200px;
+  }
+  #footer-topper {
+    font-size: 6pt;
+    color: white;
+    font-family: Droid Serif;
+    text-align: center;
+  }
+  .ads1, 
+  .ads2, 
+  .ads3, 
+  .ads4, 
+  .ads5, 
+  .ads6, 
+  .ads7 {
+    width: 190px;
   }
 }
 
-@media only screen and (device-width: 768px) and (orientation: portrait) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .wrapper {
-    width: 1200px;
-  }
-  .navbar .nav {
-   padding-left: 28%;
+    width: 1300px;
+    background-color: #fff;
   }
   .thumbnail2 {
-    width: 200px;
-    margin-left: -95px;
-    margin-right: -95px;
-    /*border: solid 5px blue;*/
+    width: 260px;
+    margin-left: 230px;
+    display: block;
+    background-color: #000;
   }
   .footer-links {
-    width: 210px;
+    width: 250px;
+  }
+  .footer-links ul li  {
+    color: #fff;
   }
   #footer-topper {
-    width: 190px;
+    width: 250px;
+    font-size: 6pt;
+    color: white;
+    font-family: Droid Serif;
+    text-align: center;
   }
-  .ads1, .ads2, .ads3, .ads4 {
-    width: 200px;
+  .ads1, 
+  .ads2, 
+  .ads3, 
+  .ads4 {
+    width: 260px;
+    background-color: #fff;
   }
 }
 
@@ -1948,14 +2180,14 @@ body {
 #icons img:hover {
   opacity: 1;
   -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-  -webkit-transition: height 0.35s ease;
-  -moz-transition:    height 0.35s ease;
-  -ms-transition:     height 0.35s ease;
-  -o-transition:      height 0.35s ease;
-  transition:         height 0.35s ease;
+  -moz-transform: scale   (1.2);
+  -o-transform: scale     (1.2);
+  transform: scale        (1.2);
+  -webkit-transition:     height 0.35s ease;
+  -moz-transition:        height 0.35s ease;
+  -ms-transition:         height 0.35s ease;
+  -o-transition:          height 0.35s ease;
+  transition:             height 0.35s ease;
 }
 
 .signature-wrapper {

@@ -14,10 +14,10 @@
 							<div class='blog-container'>
 									    <h2>
 									  	  <%= @post.title %>
-									    </h2><br />
-									  	    <p>
+									    </h2>
+									  	    <h6>
 									  	    	<%= @post.created_at.in_time_zone.strftime("PUBLISHED ON %a  %b %d, %Y @ %I:%M %p") %> BY
-									  	    </p> 
+									  	    </h6> 
 									  	<h4>
 									  		<%= @post.name %>
 									  	</h4>
@@ -37,7 +37,7 @@
 												<p>If you want to use the fomatting we used, insert [class='markitup'] inside the 'pre' tags.</p>
 									        <% else %>
 										            <p>
-											  		    <%= link_to 'Log in', '/login' %> <i> to leave a comment</i>
+											  		    <%= link_to 'Log in', 'login' %> <i> to leave a comment</i>
 											  	    </p>
 												  	<p>
 												  		<%= link_to 'Back to Posts', posts_path %> 

@@ -14,11 +14,61 @@
 	/*border: solid 5px green;*/
 }
 
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+	.dg-container{
+        margin-left: -170px;
+	}
+    .dg-wrapper{
+        margin-left: -100px;
+    }
+    .lib-header {
+    	margin-left: -170px;
+    }
+}
+
+/* rules for iPad in landscape portrait */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+	.dg-container {
+		width: 120em;
+		margin-left: -30.75em;
+    }
+    .dg-wrapper a {
+		width: 220px;
+		height: 350px;
+		margin-left: -20px;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+    }
+
+    .dg-container nav span.dg-next {
+		background-position: top right;
+		margin-left: -100px;
+}
+    body {
+    	overflow-x: hidden !important;
+    }
+}
+
+@media only screen and (min-width: 770px) and  (max-width: 800px) {
+    .dg-wrapper a {
+		width: 220px;
+		height: 350px;
+		margin-left: -400px;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+    }
+}
+
 /* rules for iPad in landscape orientation */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 802px) and (max-width: 1024px) and (orientation: landscape) {
 	.dg-container {
 		width: 100%;
-		margin-left: auto;
+		/*margin-left: auto;*/
     }
     .dg-wrapper a {
 		width: 220px;
@@ -34,45 +84,11 @@
     }
 }
 
-/* rules for iPad in landscape portrait */
-@media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-	.dg-container {
-		width: 120em;
-		margin-left: -18.75em;
-    }
+/*@media only screen  and (max-width: 1680px) {
     .dg-wrapper a {
 		width: 220px;
 		height: 350px;
-		margin-left: -0.625em;
-		display: block;
-		position: absolute;
-		left: 0;
-		top: 0;
-    }
-    body {
-    	overflow-x: hidden !important;
-    }
-}
-
-@media only screen and (device-width: 480px) and (orientation: portrait) {
-	.dg-container{
-        margin-left: -170px;
-	}
-    .dg-wrapper{
-        margin-left: -100px;
-    }
-    .lib-header {
-    	margin-left: -170px;
-    }
-}
-
-/* end @media */
-
-/*@media only screen and (max-width: 1224px) {
-    .dg-wrapper a {
-		width: 220px;
-		height: 350px;
-		margin-left: 370px;
+		margin-left: -12.9em;
 		display: block;
 		position: absolute;
 		left: 0;
@@ -80,7 +96,69 @@
     }
 }*/
 
-@media only screen and (min-width: 2048px) {
+/* end @media */
+
+@media only screen and (min-width: 1026px) and  (max-width: 1280px) {
+    .dg-wrapper a {
+		width: 220px;
+		height: 350px;
+		margin-left: -150px;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+    }
+}
+
+@media only screen and (min-width: 1282px) and  (max-width: 1366px) {
+    .dg-wrapper a {
+		width: 220px;
+		height: 350px;
+		margin-left: -120px;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+    }
+}
+
+@media only screen and (min-width: 1368px) and  (max-width: 1440px) {
+    .dg-wrapper a {
+		width: 220px;
+		height: 350px;
+		margin-left: -100px;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+    }
+}
+
+@media only screen and (min-width: 1602px) and  (max-width: 1680px) {
+    .dg-wrapper a {
+		width: 220px;
+		height: 350px;
+		margin-left: 40px;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+    }
+}
+
+@media only screen and (min-width: 1682px) and  (max-width: 1920px) {
+    .dg-wrapper a {
+		width: 220px;
+		height: 350px;
+		margin-left: 150px;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+    }
+}
+
+@media only screen and (min-width: 1940px) and (min-width: 2048px) {
     .dg-wrapper a {
 		width: 220px;
 		height: 350px;
