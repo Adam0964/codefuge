@@ -47,8 +47,8 @@ android.png: android-6b4b736ede7f8bc87456e866be74cea4.png
 android/index.png: android-6b4b736ede7f8bc87456e866be74cea4.png
 angular.jpg: angular-5b1b12d68eac3c3d5b6a482629dffbe5.jpg
 angular/index.jpg: angular-5b1b12d68eac3c3d5b6a482629dffbe5.jpg
-angular_web_development.jpg: angular_web_development-5799eb3511636e301cdb13e926a1bdc8.jpg
-angular_web_development/index.jpg: angular_web_development-5799eb3511636e301cdb13e926a1bdc8.jpg
+angular_web_development.jpg: angular_web_development-ab726ad707d146ff7593de5b0951b34d.jpg
+angular_web_development/index.jpg: angular_web_development-ab726ad707d146ff7593de5b0951b34d.jpg
 apache_solr 3.jpg: apache_solr 3-1862efc3c9cd29a26c05042951590b44.jpg
 apache_solr 3/index.jpg: apache_solr 3-1862efc3c9cd29a26c05042951590b44.jpg
 apache_solr 4.jpg: apache_solr 4-87a0eddb523fba254d58ef19de82a39f.jpg
@@ -203,8 +203,8 @@ books/agile_with_rails4.jpg: books/agile_with_rails4-fa352bef605d1e985dfa573b653
 books/agile_with_rails4/index.jpg: books/agile_with_rails4-fa352bef605d1e985dfa573b653f31ec.jpg
 books/angular.jpg: books/angular-5b1b12d68eac3c3d5b6a482629dffbe5.jpg
 books/angular/index.jpg: books/angular-5b1b12d68eac3c3d5b6a482629dffbe5.jpg
-books/angular_web_development.jpg: books/angular_web_development-5799eb3511636e301cdb13e926a1bdc8.jpg
-books/angular_web_development/index.jpg: books/angular_web_development-5799eb3511636e301cdb13e926a1bdc8.jpg
+books/angular_web_development.jpg: books/angular_web_development-ab726ad707d146ff7593de5b0951b34d.jpg
+books/angular_web_development/index.jpg: books/angular_web_development-ab726ad707d146ff7593de5b0951b34d.jpg
 books/apache_solr 3.jpg: books/apache_solr 3-1862efc3c9cd29a26c05042951590b44.jpg
 books/apache_solr 3/index.jpg: books/apache_solr 3-1862efc3c9cd29a26c05042951590b44.jpg
 books/apache_solr 4.jpg: books/apache_solr 4-87a0eddb523fba254d58ef19de82a39f.jpg
@@ -415,6 +415,8 @@ books/webdesign.jpg: books/webdesign-30528349fa2bb171fb5f821856dbd9c2.jpg
 books/webdesign/index.jpg: books/webdesign-30528349fa2bb171fb5f821856dbd9c2.jpg
 bootstrap.png: bootstrap-dc5724c5586d9acc6f4c6c2baa8d3f49.png
 bootstrap/index.png: bootstrap-dc5724c5586d9acc6f4c6c2baa8d3f49.png
+bootstrap2.png: bootstrap2-c72ea585abb2b8a4b7cc3e3533ef739a.png
+bootstrap2/index.png: bootstrap2-c72ea585abb2b8a4b7cc3e3533ef739a.png
 boutique.jpg: boutique-7c7436684fba504dea969e960c787b1b.jpg
 boutique/index.jpg: boutique-7c7436684fba504dea969e960c787b1b.jpg
 boutique1.jpg: boutique1-252b6477f30e30529caa5a03ce53bd28.jpg
@@ -1699,6 +1701,8 @@ prototype_and_scriptaculous.jpg: prototype_and_scriptaculous-c09957d655b5259204b
 prototype_and_scriptaculous/index.jpg: prototype_and_scriptaculous-c09957d655b5259204bec4acf23e118f.jpg
 queries.jpg: queries-30c2a9687bc02e3448d5b4e136849830.jpg
 queries/index.jpg: queries-30c2a9687bc02e3448d5b4e136849830.jpg
+quirktools.png: quirktools-f86eab3eab889ec1e893dd483df4d77f.png
+quirktools/index.png: quirktools-f86eab3eab889ec1e893dd483df4d77f.png
 rails.png: rails-c2b6b635960ac0ec78a12f31ec2cd798.png
 rails/index.png: rails-c2b6b635960ac0ec78a12f31ec2cd798.png
 rails2.png: rails2-3037c574312dace6640435bcc988d9f9.png
@@ -1847,8 +1851,8 @@ zurb.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
 zurb/index.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
 application.js: application-80fe288184683483746a5df89223a077.js
 application/index.js: application-80fe288184683483746a5df89223a077.js
-application.css: application-c1321097bb4fe9fe98bddb69d3e5e186.css
-application/index.css: application-c1321097bb4fe9fe98bddb69d3e5e186.css
+application.css: application-8902121caa1e6676e15fec5dfcb90330.css
+application/index.css: application-8902121caa1e6676e15fec5dfcb90330.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 fontawesome-webfont.eot: fontawesome-webfont-009f6d1f667cc42c25e712ab3429cbc7.eot

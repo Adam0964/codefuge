@@ -23,7 +23,7 @@ agt_home.png: 8351dd7a7ff8640c11f7633fb4633b80
 ai.jpeg: 20ac3e1c19723df853d5b11e206c7c87
 android.png: 6b4b736ede7f8bc87456e866be74cea4
 angular.jpg: 5b1b12d68eac3c3d5b6a482629dffbe5
-angular_web_development.jpg: 5799eb3511636e301cdb13e926a1bdc8
+angular_web_development.jpg: ab726ad707d146ff7593de5b0951b34d
 apache_solr 3.jpg: 1862efc3c9cd29a26c05042951590b44
 apache_solr 4.jpg: 87a0eddb523fba254d58ef19de82a39f
 apple-touch-icon-114-precomposed.png: a0fbab8e0d4003059dbe90d7fe57b724
@@ -101,7 +101,7 @@ books/advanced_rails.jpg: c5634e764fd22bbf74bdcacbad53bbfc
 books/agile.jpg: 07afe98c19387675d93b0121ffc7875c
 books/agile_with_rails4.jpg: fa352bef605d1e985dfa573b653f31ec
 books/angular.jpg: 5b1b12d68eac3c3d5b6a482629dffbe5
-books/angular_web_development.jpg: 5799eb3511636e301cdb13e926a1bdc8
+books/angular_web_development.jpg: ab726ad707d146ff7593de5b0951b34d
 books/apache_solr 3.jpg: 1862efc3c9cd29a26c05042951590b44
 books/apache_solr 4.jpg: 87a0eddb523fba254d58ef19de82a39f
 books/b1.jpg: f2f806d3476a5da1b06b5e39b64c2ad6
@@ -207,6 +207,7 @@ books/web_design_for_developers.jpg: 1a122620d7abbe21c76642a034ad0e6b
 books/web_standards.jpg: 11e5106961c38db3180735bb54af5f18
 books/webdesign.jpg: 30528349fa2bb171fb5f821856dbd9c2
 bootstrap.png: dc5724c5586d9acc6f4c6c2baa8d3f49
+bootstrap2.png: c72ea585abb2b8a4b7cc3e3533ef739a
 boutique.jpg: 7c7436684fba504dea969e960c787b1b
 boutique1.jpg: 252b6477f30e30529caa5a03ce53bd28
 boutique2.jpg: 6b5971c22466abbf72d57f5015f87fde
@@ -849,6 +850,7 @@ programming_the_mobile_web.jpg: da38f5edc51e8beb25b68e4cdf205f6c
 proto2.jpg: 66ffe38be3f23f38079472721b815cdc
 prototype_and_scriptaculous.jpg: c09957d655b5259204bec4acf23e118f
 queries.jpg: 30c2a9687bc02e3448d5b4e136849830
+quirktools.png: f86eab3eab889ec1e893dd483df4d77f
 rails.png: c2b6b635960ac0ec78a12f31ec2cd798
 rails2.png: 3037c574312dace6640435bcc988d9f9
 rails3.jpg: b1330f071a2ee4bbd4c4f430678df6c2
@@ -923,7 +925,7 @@ webd1.jpg: d707ddc9c557ced7bf4f15d63a446f6f
 webdesign.jpg: 30528349fa2bb171fb5f821856dbd9c2
 zurb.png: f4079d8b89f4b55313d0f716e710c778
 application.js: 60094b4e1db24fb0220091f1fc0d8c17
-application.css: ca3d4fdf51c9027ab868e2ed2869ddd2
+application.css: 23ce8bf6d477125b3d859a802bdc3cd4
 jquery.min.map: 6336c5bca4c709e809647cdfcb484d0a
 fontawesome-webfont.eot: 009f6d1f667cc42c25e712ab3429cbc7
 fontawesome-webfont.svg: f1c2889911d212e1403b68eabc1a3a56

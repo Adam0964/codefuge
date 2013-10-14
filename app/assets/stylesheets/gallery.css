@@ -14,8 +14,181 @@
 	/*border: solid 5px green;*/
 }
 
+.dg-wrapper{
+	width: 250px;
+	height: 280px;
+	margin-top: 5px;
+	margin-left: 780px;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+	/*border: solid 5px green;*/
+}
 
-@media only screen and (max-width: 480px) and (orientation: portrait) {
+.dg-wrapper a {
+	width: 220px;
+	height: 350px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.dg-wrapper a.dg-transition{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.dg-wrapper a img{
+	margin-top: 45px;
+	width: 220px;
+	height: 330px;
+	display: block;
+	padding: 5px;
+
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, 
+						 left top, left bottom, 
+						 from(transparent), 
+						 color-stop(50%, transparent),
+						  to(rgba(255,255,255,0.2)));
+	moz--box-reflect: below 0px -webkit-gradient(linear, 
+						 left top, left bottom, 
+						 from(transparent), 
+						 color-stop(50%, transparent),
+						  to(rgba(255,255,255,0.2)));
+	box-reflect: below 0px -webkit-gradient(linear, 
+						 left top, left bottom, 
+						 from(transparent), 
+						 color-stop(50%, transparent),
+						  to(rgba(255,255,255,0.2)));
+	-o-box-reflect: below 0px -webkit-gradient(linear, 
+						 left top, left bottom, 
+						 from(transparent), 
+						 color-stop(50%, transparent),
+						  to(rgba(255,255,255,0.2)));
+
+}
+
+.dg-wrapper img:hover {
+	
+	-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dg-wrapper a div{
+	font-style: italic;
+	text-align: center;
+	line-height: 50px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+	color: #333;
+	font-size: 16px;
+	width: 100%;
+	bottom: -55px;
+	display: none;
+	position: absolute;
+}
+.dg-wrapper a.dg-center div{
+	display: block;
+}
+.dg-container nav{
+	width: 58px;
+	position: absolute;
+	z-index: 1000;
+	bottom: 40px;
+	left: 50%;
+	margin-left: -29px;
+	margin-top:-500px;
+}
+.dg-container nav span{
+	text-indent: -9000px;
+	float: left;
+	cursor:pointer;
+	width: 24px;
+	height: 35px;
+	opacity: 0.8;
+	background: transparent url(arrows2.png) no-repeat top left;
+}
+.dg-container nav span:hover{
+	opacity: 1;
+}
+.dg-container nav span.dg-next, .dg-previous {
+	background-position: top right;
+	margin-left: 10px;
+}
+
+
+/**
+*****************************************************
+|        Media queries for Bookshelf gallery       |
+*****************************************************
+**/
+
+@media only screen and (min-width: 180px) and (max-width: 240px) {
+	.dg-container {
+		width: 120em;
+		height: 350px;
+		margin-left: -52em;
+    }
+    .dg-wrapper a {
+		width: 220px;
+		height: 350px;
+		margin-left: 38px;
+		margin-top: -10px;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+    }
+    .dg-wrapper .book {
+    	width: 100px;
+    	height:150px;
+    }
+}
+
+@media only screen and (min-width: 245px) and (max-width: 320px) {
+	.dg-container {
+		width: 120em;
+		margin-left: -50em;
+    }
+    .dg-wrapper a {
+		width: 220px;
+		height: 350px;
+		margin-left: -20px;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+    }
+}
+
+@media only screen and (min-width: 325px) and (max-width: 360px) {
+	.dg-container {
+		width: 120em;
+		margin-left: -48em;
+    }
+    .dg-wrapper a {
+		width: 220px;
+		height: 350px;
+		margin-left: -20px;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+    }
+}
+
+@media only screen and (min-width: 365px) and (max-width: 480px) {
 	.dg-container{
         margin-left: -170px;
 	}
@@ -27,11 +200,10 @@
     }
 }
 
-/* rules for iPad in landscape portrait */
-@media only screen and (max-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 485px) and (max-width: 533px) {
 	.dg-container {
 		width: 120em;
-		margin-left: -30.75em;
+		margin-left: -39em;
     }
     .dg-wrapper a {
 		width: 220px;
@@ -42,11 +214,38 @@
 		left: 0;
 		top: 0;
     }
-
-    .dg-container nav span.dg-next {
-		background-position: top right;
-		margin-left: -100px;
 }
+
+@media only screen and (min-width: 535px) and (max-width: 603px) {
+	.dg-container {
+		width: 120em;
+		margin-left: -39em;
+    }
+    .dg-wrapper a {
+		width: 220px;
+		height: 350px;
+		margin-left: -20px;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+    }
+}
+
+@media only screen and (min-width: 605px) and (max-width: 768px) {
+	.dg-container {
+		width: 120em;
+		margin-left: -31.75em;
+    }
+    .dg-wrapper a {
+		width: 220px;
+		height: 350px;
+		margin-left: -20px;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+    }
     body {
     	overflow-x: hidden !important;
     }
@@ -64,12 +263,7 @@
     }
 }
 
-/* rules for iPad in landscape orientation */
-@media only screen and (min-width: 802px) and (max-width: 1024px) and (orientation: landscape) {
-	.dg-container {
-		width: 100%;
-		/*margin-left: auto;*/
-    }
+@media only screen and (min-width: 805px) and (max-width: 1024px) {
     .dg-wrapper a {
 		width: 220px;
 		height: 350px;
@@ -95,8 +289,6 @@
 		top: 0;
     }
 }*/
-
-/* end @media */
 
 @media only screen and (min-width: 1026px) and  (max-width: 1280px) {
     .dg-wrapper a {
@@ -181,116 +373,3 @@
 		top: 0;
     }
 }*/
-
-.dg-wrapper{
-	width: 250px;
-	height: 280px;
-	margin-top: 5px;
-	margin-left: 780px;
-	position: relative;
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-o-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	-webkit-perspective: 1000px;
-	-moz-perspective: 1000px;
-	-o-perspective: 1000px;
-	-ms-perspective: 1000px;
-	perspective: 1000px;
-	/*border: solid 5px green;*/
-}
-
-.dg-wrapper a {
-	width: 220px;
-	height: 350px;
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-
-.dg-wrapper a.dg-transition{
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-.dg-wrapper a img{
-	margin-top: 45px;
-	width: 220px;
-	height: 330px;
-	display: block;
-	padding: 5px;
-
-	-webkit-box-reflect: below 0px -webkit-gradient(linear, 
-						 left top, left bottom, 
-						 from(transparent), 
-						 color-stop(50%, transparent),
-						  to(rgba(255,255,255,0.2)));
-	moz--box-reflect: below 0px -webkit-gradient(linear, 
-						 left top, left bottom, 
-						 from(transparent), 
-						 color-stop(50%, transparent),
-						  to(rgba(255,255,255,0.2)));
-	box-reflect: below 0px -webkit-gradient(linear, 
-						 left top, left bottom, 
-						 from(transparent), 
-						 color-stop(50%, transparent),
-						  to(rgba(255,255,255,0.2)));
-	-o-box-reflect: below 0px -webkit-gradient(linear, 
-						 left top, left bottom, 
-						 from(transparent), 
-						 color-stop(50%, transparent),
-						  to(rgba(255,255,255,0.2)));
-
-}
-
-/*.dg-wrapper img:hover {
-	
-	-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-}*/
-
-.dg-wrapper a div{
-	font-style: italic;
-	text-align: center;
-	line-height: 50px;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
-	color: #333;
-	font-size: 16px;
-	width: 100%;
-	bottom: -55px;
-	display: none;
-	position: absolute;
-}
-.dg-wrapper a.dg-center div{
-	display: block;
-}
-.dg-container nav{
-	width: 58px;
-	position: absolute;
-	z-index: 1000;
-	bottom: 40px;
-	left: 50%;
-	margin-left: -29px;
-	margin-top:-500px;
-}
-.dg-container nav span{
-	text-indent: -9000px;
-	float: left;
-	cursor:pointer;
-	width: 24px;
-	height: 35px;
-	opacity: 0.8;
-	background: transparent url(arrows2.png) no-repeat top left;
-}
-.dg-container nav span:hover{
-	opacity: 1;
-}
-.dg-container nav span.dg-next{
-	background-position: top right;
-	margin-left: 10px;
-}
