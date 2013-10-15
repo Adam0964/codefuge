@@ -1,6 +1,8 @@
 ---
 IMG_0212.JPG: IMG_0212-8a707190d42d47f53a86b6c7d8c309ca.JPG
 IMG_0212/index.JPG: IMG_0212-8a707190d42d47f53a86b6c7d8c309ca.JPG
+IMG_0226.JPG: IMG_0226-84538fde7e943555c38a3e9ad766e244.JPG
+IMG_0226/index.JPG: IMG_0226-84538fde7e943555c38a3e9ad766e244.JPG
 Image029.jpg: Image029-50d326363f73bd4ef9cc7cb63481ba81.jpg
 Image029/index.jpg: Image029-50d326363f73bd4ef9cc7cb63481ba81.jpg
 Image030.jpg: Image030-c92b745331e87b5ef74af6aacad3dbc2.jpg
@@ -429,6 +431,8 @@ boutique4.jpg: boutique4-3cf2563fcb51fbef31371b20d4e22c93.jpg
 boutique4/index.jpg: boutique4-3cf2563fcb51fbef31371b20d4e22c93.jpg
 boutique5.jpg: boutique5-b6289739d45861d821d0e18cad2432ad.jpg
 boutique5/index.jpg: boutique5-b6289739d45861d821d0e18cad2432ad.jpg
+boutique6.jpg: boutique6-9d6563c381579a609824855bd8bfcc09.jpg
+boutique6/index.jpg: boutique6-9d6563c381579a609824855bd8bfcc09.jpg
 bsmith.png: bsmith-6aef3813c3a76cca3450baa68c48b139.png
 bsmith/index.png: bsmith-6aef3813c3a76cca3450baa68c48b139.png
 bug.png: bug-d0ad599d07cb7134b5de707898ca975b.png
@@ -1851,8 +1855,8 @@ zurb.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
 zurb/index.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
 application.js: application-80fe288184683483746a5df89223a077.js
 application/index.js: application-80fe288184683483746a5df89223a077.js
-application.css: application-b16e23b60a6c3ad6f3e76ac741d691a3.css
-application/index.css: application-b16e23b60a6c3ad6f3e76ac741d691a3.css
+application.css: application-69ab79a242c996c78394762e1b68ddf8.css
+application/index.css: application-69ab79a242c996c78394762e1b68ddf8.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 fontawesome-webfont.eot: fontawesome-webfont-009f6d1f667cc42c25e712ab3429cbc7.eot
