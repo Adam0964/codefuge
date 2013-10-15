@@ -1541,7 +1541,7 @@ body {
   height: 40px;
   border: solid 2px 'Snow';
   text-align: center;
-  padding-top: 10px;
+  /*padding-top: -17px;*/
   float: left;
   color: white;
   background-image: url(bgd/bgd17.jpg);
