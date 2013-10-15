@@ -8,22 +8,21 @@ class Post < ActiveRecord::Base
                            :length => { :minimum => 5 }
 
   has_many :comments, :dependent => :destroy
-  # has_many :reviews
 
-  searchable do
-  	text :title, :boost => 5, :stored => true
-  	text :content
-    text :comments do
-       comments.map { |comment| comment.body }
-     end
+  # searchable do
+  # 	text :title, :boost => 5, :stored => true
+  # 	text :content
+  #   text :comments do
+  #      comments.map { |comment| comment.body }
+  #    end
 
-  	# text :comments do
-  	# 	comments.map(&:content)
-  	# end
-  	time :created_at
+  # 	# text :comments do
+  # 	# 	comments.map(&:content)
+  # 	# end
+  # 	time :created_at
     
-    string :sort_title do
-    title.downcase.gsub(/^(an?|the)\b/, '')
-    end
-  end
+  #   string :sort_title do
+  #   title.downcase.gsub(/^(an?|the)\b/, '')
+  #   end
+  # end
 end

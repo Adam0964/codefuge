@@ -13,7 +13,7 @@ gem 'bootstrap-will_paginate', '0.0.6'
 gem 'kaminari'
 gem 'active_link_to'
 gem "paperclip"     
-gem "sunspot_rails" 
+# gem "sunspot_rails" 
 gem 'commands'
 gem "mechanize", "~> 2.6.0"
 gem "devise"
@@ -31,6 +31,7 @@ gem 'omniauth-github'
 gem 'jbuilder'
 gem 'unicorn'
 gem 'debugger'
+gem 'rails_12factor'
 
 group :test do
   gem 'cucumber-rails', :require => false
@@ -48,7 +49,7 @@ group :development do
   gem 'spork', '0.9.0'
   gem 'launchy', '2.1.0'
   gem 'simplecov', '>=0.3.8', :require => false
-  gem 'sunspot_solr'
+  # gem 'sunspot_solr'
   gem 'nokogiri', '1.6.0'
   gem 'rb-fsevent'
   gem "capistrano"    

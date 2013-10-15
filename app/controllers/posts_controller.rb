@@ -2,18 +2,20 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
 
-  def index
-    @search = Post.search do
-      fulltext params[:search] do
-      highlight :title, :content
-      end
-    end
-    @posts = @search.results
+  # def index
+  #   @search = Post.search do
+  #     fulltext params[:search] do
+  #     highlight :title, :content
+  #     end
+  #   end
+  #   @posts = @search.results
+  def index 
+      @posts = Post.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @posts }
-    end
+      respond_to do |format|
+        format.html # index.html.erb
+        format.json { render json: @posts }
+      end
   end
 
   # GET /posts/1

@@ -1,8 +1,6 @@
 class CommentsController < ApplicationController
 
-    before_filter :authenticate_user!, :except => [:show, :index]
-
-    # @comment.create_activity :create, owner: current_user
+  before_filter :authenticate_user!, :except => [:show, :index]
 
 	def create
     @post = Post.find(params[:post_id])
@@ -12,18 +10,14 @@ class CommentsController < ApplicationController
       format.html {redirect_to post_path(@post)}
       format.js
       end
-    
   end
-
+  
     def destroy
     @post = Post.find(params[:post_id])
     @comment = @post.comments.find(params[:id])
     @comment.destroy
     redirect_to post_path(@post)
   end
-    
-
-  
 end
   
 

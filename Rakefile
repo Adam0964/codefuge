@@ -6,4 +6,4 @@ require File.expand_path('../config/application', __FILE__)
 
 Kodefuge::Application.load_tasks
 
-require 'sunspot/rails/tasks'
+# require 'sunspot/rails/tasks'
