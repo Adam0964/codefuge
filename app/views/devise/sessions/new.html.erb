@@ -12,17 +12,21 @@
 							</div>
 							<br />
 										<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-										  <div><%= f.label     :email %>
-										  <%= f.email_field    :email, :autofocus => true %></div>
+											  <div><%= f.label     :email %>
+											  <%= f.email_field    :email, :autofocus => true %></div>
 
-										  <div><%= f.label     :password %>
-										  <%= f.password_field :password %></div><br />
+											  <div><%= f.label     :password %>
+											  <%= f.password_field :password %></div><br />
 
-										  <% if devise_mapping.rememberable? -%>
-										    <div><%= f.check_box :remember_me %></div><br /><div> <%= f.label :remember_me %></div><br />
-										  <% end -%>
-
-										  <div><%= f.submit "Sign in", :class => "btn btn-large btn-primary" %></div>
+											  <% if devise_mapping.rememberable? -%>
+											      <span id="remember"><%= f.check_box :remember_me %><%= f.label :remember_me %></span>
+											    <br />
+											  <% end %>
+	                                          <% if current_user.try(:admin?)  %>
+											        <div><%= f.submit "Sign in Admin", :class => "btn btn-large btn-primary" %></div>
+											  <% else %>
+											        <div><%= f.submit "Sign in to post a comment", :class => "btn btn-large btn-primary" %></div>
+											  <% end %>
 										<% end %>
 						</div>
 			</div>

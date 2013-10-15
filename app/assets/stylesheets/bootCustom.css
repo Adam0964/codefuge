@@ -2533,7 +2533,7 @@ body {
 }
 
 #passwd-field input {
-  width: 250px;
+  width: 222px;
   height: 28px;
   position: relative;
   margin-bottom: -10px;
@@ -2542,6 +2542,24 @@ body {
 #passwd-field label {
   position: relative;
   margin-bottom: -5px;
+}
+
+.sup #remember label {
+  position: relative;
+  margin-top: -35px;
+  top: 7px;
+  left: 25px;
+}
+
+.sup #remember input {
+  position: relative;
+  margin-top: -35px;
+  top: 7px;
+}
+
+.sup input {
+  font-family: Droid Serif, Serif;
+  font-size: 13pt;
 }
 
 #field {
