@@ -568,12 +568,8 @@ posts:
   records: 
   - - '1'
     - Adam Raouki
-    - Hello
-    - ! "Sunspot is a Ruby library for expressive, powerful interaction with the Solr
-      search engine. Sunspot is built on top of the RSolr library, which provides
-      a low-level interface for Solr interaction; Sunspot provides a simple, intuitive,
-      expressive DSL backed by powerful features for indexing objects and searching
-      for them.\r\n"
+    - Testing
+    - ! "Well be migrating our blogs soon This is just a test"
     - '2013-09-26 23:29:24.320596'
     - '2013-09-26 23:29:24.320596'
 
