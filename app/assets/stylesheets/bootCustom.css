@@ -2532,6 +2532,18 @@ body {
   text-decoration: none;
 }
 
+#passwd-field input {
+  width: 250px;
+  height: 28px;
+  position: relative;
+  margin-bottom: -10px;
+}
+
+#passwd-field label {
+  position: relative;
+  margin-bottom: -5px;
+}
+
 #field {
   margin-left: 650px;
   margin-top: 100px;
