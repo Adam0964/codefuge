@@ -724,7 +724,8 @@ hello_html5__css3.jpg: 36cccc2fc9d721c77acfb72d0e368604
 heroku.png: 459eebf95a5e299f82859af3ac14f259
 home-1.png: 1394757919725b9ee1362eb1727b7c90
 home.png: ed2309249edb1e4a8e58e6232a3c254e
-home_01.png: 1ce16cf67521a4eb5de96a3765d257ae
+home1.png: 1ce16cf67521a4eb5de96a3765d257ae
+home2.png: 821498ab33bc334556ace8b5ce897aa5
 html.gif: 3096eea4696cb05bcc53750f2c9583b8
 html.png: b5dc714fdbe0464c3a58472d6c501c32
 html5.png: 982ee0d011088a2f6888716936899e6a
@@ -927,7 +928,7 @@ webd1.jpg: d707ddc9c557ced7bf4f15d63a446f6f
 webdesign.jpg: 30528349fa2bb171fb5f821856dbd9c2
 zurb.png: f4079d8b89f4b55313d0f716e710c778
 application.js: 60094b4e1db24fb0220091f1fc0d8c17
-application.css: 7462238c93d13ba2d589ac6afa3b02e8
+application.css: 7cb93f0c4df6e2847534e7b9307c2eae
 jquery.min.map: 6336c5bca4c709e809647cdfcb484d0a
 fontawesome-webfont.eot: 009f6d1f667cc42c25e712ab3429cbc7
 fontawesome-webfont.svg: f1c2889911d212e1403b68eabc1a3a56

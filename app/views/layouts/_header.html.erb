@@ -16,7 +16,6 @@
 				            <a class="brandy" href="home">KodeFuge</a>
 				            <div class="nav-collapse collapse">
 					                <ul class="nav">
-					                   
 					                	  <!-- <li>
 					                	  	    <%= link_to('home') do %>
 							                	  	  <span class='logo' style='color:navy'>
@@ -24,8 +23,11 @@
 		                                              </span>&nbsp&nbsp&nbsp 
                                                  <% end %>
                                           </li> -->
-                                 
-					                	  <li><%= link_to_unless_current 'kodefuge', 'home',     :class => 'brand' %></li> 
+                                          <%#<li class='site-logo'> <%= link_to 'home' do %>
+											<%#      <%= image_tag('home2.png') %>
+										     <%# <% end %>
+                                 		  <!-- </li> -->
+					                	  <li><%= link_to_unless_current 'HOME', 'home',             :class => 'navtitle' %></li>  
 					                	  <li class="divider-vertical"></li>
 				                          <li><%= link_to_unless_current 'ABOUT', 'about',           :class => 'navtitle' %></li>
 				                          <li class="divider-vertical"></li>

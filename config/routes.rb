@@ -1,6 +1,7 @@
 Kodefuge::Application.routes.draw do
 
   devise_for :admins, :controllers => { :sessions => "admins/sessions" }
+  devise_for :users, :controllers  => {:registrations  => 'registrations'}
   devise_for :users, :path => "auth", :path_names => { :sign_in      => 'login', 
                                                        :sign_out     => 'logout', 
                                                        :password     => 'secret', 
@@ -9,7 +10,6 @@ Kodefuge::Application.routes.draw do
                                                        :registration => 'register', 
                                                        :sign_up      => 'cmon_let_me_in' 
                                                       }
-   devise_for :users, :controllers => {:registrations  => 'registrations'}
 
    authenticated :user do
      root :to => 'posts#index'
