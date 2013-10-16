@@ -83,61 +83,6 @@ body {
   text-align: center;
 }
 
-.title h4 {
-  margin-bottom: 10px;
-  padding-top: 27px;
-  font-size: 12pt;
-  font-family: Droid Serif, Helvetica, sans-serif;
-  text-align: center;
-  color: #fff;
-  display: none;
-}
-
-.title  p {
-  width: 250px;
-  height: 200px;
-  border: solid 3px white;
-  background-color: red;
-  margin-top: 200px;
-  margin-left: 1150px;
-  margin-bottom: -30px;
-  padding-top: 61px;
-  font-size: 12pt;
-  font-family: Droid Serif, Helvetica, sans-serif;
-  text-align: center;
-  color: #fff;
-  display: none;
-  -moz-border-radius:4px;
-  -webkit-border-radius:4px;
-  border-radius:4px;
-}
-
-.title a:hover {
-  opacity: .5;
-  text-decoration: none;
-  background-color: inherit;
-}
-
-.navtitle {
-  font-size: 18px;
-  font-family: 'Economica';
-  color: #3bce3b;
-}
-
-.logo {
-  width: 150px !important;
-  height: 50px;
-  margin-left: 42%;
-  padding: 10px 8px 10px 12px;
-  background-color: orange;
-  /*border: solid 3px white;*/
-  font-family: Droid Serif;
-  font-size: 30pt;
-  -moz-border-radius:    2px 2px 2px 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
-  border-radius:         2px 2px 2px 2px;
-}
-
 @media only screen and (max-width: 533px){
   .title span > h2 {
     visibility: hidden;
@@ -198,13 +143,60 @@ body {
   }
 }
 
+.title h4 {
+  margin-bottom: 10px;
+  padding-top: 27px;
+  font-size: 12pt;
+  font-family: Droid Serif, Helvetica, sans-serif;
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+
+.title  p {
+  width: 250px;
+  height: 200px;
+  border: solid 3px white;
+  background-color: red;
+  margin-top: 200px;
+  margin-left: 1150px;
+  margin-bottom: -30px;
+  padding-top: 61px;
+  font-size: 12pt;
+  font-family: Droid Serif, Helvetica, sans-serif;
+  text-align: center;
+  color: #fff;
+  display: none;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+}
+
+.title a:hover {
+  opacity: .5;
+  text-decoration: none;
+  background-color: inherit;
+}
+
+.logo {
+  width: 150px !important;
+  height: 50px;
+  margin-left: 42%;
+  padding: 10px 8px 10px 12px;
+  background-color: orange;
+  /*border: solid 3px white;*/
+  font-family: Droid Serif;
+  font-size: 30pt;
+  -moz-border-radius:    2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius:         2px 2px 2px 2px;
+}
 
  /**
  -------------------------------------------------
  |         CUSTOMIZE THE NAVBAR                  |
  ------------------------------------------------- 
  **/
-
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -213,7 +205,7 @@ body {
   left: 0;
   right: 0;
   z-index: 10;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: -210px;
 }
 
@@ -265,7 +257,7 @@ body {
 }
 
 .nav .divider-vertical {
-  /*padding-top: 30px;*/
+  padding-top: 30px;
 }
 
 /*@media only screen and (min-width: 178px) and (max-width: 240px) {
