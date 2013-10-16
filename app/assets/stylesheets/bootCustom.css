@@ -2711,8 +2711,113 @@ body {
   -moz-border-radius:    5px 5px 5px 5px;
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius:         5px 5px 5px 5px;
- /* border: solid 5px green;*/
 }
+
+/* end @media */
+
+.footer-links h4 {
+  font-family: Droid Serif, Serif;
+  text-align: center;
+  color: #F8F8FF;
+  margin-top: 2%;
+}
+
+.footer-links > link {
+  float: left;
+  color: blue;
+}
+
+.footer-links ul {
+  list-style-type:none;
+  margin-left: 30px;
+}
+
+.footer-links span > a {
+  font-family: Droid Serif, Serif;
+  color: #66CCFF !important;
+  display:inline-block;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.footer-links img:hover {
+  -webkit-transform:  rotate(360deg) scale(1.5);
+  -webkit-transition: all 0.5s linear;
+  -moz-transform:     rotate(360deg) scale(1.5);
+  -moz-transition:    all 0.5s linear;
+  -o-transform:       rotate(360deg) scale(1.5);
+  -o-transition:      all 0.5s linear;
+  transform:          rotate(360deg) scale(1.5);
+  transition:         all 0.5s linear;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.social-wrapper  {
+  width: 100%;
+  height: 60px;
+  display: inline;
+  margin-top: 5px;
+  margin-bottom: -100px;
+  padding-top: 25px;
+  background-image: url(bgd/bgd32.jpg);
+}
+
+#icons {
+  width: 300px;
+  height: auto;
+  margin-left: 35%;
+  margin-top: -10px;
+  padding-left: 50px;
+  padding-top: -15px;
+}
+
+#icons h3 {
+  font-family: Droid Serif, Serif;
+  color: #fff;
+}
+
+#icons img {
+  width: 50px;
+  height:50px;
+  margin-left: 4px;
+  opacity: .4;
+}
+
+#icons img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale   (1.2);
+  -o-transform: scale     (1.2);
+  transform: scale        (1.2);
+  -webkit-transition:     height 0.35s ease;
+  -moz-transition:        height 0.35s ease;
+  -ms-transition:         height 0.35s ease;
+  -o-transition:          height 0.35s ease;
+  transition:             height 0.35s ease;
+  /*text-decoration: none;*/
+  /*background-color: inherit;*/
+}
+
+.signature-wrapper {
+  width: 100%;  /*2575px; */
+  height: 25px;
+  display: inline;
+  margin-top: 20px;
+  margin-bottom: -40px;
+  margin-left: 20px;
+  padding-top: 50px;
+  background-image: url(bgd/bgd36.jpg);
+}
+
+.signature-wrapper p {
+  text-align: center;
+}
+
+/**
+*************************************************************
+|                Media queries for The Footer               |
+*************************************************************
+**/
 
 @media only screen and (max-width:480px) {
   .wrapper {
@@ -2789,106 +2894,5 @@ body {
     width: 260px;
     background-color: #fff;
   }
-}
-
-/* end @media */
-
-.footer-links h4 {
-  font-family: Droid Serif, Serif;
-  text-align: center;
-  color: #F8F8FF;
-  margin-top: 2%;
-}
-
-.footer-links > link {
-  float: left;
-  color: blue;
-}
-
-.footer-links ul {
-  list-style-type:none;
-  margin-left: 30px;
-}
-
-.footer-links span > a {
-  font-family: Droid Serif, Serif;
-  color: #66CCFF !important;
-  display:inline-block;
-  margin-left: 15px;
-  vertical-align: middle;
-}
-
-.footer-links img:hover {
-  -webkit-transform:  rotate(360deg) scale(1.5);
-  -webkit-transition: all 0.5s linear;
-  -moz-transform:     rotate(360deg) scale(1.5);
-  -moz-transition:    all 0.5s linear;
-  -o-transform:       rotate(360deg) scale(1.5);
-  -o-transition:      all 0.5s linear;
-  transform:          rotate(360deg) scale(1.5);
-  transition:         all 0.5s linear;
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-
-.social-wrapper  {
-  width: 100%; /* 2547px; */
-  height: 60px;
-  display: inline;
-  margin-top: 5px;
-  margin-bottom: -100px;
-  /*margin-left: 1220px;*/
-  padding-top: 25px;
-  background-image: url(bgd/bgd32.jpg) !important;
-}
-
-#icons {
-  width: 300px;
-  height: auto;
-  margin-left: 35%;
-  margin-top: -10px;
-  padding-left: 50px;
-  padding-top: -15px;
-}
-
-#icons h3 {
-  font-family: Droid Serif, Serif;
-  color: #fff;
-}
-
-#icons img {
-  width: 50px;
-  height:50px;
-  margin-left: 4px;
-  opacity: .4;
-}
-
-#icons img:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale   (1.2);
-  -o-transform: scale     (1.2);
-  transform: scale        (1.2);
-  -webkit-transition:     height 0.35s ease;
-  -moz-transition:        height 0.35s ease;
-  -ms-transition:         height 0.35s ease;
-  -o-transition:          height 0.35s ease;
-  transition:             height 0.35s ease;
-  text-decoration: none;
-  background-color: inherit;
-}
-
-.signature-wrapper {
-  width: 2575px;
-  height: 25px;
-  display: inline;
-  margin-top: 20px;
-  margin-bottom: -40px;
-  margin-left: -720px;
-  padding-top: 50px;
-  background-image: url(bgd/bgd36.jpg) !important;
-}
-
-.signature-wrapper p {
-  text-align: center;
 }
 
