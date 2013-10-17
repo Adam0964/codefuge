@@ -86,21 +86,6 @@
 						  to(rgba(255,255,255,0.2)));
 }
 
-/* iPhone, Android rules here */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-	.da-slide h2 {
-		/*margin-left: -6.6%;*/
-	    font-size: 8pt;
-	}
-	.da-slide p {
-		font-size: 12pt;
-	}
-	.button_to {
-		display: none;
-		visibility: hidden;
-	}
-}
-
 .da-slider-fb .da-slide h2,
 .da-slider-fb .da-slide p,
 .da-slider-fb .da-slide .da-link{
@@ -963,7 +948,7 @@
 **************************************************
 **/
 
-@media only screen and (min-width: 320px)(max-width:480px) {
+@media only screen and (min-width: 240px) and (max-width: 480px) {
 	.bigbutton,
 	.bigbutton2,
 	.bigbutton3,
@@ -974,6 +959,22 @@
 		visibility: hidden;
 	}
 }
+
+/* iPhone, Android rules here */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.da-slide h2 {
+		/*margin-left: -6.6%;*/
+	    font-size: 8pt;
+	}
+	.da-slide p {
+		font-size: 12pt;
+	}
+	.button_to {
+		display: none;
+		visibility: hidden;
+	}
+}
+
 
 /*.icon-external-link {
 	margin-top: 300px;

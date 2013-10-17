@@ -6,6 +6,6 @@ class RegistrationsController < Devise::RegistrationsController
 		end 
 
 		def after_sign_in_path_for(resource)
-		        "posts/index"
+		        "posts/id"
 		end 
 end

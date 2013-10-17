@@ -56,6 +56,7 @@ Kodefuge::Application.routes.draw do
      match "/posts/login",   :to => "devise/sessions#new"
      match "/posts/logout",  :to => "devise/sessions#destroy"
      match "/posts/signup",  :to => "devise/sessions#create"
+     match "/login2",         :to => 'devise/sessions#admin'
   end
   
 
