@@ -2789,6 +2789,16 @@ body {
   background-image: url(bgd/bgd36.jpg);
 }
 
+.btn-large {
+    padding: 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+            background-color: blue;
+}
+
 
 /**
 *************************************************************

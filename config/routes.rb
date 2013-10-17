@@ -1,6 +1,6 @@
 Kodefuge::Application.routes.draw do
 
-  devise_for :admins, :controllers => { :sessions => "admins/sessions" }
+  devise_for :admins, :controllers => { :sessions      => 'admins/sessions' }
   devise_for :users, :controllers  => {:registrations  => 'registrations'}
   devise_for :users, :path => "auth", :path_names => { :sign_in      => 'login', 
                                                        :sign_out     => 'logout', 
@@ -56,7 +56,7 @@ Kodefuge::Application.routes.draw do
      match "/posts/login",   :to => "devise/sessions#new"
      match "/posts/logout",  :to => "devise/sessions#destroy"
      match "/posts/signup",  :to => "devise/sessions#create"
-     match "/login2",         :to => 'devise/sessions#admin'
+     match "/login2",        :to => 'devise/sessions#admin'
   end
   
 
