@@ -2796,6 +2796,17 @@ body {
 *************************************************************
 **/
 
+
+/*@media only screen and (max-width:320) {
+  .social-wrapper {
+    width: 10%;
+    margin-left: 100px;
+  }
+  .signature-wrapper {
+    padding-left: 115px;
+  }
+}*/
+
 @media only screen and (max-width:480px) {
   .wrapper {
     background-color: #fff;
@@ -2806,38 +2817,6 @@ body {
    #footer-topper {
     width: 242px;
    }
-}
-
-/* rules for iPad in landscape orientation */
-@media only screen and (min-width: 770px) and (max-width: 1024px) {
-  .navbar .nav {
-   padding-left: 28%;
-  }
-  .thumbnail2 {
-    width: 200px;
-    padding-right: 15px;
-  }
-  .footer-links {
-    width: 210px;
-  }
-  #footer-topper {
-    width: 200px;
-  }
-  #footer-topper {
-    font-size: 6pt;
-    color: white;
-    font-family: Droid Serif;
-    text-align: center;
-  }
-  .ads1, 
-  .ads2, 
-  .ads3, 
-  .ads4, 
-  .ads5, 
-  .ads6, 
-  .ads7 {
-    width: 190px;
-  }
 }
 
 @media only screen and (min-width: 608px) and (max-width: 768px) {
@@ -2868,5 +2847,60 @@ body {
     width: 260px;
     background-color: #fff;
   }
+
+  .social-wrapper {
+    margin-left: -820px;
+  }
+  .signature-wrapper {
+    /*padding-left: 700px;*/
+  }
 }
+
+@media only screen and (min-width: 770px) and (max-width: 800px) {
+  .social-wrapper {
+    margin-left: -500px;
+  }
+  .signature-wrapper {
+    padding-left: 980px;
+  }
+
+}
+
+@media only screen and (min-width: 805px) and (max-width: 1024px) {
+  .navbar .nav {
+   padding-left: 28%;
+  }
+  .thumbnail2 {
+    width: 200px;
+    padding-right: 15px;
+  }
+  .footer-links {
+    width: 210px;
+  }
+  #footer-topper {
+    width: 200px;
+  }
+  #footer-topper {
+    font-size: 6pt;
+    color: white;
+    font-family: Droid Serif;
+    text-align: center;
+  }
+  .ads1, 
+  .ads2, 
+  .ads3, 
+  .ads4, 
+  .ads5, 
+  .ads6, 
+  .ads7 {
+    width: 190px;
+  }
+  .social-wrapper {
+    margin-left: -600px;
+  }
+  .signature-wrapper {
+    padding-left: 1115px;
+  }
+}
+
 
