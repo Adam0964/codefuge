@@ -40,9 +40,9 @@
 				                          <li> <%= link_to_unless_current 'PORTFOLIO', 'portfolio',  :class => "navtitle" %></li>
 				                          <li class="divider-vertical"></li>
 				                          <% if user_signed_in? %>    
-		                                      <li><%= link_to_unless_current 'LOGOUT', 'logout',     :class => 'navtitle' %></li> 
+		                                      <li><%= link_to_unless_current 'ADMIN OUT', 'logout',     :class => 'navtitle' %></li> 
 		                                  <% else %>         
-		                                      <li><%= link_to_unless_current 'LOGIN', 'login',       :class => 'navtitle'  %></li>
+		                                      <li><%= link_to_unless_current 'ADMIN IN', 'login',       :class => 'navtitle'  %></li>
 		                                  <% end %>
 					                </ul>
 

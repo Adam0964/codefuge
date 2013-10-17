@@ -2794,8 +2794,8 @@ body {
   -ms-transition:         height 0.35s ease;
   -o-transition:          height 0.35s ease;
   transition:             height 0.35s ease;
-  /*text-decoration: none;*/
-  /*background-color: inherit;*/
+  text-decoration: none;
+  background-color: inherit;
 }
 
 .signature-wrapper {

@@ -92,16 +92,13 @@
 		/*margin-left: -6.6%;*/
 	    font-size: 8pt;
 	}
-
 	.da-slide p {
 		font-size: 12pt;
 	}
-
 	.button_to {
 		display: none;
 		visibility: hidden;
 	}
-
 }
 
 .da-slider-fb .da-slide h2,
@@ -800,14 +797,6 @@
   top:1px;
 }
 
-@media only screen and (max-width:480px) {
-	.bigbutton {
-		margin-left: 60px;
-		margin-top: 320px;
-		
-	}
-}
-
 .bigbutton2 {
   margin-top: 290px; /*depends on p height*/
   margin-left: 250px;
@@ -966,6 +955,24 @@
 }.bigbutton6:active {
   position:relative;
   top:1px;
+}
+
+/**
+**************************************************
+|           Media queries for cslider            |
+**************************************************
+**/
+
+@media only screen and (min-width: 320px)(max-width:480px) {
+	.bigbutton,
+	.bigbutton2,
+	.bigbutton3,
+	.bigbutton4,
+	.bigbutton5,
+	.bigbutton6 {
+		display: none;
+		visibility: hidden;
+	}
 }
 
 /*.icon-external-link {
