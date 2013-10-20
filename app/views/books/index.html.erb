@@ -33,7 +33,6 @@
                                     <div class='photos'>
                                 <% end %>
                                        <table cellspacing="0">
-                                          <% cache @book do %>
                                               <% @books.in_groups_of(9, false).each do |books| %>  
                                                <tr> 
                                                     <% for book in books %>
@@ -50,7 +49,6 @@
                                                     <% end %> 
                                               </tr>
                                             <% end %> 
-                                          <% end %>
                                        </table>
                                      </div>
         </div>  
