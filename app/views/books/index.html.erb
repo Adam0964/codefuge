@@ -23,7 +23,7 @@
          <div class="span22">  
          <article class="lib-header"> 
               <p> 
-                We use different resources to hone our skills: conferences, blogs, screencasts, but, there is no better resource than a book. Not only do you get the facts from the horse’s mouth, so to speak, but you get to the bottom of a topic, as well, so you know what the heck you’re doing. These are just a few of the books that we used, are currently using or intend to use in the near future. We hope you will glean from them something as much as we did or will.
+                We use different resources to hone our skills: conferences, blogs, screencasts, but, there is no better resource than a book. Not only do you get the facts from the horse’s mouth, so to speak, but you get to the bottom of a topic, as well, so you know what the heck you’re doing. These are just a few of the books that we used, are currently using or intend to use in the near future. We hope you will glean from them as much as we did or will.
               </p>
          </article>
          <div class= 'span10'>
@@ -33,11 +33,9 @@
                                     <div class='photos'>
                                 <% end %>
                                        <table cellspacing="0">
-                                          <%#<% if browser.ipad? %>
-                                              <%#<% @books.in_groups_of(5, false).each do |books| %>  
-                                          <%#<% else %>
+                                        
                                               <% @books.in_groups_of(9, false).each do |books| %>  
-                                          <%#<%  end %>
+                                          
                                                <tr> 
                                                   <% cache @book do %>
                                                     <% for book in books %>
