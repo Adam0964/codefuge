@@ -33,9 +33,9 @@
                                     <div class='photos'>
                                 <% end %>
                                        <table cellspacing="0">
+                                          <% cache @book do %>
                                               <% @books.in_groups_of(9, false).each do |books| %>  
                                                <tr> 
-                                                 <%# <% cache @book do %>
                                                     <% for book in books %>
                                                         <td>
                                                             <%= link_to image_tag(book.cover, :class => 'book') %>
@@ -48,9 +48,9 @@
                                                             <div class='hrline'><hr /></div>
                                                         </td>
                                                     <% end %> 
-                                                 <%# <% end %>
                                               </tr>
                                             <% end %> 
+                                          <% end %>
                                        </table>
                                      </div>
         </div>  
