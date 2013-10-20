@@ -2,13 +2,6 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
 
-  # def index
-  #   @search = Post.search do
-  #     fulltext params[:search] do
-  #     highlight :title, :content
-  #     end
-  #   end
-  #   @posts = @search.results
   def index 
       @posts = Post.all
 

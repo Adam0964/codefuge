@@ -10,10 +10,6 @@ class User < ActiveRecord::Base
   validates_presence_of :name, 
                         :email
                        
- 
-  # has_attached_file :avatar, 
-  #                   :styles => { :small => "50x50>"}, 
-  #                   :default_url => "/images/:style/missing.png"
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
