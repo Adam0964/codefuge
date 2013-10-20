@@ -8,9 +8,11 @@
         <div class="container2"> 
               <section id="dg-container" class="dg-container">
                 <div class="dg-wrapper">
+                  <% cache @book do %>
                     <% @books.each do |book| %>
                         <%= link_to image_tag(book.cover, :class => 'book') %>
                     <% end %>
+                  <% end %>
                 </div>
                 <nav> 
                   <span class="dg-prev">&lt;</span>
@@ -48,7 +50,8 @@
                                           <%#<% else %>
                                               <% @books.in_groups_of(9, false).each do |books| %>  
                                           <%#<%  end %>
-                                                  <tr> 
+                                               <tr> 
+                                                  <% cache @book do %>
                                                     <% for book in books %>
                                                         <td>
                                                             <%= link_to image_tag(book.cover, :class => 'book') %>
@@ -61,7 +64,8 @@
                                                             <div class='hrline'><hr /></div>
                                                         </td>
                                                     <% end %> 
-                                                  </tr>
+                                                  <% end %>
+                                              </tr>
                                             <% end %> 
                                        </table>
                                      </div>

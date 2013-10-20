@@ -11,7 +11,7 @@ Kodefuge::Application.routes.draw do
                                                        :sign_up      => 'cmon_let_me_in' 
                                                       }
 
-   authenticated :user do
+  authenticated :user do
      root :to => 'posts#index'
   end 
 

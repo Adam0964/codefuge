@@ -32,6 +32,8 @@ gem 'jbuilder'
 gem 'unicorn'
 gem 'debugger'
 gem 'rails_12factor'
+gem 'cache_digests'
+
 
 group :test do
   gem 'cucumber-rails', :require => false

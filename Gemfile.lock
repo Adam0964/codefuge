@@ -41,6 +41,9 @@ GEM
       will_paginate
     browser (0.2.1)
     builder (3.0.4)
+    cache_digests (0.3.1)
+      actionpack (>= 3.2)
+      thread_safe
     cancan (1.6.10)
     capistrano (2.15.5)
       highline
@@ -372,6 +375,7 @@ DEPENDENCIES
   bootstrap-sass
   bootstrap-will_paginate (= 0.0.6)
   browser
+  cache_digests
   cancan
   capistrano
   capistrano-rails
