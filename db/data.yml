@@ -573,8 +573,8 @@ posts:
       original css, my table displayed perfectly on Chrome and Safari. On Firefox,
       Opera and IE, the padding in the row where the items were displayed had almost
       tripled, which led to the overflow of 4 and a half items. The table looked terrible,
-      to put it mildly. </p>\r\n\r\n<p>After a lot head scratching and after posting
-      the question on Stackoveflow, which led to zero relevant feedback, I finally
+      to put it mildly. </p>\r\n\r\n<p>After a lot of head scratching and after posting
+      the issue on Stackoveflow, which led to zero relevant feedback, I finally
       got to the bottom of this issue: it was the css as I suspected all along.</p>\r\n\r\n<p>I
       created a special css to handle that table on Firefox, Opera and IE and with
       the help of the browser gem at: <a>https://github.com/fnando/browser</a>, I
