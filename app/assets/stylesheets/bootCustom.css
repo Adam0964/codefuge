@@ -1,9 +1,9 @@
 
-/******************************
- *                            *
- *     bootCustom.css         *
- *                            *
- ******************************/
+/**************************************************
+ |                                                |
+ |                 bootCustom.css                 |          
+ |                                                |
+ *************************************************|/
 
  
 
@@ -42,10 +42,7 @@ body {
 **/
 
 
-/*.alternate-nav {
-  display: none;
-  visibility: hidden;
-}*/
+
 
 /**
 ---------------------------------------------------
@@ -77,6 +74,7 @@ body {
 }
 
 .title span > h2 {
+  position: relative;
   margin-top: -40px;
   margin-left: -75px;
   font-family: 'Parisienne', cursive;
@@ -1485,12 +1483,6 @@ body {
   height: auto;
   position: relative;
   margin-top: 100px;
-}
-
-.blog-container h1 {
-  font-size: 1.6em;
-  font-family: Droid Serif;
-  text-align: center;
 }
 
 .blog-container h2 {

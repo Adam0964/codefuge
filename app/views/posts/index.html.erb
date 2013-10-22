@@ -13,9 +13,11 @@
                             <br />
                              <div class='blog-container'>
                                 <% @posts.each do |post| %>
-                                            <h1><%= post.title%></h1>
-                                            <h6><%= post.created_at.strftime("PUBLISHED ON %a %b %d, %Y  %I:%M%p BY" ) %></h6>
-                                            <h4><%= post.name %></h4>
+                                            <h2><%= post.title%></h2>
+                                            <h6>
+                                              <%= post.created_at.strftime("PUBLISHED ON %a %b %d, %Y  %I:%M%p by ")%><%= post.name.upcase %>
+                                            </h6><br />
+                                            <!-- <h4><%= post.name %></h4> -->
                                             <!-- <hr class='dotted_line'/><br /><br /> -->
                                             <p><%= raw post.content.split[0..50].join(" ") %></p>
                                             <br />
@@ -28,21 +30,21 @@
                                                              comments
                                                    <% end %>
                                                 </i>
-                                           </h5>
+                                            </h5>
                                             <br /><br /><br />
                                             <hr class='straightLine'/>
                                                  <% if current_user.try(:admin?)  %>
                                                         <%= link_to 'Edit', edit_post_path(post) %> 
-                                                        <%= link_to 'Destroy', post, :method => :delete, data: { confirm: 'Are you sure?' } %>
+                                                        <%= button_to 'Destroy', post, :method => :delete, data: { confirm: 'Are you sure?' } %>
                                                  <% else %>
                                                  <% end %>
-                                            </div>
                                   <% end %> 
+                              </div>
                                             <br />
                                             <% if current_user.try(:admin?)  %>
                                                     <%= link_to 'New Post', new_post_path %>
                                             <% else %>
                                             <% end %>
-                  </div>
-</div>
+            </div>
+   </div>
 </div>
