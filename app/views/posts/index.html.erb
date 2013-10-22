@@ -4,33 +4,16 @@
   <div class="container marketing">
       <div class="row">  
             <div class="span10">                
-                            <!-- <div class='search-container'>
-                                  <%= form_tag posts_path, :method => :get do %>
-                                  <%= text_field_tag :search, params[:search], :class => "search-query", :placeholder => '' %>
-                                  <%= submit_tag "Search Blog", :class =>'search-button' %>
-                                  <% end %>
-                            </div> -->
-                            <br />
                              <div class='blog-container'>
+                              <br />
                                 <% @posts.each do |post| %>
                                             <h2><%= post.title%></h2>
                                             <h6>
                                               <%= post.created_at.strftime("PUBLISHED ON %a %b %d, %Y  %I:%M%p by ")%><%= post.name.upcase %>
                                             </h6><br />
-                                            <!-- <h4><%= post.name %></h4> -->
-                                            <!-- <hr class='dotted_line'/><br /><br /> -->
                                             <p><%= raw post.content.split[0..50].join(" ") %></p>
                                             <br />
                                             <%= button_to'CONTINUE READING', post, :method => "get", :id => 'readButton' %>
-                                            <h5>
-                                                <i><%= post.comments.count %> 
-                                                   <% if post.comments.count == 1 %> 
-                                                             comment
-                                                   <% else %> 
-                                                             comments
-                                                   <% end %>
-                                                </i>
-                                            </h5>
                                             <br /><br /><br />
                                             <hr class='straightLine'/>
                                                  <% if current_user.try(:admin?)  %>
