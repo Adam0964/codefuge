@@ -8,7 +8,7 @@
 .da-slider{
 	width: 100%;	
 	height: 530px;
-	margin-top: 1px;
+	margin-top: 80px;
 	position: relative;
 	/*margin: 90px auto 15px;*/
 	overflow: hidden;
@@ -948,6 +948,12 @@
 **************************************************
 **/
 
+@media only screen and (min-width: 220px) and (max-width: 800px) {
+.da-slider {
+		margin-top: 30px;
+	}
+}
+
 @media only screen and (min-width: 240px) and (max-width: 480px) {
 	.bigbutton,
 	.bigbutton2,
@@ -958,10 +964,6 @@
 		display: none;
 		visibility: hidden;
 	}
-}
-
-/* iPhone, Android rules here */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
 	.da-slide h2 {
 		/*margin-left: -6.6%;*/
 	    font-size: 8pt;

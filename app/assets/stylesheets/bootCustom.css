@@ -214,15 +214,18 @@ body {
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: absolute;
+  /*height: 70px;*/
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-left: -210px;
+  /*background-color: orange;*/
+  /*border: solid 5px red;*/
 }
 
-.row-fluid  {
+/*.row-fluid  {
   display: inline-block;
   float: left;
   width: 100%;
@@ -230,7 +233,7 @@ body {
   margin-top: -20px;
   margin-bottom: 50px;
   background-image: url(bgd/bgd46.jpg);
-}
+}*/
 
 /* Remove border and change up box shadow for more contrast */
 .navbar .navbar-inner {
@@ -238,17 +241,16 @@ body {
   -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
      -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
           box-shadow: 0 2px 10px rgba(0,0,0,.25);
-          /*border: solid 5px green;*/
-}
-
-.navbar .nav {
-  padding-left: 38%;
+          /*border: solid 5px purple;*/
 }
 
 /* Navbar links: increase padding for taller navbar */
-.navbar .nav > li > a {
-  background-color: blue;   
-}
+/*.navbar .nav > li > a {
+  background-color: blue;  
+  height: 40px;
+  left: 0;
+  right: 0;
+}*/
 
 /* Offset the responsive button for proper vertical alignment */
 .navbar .btn-navbar {
@@ -256,16 +258,26 @@ body {
 }
 
 .nav {
+  padding-left: 38%;
   width: 100%;
-  background-color: blue;
+ 
+  /*background-color: orange;*/
   margin-top: -50px;
+  background-color: #000066;
+  /*border: solid 5px yellow;*/
 }
 
 .nav > li > a {
-  margin-top: 15px;
+  margin-top: 45px;
   display: inline;
+  background-color: #000066;  
+  height: 25px;
+  left: 0;
+  right: 0;
+  padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
+  /*border: solid 5px green;*/
   /*color: #FFFAFA;*/
 }
 
@@ -314,6 +326,12 @@ body {
   }
 }*/
 
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .nav > li > a {
+    background-color: blue;
+  }
+}
+
 @media only screen and (min-width: 485px) and (max-width: 603px) {
   .navbar .nav {
     padding-left: 40%;
@@ -324,10 +342,11 @@ body {
     padding-left: 10px;
     padding-right: 20px;
     font-size: 6pt;
+    background-color: blue;
   }
 }
 
-@media only screen and (min-width: 605px) and (max-width: 768px) {
+@media only screen and (min-width: 605px) and (max-width: 800px) {
   .navbar-wrapper {
     width: 1230;
     margin-left: -100px;
@@ -345,10 +364,11 @@ body {
     padding-left: 10px;
     padding-right: 20px;
     font-size: 6pt;
+    border: solid 5px blue;
   }
 }
 
-@media only screen and (min-width: 770px) and (max-width: 1024px) {
+@media only screen and (min-width: 805px) and (max-width: 1024px) {
   .navbar .nav {
     padding-left: 30%;
   }
@@ -1180,8 +1200,14 @@ body {
 ***********************************************************
 **/
 
+@media only screen and (min-width: 220px) and (max-width: 800px) {
+  .about {
+    margin-top: 30px;
+  }
+}
 
-@media only screen and (min-width: 240px) and (max-width: 360px) {
+
+@media only screen and (min-width: 240px) and (max-width: 320px) {
   .wrapper {
     background-color: #fff;
   }
@@ -1207,7 +1233,7 @@ body {
   } 
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 325px) and (max-width: 480px) {
   .kaption h4 {
     margin-left: -220px;
   }
@@ -1803,6 +1829,15 @@ body {
 *****************************************************
 **/
 
+@media only screen and (min-width: 220px) and (max-width: 800px) {
+  #dg-container {
+    margin-top: 30px;
+  }
+  .container3 {
+    margin-top: -60px;
+  }
+}
+
 @media only screen and (min-width: 180px) and (max-width: 240px) {
   .container3 {
      margin-left: -20px;
@@ -2020,6 +2055,11 @@ body {
 ********************************************************
 **/
 
+@media only screen and (min-width: 220px) and (max-width: 800px) {
+  .media-unit {
+    margin-top: -30px;
+  }
+}
 
 /* video */
 @media only screen and (min-width: 370px) and (max-width: 533px) {
@@ -2543,6 +2583,11 @@ body {
 *****************************************************************
 **/
 
+@media only screen and (min-width: 220px) and (max-width: 800px) {
+  .sup {
+    margin-top: 30px;
+  }
+}
 
 @media only screen and (min-width: 178px) and (max-width: 240px) {
   .sup {
@@ -2818,7 +2863,7 @@ body {
   }
 }*/
 
-@media only screen and (max-width:480px) {
+@media only screen and (min-width: 320px) and (max-width:480px) {
   .wrapper {
     background-color: #fff;
   }
