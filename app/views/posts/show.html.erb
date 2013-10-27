@@ -17,12 +17,8 @@
 									  	  <%= @post.title %>
 									    </h2>
 									  	    <h6>
-									  	    	<%= @post.created_at.in_time_zone.strftime("PUBLISHED ON %a  %b %d, %Y @ %I:%M %p") %> BY
+									  	    	<%= @post.created_at.strftime("PUBLISHED ON %a %b %d, %Y  %I:%M%p by ")%><%= @post.name.upcase %>
 									  	    </h6> 
-									  	<h4>
-									  		<%= @post.name %>
-									  	</h4>
-									   <!--  </div> -->
 		                                <hr /><br />
 									         <p> 
 									         	<%= @post.content.html_safe %>

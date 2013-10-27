@@ -32,13 +32,13 @@
                                 <% else %>
                                     <div class='photos'>
                                 <% end %>
-                                       <table cellspacing="0">
-                                          <% @books.in_groups_of(9, false).each do |books| %>  
+                                       <table cellspacing="0"> 
+                                          <% @books.in_groups_of(9, false).each do |books| %>
                                                <tr> 
                                                     <% for book in books %>
                                                         <td>
                                                             <%= link_to image_tag(book.cover, :class => 'book') %>
-                                                            <% if current_user.try(:admin?)  %>                                                 
+                                                            <% if current_user.try(:admin?)  %>
                                                                   <%= link_to 'Edit', edit_book_path(book) %> |
                                                                   <%= link_to 'Destroy', method: :delete, data: { confirm: 'Are you sure?' } %>
                                                                   <%= link_to 'New Book', new_book_path %>

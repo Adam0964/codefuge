@@ -3,7 +3,8 @@
  |                                                |
  |                 bootCustom.css                 |          
  |                                                |
- *************************************************|/
+ *************************************************|
+ **/
 
  
 
@@ -34,6 +35,22 @@ body {
   width: 100%;
 }
 
+
+/**
+***************************************************
+|         general media queries for mobile        |
+***************************************************
+**/
+
+@media only screen and (min-width: 300px) and (max-width: 1025px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
 
 /**
 ---------------------------------------------------
@@ -1447,36 +1464,39 @@ body {
   width: 82.5em;
   height: auto;
   position: relative;
-  margin-top: 100px;
+  margin-top: 60px;
+  padding: 30px;
 }
 
 .blog-container h2 {
-  font-family: Droid Serif, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.5em;
-  color:#27408B;
+  color:#0066CC;
   text-align: center;
 }
 
 .blog-container p {
-  font-family: Droid Serif, sans-serif;
-  font-size: 1.1em;
-  line-height: 150%
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color:#565656;
 }
 
 .blog-container h6 {
-  font-family: Droid Serif, Serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
+  color:#565656;
 }
 
 .blog-container h4  {
-  color: gray;
-  font-family: Droid Serif, Serif;
+  color: #565656;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
 .blog-container h5 {
-  color: gray;
-  font-family: Droid Serif, Serif;
+  color: #565656;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   float: right;
 }
 
@@ -1488,7 +1508,6 @@ body {
 #blog-container2 {
   width: 1000px;
   height: auto;
-  /*border: solid 1px gray;*/
   padding: 15px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -1500,7 +1519,7 @@ body {
 
 .markitup {
   background-color: black;
-  font-family: Droid Serif, serif;
+  font-family: 'Droid' Serif, serif;
   color: lime;
 }
 
