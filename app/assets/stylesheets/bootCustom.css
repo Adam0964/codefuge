@@ -1507,7 +1507,7 @@ body {
   width: 82.5em;
   height: auto;
   position: relative;
-  margin-top: 60px;
+  margin-top: 90px;
   padding: 30px;
 }
 
@@ -1525,12 +1525,6 @@ body {
   color:#565656;
 }
 
-.blog-container h6 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-align: center;
-  color:#565656;
-}
-
 .blog-container h4  {
   color: #565656;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -1543,6 +1537,13 @@ body {
   float: right;
 }
 
+.blog-container h6 {
+  font-family: 'Helvetica lighter', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-style: italic;
+  color:#565656;
+}
+
 .straightLine {
   border: solid 1.5px 'Snow';
   width: auto;
@@ -1553,23 +1554,23 @@ body {
   height: auto;
   padding: 15px;
   -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
+  -moz-border-radius:    7px;
+  border-radius:         7px;
   overflow: hidden;
-  margin-top: -10px;
+  margin-top:   -10px;
   margin-bottom: 80px;
 }
 
 .markitup {
   background-color: black;
-  font-family: 'Droid' Serif, serif;
+  font-family: 'Droid' Serif;
   color: lime;
 }
 
 #readButton {
   width: 200px;
   height: 40px;
-  border: solid 2px 'Snow';
+  border: solid 2px #D2691E;
   text-align: center;
   /*padding-top: -17px;*/
   float: left;

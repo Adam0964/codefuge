@@ -4,20 +4,13 @@
      <div class="row">  
             <div class="span3">                
                     <div class="span10">                
-                            <!-- <div class='search-container'>
-                                  <%= form_tag posts_path, :method => :get do %>
-                                  <%= text_field_tag :search, params[:search], :class => "search-query", :placeholder => '' %>
-                                  <%= submit_tag "Search Blog", :class =>'search-button' %>
-                                  <% end %>
-                            </div> -->
-                            <br />
 							<div class='blog-container'>
-								<% cache @post do%>
+								<% cache @post do %>
 									    <h2>
 									  	  <%= @post.title %>
 									    </h2>
 									  	    <h6>
-									  	    	<%= @post.created_at.strftime("PUBLISHED ON %a %b %d, %Y  %I:%M%p by ")%><%= @post.name.upcase %>
+									  	    	<%= @post.created_at.strftime("Published on %a %b %d, %Y  %I:%M%p by ")%><%= @post.name.upcase %>
 									  	    </h6> 
 		                                <hr /><br />
 									         <p> 
@@ -26,8 +19,6 @@
 									    <div>
 									    <br /><br />
 									    </div> <br />
-									    <!-- <div id='blog-container2'> -->
-									        <%#<%= render @post.comments %> 
 								<% end %>
 						                <div id="disqus_thread"></div>
 									    <script type="text/javascript">

@@ -9,7 +9,7 @@
                                 <% @posts.each do |post| %>
                                             <h2><%= post.title%></h2>
                                             <h6>
-                                              <%= post.created_at.strftime("PUBLISHED ON %a %b %d, %Y  %I:%M%p by ")%><%= post.name.upcase %>
+                                              <%= post.created_at.strftime("Published on %a %b %d, %Y  %I:%M%p by ")%><%= post.name.upcase %>
                                             </h6><br />
                                             <p><%= raw post.content.split[0..50].join(" ") %></p>
                                             <br />
