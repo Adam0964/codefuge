@@ -819,7 +819,7 @@ body {
 .about  {
   width: auto;
   height: auto;
-  margin-top:58px;
+  margin-top: 98px;
   padding: 45px;
   background-color: #F5F5F5; /*WhiteSmoke*/
   -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -2000,7 +2000,7 @@ body {
   width: 1475px;
   height: auto;
   margin-bottom: 8px;
-  margin-top: 20px;
+  margin-top: 95px;
   margin-left: -124px;
   padding: 15px 24px;
   /*background-color: #333333;*/
@@ -2014,16 +2014,19 @@ body {
   padding-top: 50px;
   margin-bottom: 0;
   font-size: 30px;
-  font-family: Droid Serif;
+  font-family: 'Helvetica Neue', Serif;
   color: #FDFDF0;
   line-height: 1;
   letter-spacing: -1px; 
+  text-align: center;
 }
 
 .media-unit p {
+  font-family: 'Helvetica Neue', Serif;
   font-size: 14px;
   color: #FDFDF0;
   line-height: 25px;
+  text-align: center;
 }
 
 .videos {
@@ -2537,7 +2540,7 @@ body {
 .sup {
   width: 700px;
   height: auto;
-  margin-top: 80px;
+  margin-top: 120px;
   margin-bottom: 20px;
   margin-left: 125px;
   position: relative;
