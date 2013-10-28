@@ -27,30 +27,53 @@
               </p>
          </article>
          <div class= 'span10'>
-                               <% if browser.firefox? || browser.opera?  || browser.ie? %>
+                               <% if browser.firefox? || browser.opera?  || browser.ie? || browser.tablet? %>
                                     <div class='fire-photos'>
                                 <% else %>
                                     <div class='photos'>
                                 <% end %>
-                                       <table cellspacing="0"> 
-                                          <% @books.in_groups_of(9, false).each do |books| %>
-                                               <tr> 
-                                                    <% for book in books %>
-                                                        <td>
-                                                            <%= link_to image_tag(book.cover, :class => 'book') %>
-                                                            <% if current_user.try(:admin?)  %>
-                                                                  <%= link_to 'Edit', edit_book_path(book) %> |
-                                                                  <%= link_to 'Destroy', method: :delete, data: { confirm: 'Are you sure?' } %>
-                                                                  <%= link_to 'New Book', new_book_path %>
-                                                            <% else %>
-                                                            <% end %>
-                                                            <div class='hrline'><hr /></div>
-                                                        </td>
-                                                    <% end %> 
-                                              </tr>
-                                            <% end %>
-                                       </table>
-                                     </div>
+
+                                 <% if browser.tablet? %>
+                                        <table cellspacing="0"> 
+                                              <% @books.in_groups_of(5, false).each do |books| %>
+                                                   <tr> 
+                                                        <% for book in books %>
+                                                            <td>
+                                                                <%= link_to image_tag(book.cover, :class => 'book') %>
+                                                                <% if current_user.try(:admin?)  %>
+                                                                      <%= link_to 'Edit', edit_book_path(book) %> |
+                                                                      <%= link_to 'Destroy', method: :delete, data: { confirm: 'Are you sure?' } %>
+                                                                      <%= link_to 'New Book', new_book_path %>
+                                                                <% else %>
+                                                                <% end %>
+                                                                <div class='hrline'><hr /></div>
+                                                            </td>
+                                                        <% end %> 
+                                                  </tr>
+                                                <% end %>
+                                           </table>
+                                         </div>
+                                 <% else %>
+                                           <table cellspacing="0"> 
+                                              <% @books.in_groups_of(9, false).each do |books| %>
+                                                   <tr> 
+                                                        <% for book in books %>
+                                                            <td>
+                                                                <%= link_to image_tag(book.cover, :class => 'book') %>
+                                                                <% if current_user.try(:admin?)  %>
+                                                                      <%= link_to 'Edit', edit_book_path(book) %> |
+                                                                      <%= link_to 'Destroy', method: :delete, data: { confirm: 'Are you sure?' } %>
+                                                                      <%= link_to 'New Book', new_book_path %>
+                                                                <% else %>
+                                                                <% end %>
+                                                                <div class='hrline'><hr /></div>
+                                                            </td>
+                                                        <% end %> 
+                                                  </tr>
+                                                <% end %>
+                                           </table>
+                                    </div>
+                                 <% end %>
         </div>  
     </div>     
     </div>

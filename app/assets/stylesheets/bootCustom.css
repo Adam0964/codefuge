@@ -250,6 +250,7 @@ body {
 /* Offset the responsive button for proper vertical alignment */
 .navbar .btn-navbar {
   margin-top: 35px;
+  margin-right: 10px;
 }
 
 .nav {
@@ -265,9 +266,10 @@ body {
   right: 0;
   height: 25px;
   display: inline;
-  margin-top: 10px;
+  margin-top: 28px;
   padding-left: 50px;
-  padding-right: 50px;
+  font-size:14px;
+  font-family: 'Helvetica lighter';
 }
 
 .nav .divider-vertical {
@@ -352,7 +354,7 @@ body {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23) );
   background:-moz-linear-gradient( center top, #ffec64 5%, #ffab23 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23');
-  background-color:#ffec64;
+  background-color: #ffec64;
   -moz-border-radius:6px;
   -webkit-border-radius:6px;
   border-radius:6px;
@@ -546,6 +548,43 @@ body {
   top:1px;
 }
 
+.bigbutton7 {
+  margin-top: 290px; 
+  margin-left: 250px;
+  padding:12px 20px;
+  -moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+  box-shadow:inset 0px 1px 0px 0px #97c4fe;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+  background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+  background-color:#3d94f6;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  text-indent:-1px;
+  border:1px solid #337fed;
+  display:inline-block;
+  color:#ffffff;
+  font-family: 'Palatino', sans-serif;
+  font-size:20px;
+  font-weight:bold;
+  padding:12px 20px;
+  text-decoration:none;
+  text-shadow:1px 1px 0px #1570cd;
+}
+.bigbutton7:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
+  background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+  background-color:#1e62d0;
+}.bigbutton7:active {
+  position:relative;
+  top:1px;
+}
+
+
+
 @media only screen and (max-width: 768px) {
   .da-slide .button_to {
     margin-left: -170px;
@@ -723,8 +762,12 @@ body {
 /* end @media */
 
 
-.advert .caption h4, p {
-  font-family: Droid Serif;
+.advert .caption h4 {
+  font-family: 'Helvetica Neue';
+}
+
+.advert .caption p {
+  font-family: 'Helvetica Neue';
 }
 
 .advert img {
@@ -1704,7 +1747,7 @@ body {
 
 .photos {
   width: 1600px;
-  margin-left: 5px;
+  /*margin-left: 5px;*/
   padding: 5px;
   position: relative;
   border-collapse:collapse;
@@ -1739,7 +1782,7 @@ body {
 .lib-header p {
   width: 100%;
   height: auto;
-  margin-top: -35px;
+  margin-top: -25px;
   display:inline-block;
   background: rgb(123, 53, 0);
   background: -moz-linear-gradient   (273deg, rgb(123, 53, 0) 100%, rgb(0, 0, 0) 0%);
@@ -1758,12 +1801,13 @@ body {
 
 .container3 {
   width: 1600px;
-  margin: 400px auto;
+  margin: -10px auto;
   *zoom: 1;
   background-image: url(bgd/bgd8.jpg);
   -webkit-box-shadow: -1px -4px 20px rgba(118, 123, 134, 0.47);
   -moz-box-shadow:    -1px -4px 20px rgba(118, 123, 134, 0.47);
   box-shadow:         -1px -4px 20px rgba(118, 123, 134, 0.47);
+  /*border: solid 5px green;*/
 }  
 
 .hrline {
@@ -1850,40 +1894,84 @@ body {
 
 @media only screen and (min-width: 535px) and (max-width: 603px) {
   .container3 {
-     margin-left: -20px;
-     padding-left: 40px;
-  }
-  .lib-header p {
-    padding-left: 70px;
-    margin-left: -50px;
+      width: 600px;
+      margin-left: -40px;
+      padding-left: 80px;
+   }
+   .lib-header p {
+      width: 520px;
+      padding: 35px;
+      margin-left: -65px;
+   }
+   .hrline {
+      width: 100%;
+      margin-left: -45px;
   }
 }
 
 @media only screen and (min-width: 605px) and (max-width: 768px) {
-  .container3 {
-     margin-left: -20px;
-     padding-left: 40px;
-  }
-  .lib-header p {
-    padding-left: 70px;
-    margin-left: -50px;
+   .container3 {
+      width: 768px;
+      margin-left: -40px;
+      padding-left: 80px;
+   }
+   .lib-header p {
+      width: 700px;
+      padding: 35px;
+      margin-left: -65px;
+   }
+   .hrline {
+      width: 100%;
+      margin-left: -45px;
   }
 }
 
 @media only screen and (min-width: 770px) and (max-width: 800px)  {
-  .lib-header p {
-    padding-left: 10px;
-    padding-right: 75px;
+   .container3 {
+      width: 768px;
+      margin-left: -40px;
+      padding-left: 80px;
+   }
+   .lib-header p {
+      width: 750px;
+      padding: 35px;
+      margin-left: -65px;
+   }
+   .fire-photos img {
+     /*margin-left: 450px;*/
+   }
+   .hrline {
+      width: 100%;
+      margin-left: -45px;
   }
 }
 
-@media only screen and (max-width: 1680px) {
+@media only screen and (min-width: 805px) and (max-width: 1024px) {
+   .container3 {
+      width: 1030px;
+      margin-left: -5px;
+      /*padding-left: 15px;*/
+   }
+   .lib-header p {
+      width: 878px;
+      padding: -10px;
+   }
+   .fire-photos img {
+     margin-left: 75px;
+   }
+   .hrline {
+      width: 100%;
+      margin-left: 70px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1680px) {
   .lib-header p {
     width: 1450px;
   }
 }
 
-@media only screen and (max-width: 1920px)  {
+@media only screen and (min-width: 1690px) and (max-width: 1920px)  {
   .lib-header p {
     width: 1450px;
   }
@@ -2656,7 +2744,7 @@ body {
   height: 450px;
   margin-top: auto;
   margin-bottom: 15px;
-  background-color: #000;
+  background-color: #323A45;
   -moz-border-radius:    3px 3px 0 0;
   -webkit-border-radius: 3px 3px 0 0;
   border-radius:         3px 3px 0 0;
@@ -2807,8 +2895,23 @@ body {
     background-color: #000;
    }
    #footer-topper {
-    width: 242px;
+     display: none;
    }
+   .social-wrapper {
+    margin-left: -1070px;
+  }
+  .signature-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 535px) and (max-width: 600px) {
+  .social-wrapper {
+     margin-left: -450px;
+  }
+  .signature-wrapper {
+    margin-left: -300px;
+  }
 }
 
 @media only screen and (min-width: 608px) and (max-width: 768px) {
@@ -2841,10 +2944,10 @@ body {
   }
 
   .social-wrapper {
-    margin-left: -820px;
+    margin-left: -1070px;
   }
   .signature-wrapper {
-    /*padding-left: 700px;*/
+    display: none;
   }
 }
 
