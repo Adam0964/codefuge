@@ -5,5 +5,4 @@ class Book < ActiveRecord::Base
   				  :pubDate, 
   				  :title, 
   				  :cover
-
 end
