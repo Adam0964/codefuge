@@ -14,16 +14,16 @@
 				            </button>
 				            <div class="nav-collapse collapse">
 					                <ul class="nav">
-					                	  <li><%= link_to_unless_current 'KODEFUGE', 'home',         :class => 'navtitle' %>&nbsp&nbsp</li>
-				                          <li><%= link_to_unless_current 'ABOUT', 'about',           :class => 'navtitle' %></li>
-				                          <li><%= link_to_unless_current 'BLOG', 'blog',             :class => 'navtitle' %></li>
-				                          <li><%= link_to_unless_current 'BOOKSHELF', 'bookshelf',   :class => 'navtitle' %></li>
-				                          <li><%= link_to_unless_current 'VIDEOSHELF', 'videoshelf', :class => 'navtitle' %></li>
-				                          <li> <%= link_to_unless_current 'PORTFOLIO', 'portfolio',  :class => "navtitle" %></li>
+					                	  <li><%= link_to_unless_current 'KODEFUGE', 'home',        :class => 'navtitle' %>&nbsp&nbsp</li>
+				                          <li><%= link_to_unless_current 'ABOUT', 'about',          :class => 'navtitle' %></li>
+				                          <li><%= link_to_unless_current 'BLOG', 'blog',            :class => 'navtitle' %></li>
+				                          <li><%= link_to_unless_current 'BOOKSHELF', 'bookshelf',  :class => 'navtitle' %></li>
+				                          <li><%= link_to_unless_current 'VIDEOSHELF','videoshelf', :class => 'navtitle' %></li>
+				                          <li><%= link_to_unless_current 'PORTFOLIO', 'portfolio',  :class => "navtitle" %></li>
 				                          <% if user_signed_in? %>    
-		                                      <li><%= link_to_unless_current 'ADMIN OUT', 'logout',  :class => 'navtitle' %></li> 
+		                                      <li><%= link_to_unless_current 'ADMIN OUT', 'logout', :class => 'navtitle' %></li> 
 		                                  <% else %>         
-		                                      <li><%= link_to_unless_current 'ADMIN IN', 'login2',   :class => 'navtitle'  %></li>
+		                                      <li><%= link_to_unless_current 'ADMIN IN', 'login2',  :class => 'navtitle'  %></li>
 		                                  <% end %>
 					                </ul>
 			                </div>
