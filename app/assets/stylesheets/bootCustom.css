@@ -1463,9 +1463,10 @@ body {
   padding: 30px;
 }
 
-.blog-container h2 {
+.blog-container h3 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  /*font-size: 1.5em;*/
+  font-size: 20px;
+ 
   color:#0066CC;
   text-align: center;
 }

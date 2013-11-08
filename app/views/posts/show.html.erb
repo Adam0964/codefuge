@@ -6,9 +6,9 @@
                     <div class="span10">                
 							<div class='blog-container'>
 								<% cache @post do %>
-									    <h2>
+									    <h3>
 									  	  <%= @post.title.upcase %>
-									    </h2>
+									    </h3>
 									  	    <h6>
 									  	    	<%= @post.created_at.strftime("Published on %b %d, %Y by ")%><%= @post.name.upcase %>
 									  	    </h6> 
