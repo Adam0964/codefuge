@@ -9,7 +9,7 @@
 	    <meta name="description" content="">
 
   	  <title>Kodefuge</title>
-      <%= favicon_link_tag       "favicon.ico" %>
+      <%= favicon_link_tag      "favicon.ico" %>
 
       <%= stylesheet_link_tag   "http://fonts.googleapis.com/css?family=Parisienne" %>
 
@@ -20,7 +20,7 @@
 
       <% flash.each do |name, message| %>
           <%= content_tag :div, message, :id => "flash_#{name}" %>
-          <% end %>
+      <% end %>
 
       <%= yield %>
       <%= render :partial => 'layouts/header' %>       
@@ -51,7 +51,7 @@
                 // $('#html').markItUp(myHtmlSettings);
              });
       </script> 
-      <script type="text/javascript">
+      <script>
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
             var disqus_shortname = 'kodefuge'; // required: replace example with your forum shortname
 
@@ -73,7 +73,7 @@
             ga('send', 'pageview');
 
     </script>
-    // <script>
+    <!-- <script>
     //        $(document).bind('touchmove',function(event) {
     //               e.preventDefault();
     //               curX = event.targetTouches[0].pageX - startX;
@@ -82,7 +82,7 @@
     //             }
 
     //         });
-    // </script>
+    // </script> -->
     
 </body>
 </html>

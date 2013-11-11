@@ -24,7 +24,7 @@ class User < ActiveRecord::Base
 
   # include Authentication::ActiveRecordHelpers
 
-  has_many :comments
+  #has_many :comments
   # has_many :authorizations
   # has_many :services, :dependent => :destroy
   # mount_uploader  :avatar, :AvatarUploader , :ignore_integrity_errors
