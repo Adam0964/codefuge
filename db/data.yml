@@ -678,7 +678,7 @@ posts:
       \      end\r\n\r\n       def book_info\r\n          info = @info_item.get_cd_info(@title,
       @author)\r\n          result = \"CD_info: #{info}\"\r\n          result\r\n
       \      end\r\nend \r\n</pre>\r\n<p>You’ll notice, right away, a repetitious
-      copy and paste that makes the program boring and would require us to test every
+      copy and paste pattern that makes the program boring and would require us to test every
       method, and there are quite a few of them. Not exactly the best approach.</p>\r\n\r\n<p>There
       are two ways to ways to refactor this program: Using Dynamic methods and method_missing.
       I will use the first one in this post and tackle the second in an upcoming one.\r\n</p>\r\n\r\n<p>In
