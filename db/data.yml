@@ -658,9 +658,9 @@ posts:
     - Metaprogramming, a diet pill for Ruby
     - ! "<p>In a nutshell, Metaprogramming is the art of writing code to write code
       that runs at runtime, and the repetition is intended here. In Ruby, as in other
-      languages, metaprogramming are one way of DRYing your code by refactoring it
+      languages, metaprogramming is one way of DRYing your code by refactoring it
       in a way that would weed out all unnecessary repetitions and rewrite your classes
-      in a concise, readable and hopefully elegant manner. Consider the following
+      in a concise, readable and, hopefully, elegant manner. Consider the following
       snippets:</p>\r\n\r\n\r\n<p>First, we have a store where our items reside:</p>\r\n\r\n<pre>\r\nclass
       AmazonStore\r\n     def initialize\r\n           #connect to the database\r\n
       \    end\r\n     def get book_info(title, author)\r\n            @title = title\r\n
