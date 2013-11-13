@@ -573,8 +573,8 @@ posts:
       original css, my table displayed perfectly on Chrome and Safari. On Firefox,
       Opera and IE, the padding in the row where the items were displayed had almost
       tripled, which led to the overflow of 4 and a half items. The table looked terrible,
-      to put it mildly. </p>\r\n\r\n<p>After a lot of head scratching and after posting
-      the issue on Stackoveflow, which led to zero relevant feedback, I finally
+      to put it mildly. </p>\r\n\r\n<p>After a lot head scratching and after posting
+      the question on Stackoveflow, which led to zero relevant feedback, I finally
       got to the bottom of this issue: it was the css as I suspected all along.</p>\r\n\r\n<p>I
       created a special css to handle that table on Firefox, Opera and IE and with
       the help of the browser gem at: <a>https://github.com/fnando/browser</a>, I
@@ -653,6 +653,66 @@ posts:
       will return an error.</p>\r\n"
     - '2013-10-21 21:28:37.945548'
     - '2013-10-22 13:46:35.122236'
+  - - '21'
+    - Adam Raouki
+    - Metaprogramming, a diet pill for Ruby
+    - ! "<p>In a nutshell, Metaprogramming is the art of writing code to write code
+      that runs at runtime, and the repetition is intended here. In Ruby, as in other
+      languages, metaprogramming are one way of DRYing your code by refactoring it
+      in a way that would weed out all unnecessary repetitions and rewrite your classes
+      in a concise, readable and hopefully elegant manner. Consider the following
+      snippets:</p>\r\n\r\n\r\n<p>First, we have a store where our items reside:</p>\r\n\r\n<pre>\r\nclass
+      AmazonStore\r\n     def initialize\r\n           #connect to the database\r\n
+      \    end\r\n     def get book_info(title, author)\r\n            @title = title\r\n
+      \           @author = author\r\n     end\r\n     def movie_info(title, author)\r\n
+      \           @title = title\r\n            @author = author\r\n     end\r\n     def
+      cd_info(title, author)\r\n             @title = title\r\n             @author
+      = author)\r\n     end\r\nend\r\n</pre>\r\n\r\n<p>Here is our first attempt to
+      extract those items from the database: </p>\r\n<pre>\r\nclass Purchase\r\n      def
+      initialize(title, author, item_info)\r\n           @title = title\r\n           @author
+      = author\r\n           @item_info= item_info\r\n       end\r\n\r\n       def
+      book_info\r\n          info = @info_item.get_book_info(@title, @author)\r\n
+      \         result = \"Book_info: #{info}\"\r\n          result\r\n       end\r\n\r\n
+      \      def movie_info\r\n          info = @info_item.get_movie_info(@title,
+      @author)\r\n          result = \"Movie_info: #{info}\"\r\n          result\r\n
+      \      end\r\n\r\n       def book_info\r\n          info = @info_item.get_cd_info(@title,
+      @author)\r\n          result = \"CD_info: #{info}\"\r\n          result\r\n
+      \      end\r\nend \r\n</pre>\r\n<p>You’ll notice, right away, a repetitious
+      copy and paste that makes the program boring and would require us to test every
+      method, and there are quite a few of them. Not exactly the best approach.</p>\r\n\r\n<p>There
+      are two ways to ways to refactor this program: Using Dynamic methods and method_missing.
+      I will use the first one in this post and tackle the second in an upcoming one.\r\n</p>\r\n\r\n<p>In
+      Ruby, when you call a method, you usually do so by using the dot notation: </p><br
+      />\r\n\r\n<pre>\r\nobj = Book.new\r\nobj = some_method()\r\n </pre>\r\n\r\n<p>However,
+      there is another way: you can use Object#send(), such as in:</p><br />\r\n\r\n<pre>\r\nobj.send(:some_method)
+      \r\n</pre>\r\n\r\n<p>With send(), the method name becomes a simple argument
+      that you can call at the last moment, while your program is running, if you
+      so choose. This is what is referred to as Dynamic Dispatch in Ruby.</p>\r\n\r\n<p>Based
+      on this information, let’s revisit our example and refactor:</p>\r\n\r\n<pre>class
+      Purchase\r\n      def initialize(title, author, item_info)\r\n           @title
+      = title\r\n           @author = author\r\n           @item_info= item_info\r\n
+      \      end\r\n\r\n       def book_info\r\n          data :book_info\r\n       end\r\n\r\n
+      \      def movie_info\r\n          data :movie_info\r\n       end\r\n\r\n       def
+      cd_info\r\n          data :cd_info\r\n       end\r\n\r\n       def data(name)\r\n
+      \          info = @item_info.send \"get_#{name}_info\", @title, @author\r\n
+      \              result = \"#{name.to_s}: #{info}\"\r\n               result\r\n
+      \      end\r\nend\r\n</pre>\r\n\r\n<p>Calls to, respectively, book_info, movie_info
+      and cd_info, is delegated to data(), which triggers calls to AmazonStore#book_info,
+      AmazonStore#movie_info, AmazonStor#cd_info<p>\r\n\r\n\r\n<p>Beside dynamic dispatch,
+      you can also generate methods dynamically:</p>\r\n\r\n<pre> class Purchase\r\n
+      \     def initialize(title, author, item_info)\r\n           @title = title\r\n
+      \          @author = author\r\n           @item_info= item_info\r\n       end\r\n\r\n
+      \      def self.define_data(name)\r\n            define_method(name) {\r\n               info
+      = @item_info.send \"get_#{name}_info\", @title, @author\r\n               result
+      = \"#{name.to_s}: #{info}\"\r\n               result\r\n            }\r\n        end\r\n\r\n
+      \       define_data :book_info\r\n        define_data :movie_info\r\n        define_data
+      :cd_info\r\nend\r\n</pre>\r\n\r\n<p>Notice that we call defne_method on self,
+      which happens to be in this case our class Purchase. That means that the method
+      is a class method.</p>\r\n\r\n<p>We can go even further in our quest to dry
+      out our code even more by refactoring the 3 define_data methods. But, that will
+      be the subject of another post.</p>\r\n"
+    - '2013-11-13 02:11:08.114803'
+    - '2013-11-13 02:23:12.910308'
 
 ---
 users:
