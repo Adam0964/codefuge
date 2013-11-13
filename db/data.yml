@@ -680,7 +680,7 @@ posts:
       \      end\r\nend \r\n</pre>\r\n<p>You’ll notice, right away, a repetitious
       copy and paste pattern that makes the program boring and would require us to test every
       method, and there are quite a few of them. Not exactly the best approach.</p>\r\n\r\n<p>There
-      are two ways to ways to refactor this program: Using Dynamic methods and method_missing.
+      are two ways to refactor this program: Using Dynamic methods and method_missing.
       I will use the first one in this post and tackle the second in an upcoming one.\r\n</p>\r\n\r\n<p>In
       Ruby, when you call a method, you usually do so by using the dot notation: </p><br
       />\r\n\r\n<pre>\r\nobj = Book.new\r\nobj = some_method()\r\n </pre>\r\n\r\n<p>However,
