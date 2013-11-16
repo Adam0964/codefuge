@@ -661,12 +661,11 @@ posts:
       languages, metaprogramming is one way of DRYing your code by refactoring it
       in a way that would weed out all unnecessary repetitions and rewrite your classes
       in a concise, readable and, ideally, elegant manner. Consider the following
-      snippets:</p>\r\n\r\n\r\n<p>First, we have a store where our items reside:</p>\r\n\r\n<pre>\r\nclass
-      AmazonStore\r\n     def initialize\r\n           #connect to the database\r\n
-      \    end\r\n     def get book_info(title, author)\r\n            @title = title\r\n
-      \           @author = author\r\n     end\r\n     def movie_info(title, author)\r\n
-      \           @title = title\r\n            @author = author\r\n     end\r\n     def
-      cd_info(title, author)\r\n             @title = title\r\n             @author
+      snippet:</p>\r\n\r\n\r\n<p>First, we have a store where our items reside:</p>\r\n\r\n<pre>\r\nclass
+      AmazonStore\r\n     def get book_info(title, author)\r\n            @title =
+      title\r\n            @author = author\r\n     end\r\n     def movie_info(title,
+      author)\r\n            @title = title\r\n            @author = author\r\n     end\r\n
+      \    def cd_info(title, author)\r\n             @title = title\r\n             @author
       = author)\r\n     end\r\nend\r\n</pre>\r\n\r\n<p>Here is our first attempt to
       extract those items from the database: </p>\r\n<pre>\r\nclass Purchase\r\n      def
       initialize(title, author, item_info)\r\n           @title = title\r\n           @author
@@ -678,10 +677,12 @@ posts:
       \      end\r\n\r\n       def book_info\r\n          info = @info_item.get_cd_info(@title,
       @author)\r\n          result = \"CD_info: #{info}\"\r\n          result\r\n
       \      end\r\nend \r\n</pre>\r\n<p>You’ll notice, right away, a repetitious
-      copy and paste pattern that makes the program boring and would require us to test every
-      method, and there are quite a few of them. Not exactly the best approach.</p>\r\n\r\n<p>There
-      are two ways to refactor this program: Using Dynamic methods and method_missing.
-      I will use the first one in this post and tackle the second in an upcoming one.\r\n</p>\r\n\r\n<p>In
+      copy and paste that makes the program boring and would require us to test every
+      method, and there are quite a few of them if you consider the scope of a store
+      like Amazon. Not exactly the best approach.</p>\r\n\r\n<p>There are two ways
+      to ways to refactor this program: <br />\r\n1- Using Dynamic methods <br />\r\n2-
+      Using method_missing.</p>\r\n\r\n<p> I will use the first one to demonstrate
+      in this post and tackle the second in an upcoming one.\r\n</p>\r\n\r\n<p>In
       Ruby, when you call a method, you usually do so by using the dot notation: </p><br
       />\r\n\r\n<pre>\r\nobj = Book.new\r\nobj = some_method()\r\n </pre>\r\n\r\n<p>However,
       there is another way: you can use Object#send(), such as in:</p><br />\r\n\r\n<pre>\r\nobj.send(:some_method)
@@ -712,7 +713,7 @@ posts:
       out our code even more by refactoring the 3 define_data methods. But, that will
       be the subject of another post.</p>\r\n"
     - '2013-11-13 02:11:08.114803'
-    - '2013-11-13 02:23:12.910308'
+    - '2013-11-16 17:12:28.970435'
 
 ---
 users:
