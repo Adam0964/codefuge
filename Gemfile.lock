@@ -385,7 +385,7 @@ DEPENDENCIES
   compass-rails
   cucumber-rails
   database_cleaner (= 0.7.0)
-  debugger
+  debugger (= 1.6.1)
   devise
   elif
   execjs

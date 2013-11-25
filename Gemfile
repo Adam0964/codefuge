@@ -30,7 +30,7 @@ gem 'omniauth'
 gem 'omniauth-github'
 gem 'jbuilder'
 gem 'unicorn'
-gem 'debugger'
+gem 'debugger', '1.6.1'
 gem 'rails_12factor'
 gem 'cache_digests'
 
