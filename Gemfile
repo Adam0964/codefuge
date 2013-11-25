@@ -4,6 +4,7 @@
 # end
 
 source 'https://rubygems.org'
+ruby "2.0.0"
 
 gem 'rails', '3.2.13'
 gem 'bcrypt-ruby', '3.0.1'
@@ -50,7 +51,7 @@ group :development do
   gem 'spork', '0.9.0'
   gem 'launchy', '2.1.0'
   gem 'simplecov', '>=0.3.8', :require => false
-  gem 'nokogiri', '1.6.0'
+  gem 'nokogiri'
   gem 'rb-fsevent'
   gem "capistrano"    
   gem 'capistrano-rails'

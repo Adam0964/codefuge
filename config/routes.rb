@@ -30,17 +30,17 @@ Kodefuge::Application.routes.draw do
   match '/mobile',       :to => 'pages#mobile'
 
    # routes from posts as a root
-   match "/posts/home(.:format)"        => "pages#index",         :as     => :home
-   match "/posts/about(.:format)"       => "pages#about",         :as     => :about
-   match "/posts/bookshelf(.:format)"   => "books#index",         :as     => :bookshelf
-   match "/posts/blog(.:format)"        => "posts#index",         :as     => :blog
-   match "/posts/videoshelf(.:format)"  => "pages#videoshelf",    :as     => :videoshelf
-   match "/posts/portfolio(.:format)"   => "pages#portfolio",     :as     => :portfolio
-   match "/posts/frontend(.:format)"    => "pages#frontend",      :as     => :frontend
-   match "/posts/backend(.:format)"     => "pages#backend",       :as     => :backend
-   match "/posts/responsive(.:format)"  => "pages#responsive",    :as     => :responsive
-   match "/posts/testing(.:format)"     => "pages#testing",       :as     => :testing
-   match "/posts/mobile(.:format)"      => "pages#mobile",        :as     => :mobile
+   # match "/posts/home(.:format)"        => "pages#index",         :as     => :home
+   # match "/posts/about(.:format)"       => "pages#about",         :as     => :about
+   # match "/posts/bookshelf(.:format)"   => "books#index",         :as     => :bookshelf
+   # match "/posts/blog(.:format)"        => "posts#index",         :as     => :blog
+   # match "/posts/videoshelf(.:format)"  => "pages#videoshelf",    :as     => :videoshelf
+   # match "/posts/portfolio(.:format)"   => "pages#portfolio",     :as     => :portfolio
+   # match "/posts/frontend(.:format)"    => "pages#frontend",      :as     => :frontend
+   # match "/posts/backend(.:format)"     => "pages#backend",       :as     => :backend
+   # match "/posts/responsive(.:format)"  => "pages#responsive",    :as     => :responsive
+   # match "/posts/testing(.:format)"     => "pages#testing",       :as     => :testing
+   # match "/posts/mobile(.:format)"      => "pages#mobile",        :as     => :mobile
 
    # oustside routing
    match "/posts/https://twitter.com/adam0964(.:format)"              => "pages#https://twitter.com/adam0964",     :as => :twitter

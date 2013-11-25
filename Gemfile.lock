@@ -403,7 +403,7 @@ DEPENDENCIES
   less-rails
   markitup-rails
   mechanize (~> 2.6.0)
-  nokogiri (= 1.6.0)
+  nokogiri
   omniauth
   omniauth-github
   paperclip
