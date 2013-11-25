@@ -41,6 +41,9 @@ GEM
       will_paginate
     browser (0.2.1)
     builder (3.0.4)
+    byebug (2.3.1)
+      columnize (~> 0.3.6)
+      debugger-linecache (~> 1.2.0)
     cache_digests (0.3.1)
       actionpack (>= 3.2)
       thread_safe
@@ -374,6 +377,7 @@ DEPENDENCIES
   bootstrap-sass
   bootstrap-will_paginate (= 0.0.6)
   browser
+  byebug
   cache_digests
   cancan
   capistrano
