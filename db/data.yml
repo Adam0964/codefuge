@@ -633,8 +633,8 @@ posts:
       \          info = @item_info.send \"get_#{name}_info\", @title, @author\r\n
       \              result = \"#{name.to_s}: #{info}\"\r\n               result\r\n
       \      end\r\nend\r\n</pre>\r\n\r\n<p>Calls to, respectively, book_info, movie_info
-      and cd_info, is delegated to data(), which triggers calls to AmazonStore#book_info,
-      AmazonStore#movie_info, AmazonStor#cd_info<p>\r\n\r\n\r\n<p>Beside dynamic dispatch,
+      and cd_info, are delegated to data(), which triggers calls to AmazonStore#book_info,
+      AmazonStore#movie_info and AmazonStore#cd_info.<p>\r\n\r\n\r\n<p>Beside dynamic dispatch,
       you can also generate methods dynamically:</p>\r\n\r\n<pre> class Purchase\r\n
       \     def initialize(title, author, item_info)\r\n           @title = title\r\n
       \          @author = author\r\n           @item_info= item_info\r\n       end\r\n\r\n
@@ -645,7 +645,7 @@ posts:
       :cd_info\r\nend\r\n</pre>\r\n\r\n<p>Notice that we call defne_method on self,
       which happens to be in this case our class Purchase. That means that the method
       is a class method.</p>\r\n\r\n<p>We can go even further in our quest to dry
-      out our code even more by refactoring the 3 define_data methods. But, that will
+      up our code even more by refactoring the 3 define_data methods. But, that will
       be the subject of another post.</p>\r\n"
     - '2013-11-13 02:11:08.114803'
     - '2013-11-16 17:12:28.970435'
