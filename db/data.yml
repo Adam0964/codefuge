@@ -747,16 +747,16 @@ posts:
       ln -s /private/tmp/.s.PGSQL.5432 /var/run/postgresql/.s.PGSQL.5432</pre><br
       />\r\n\r\n<p>There you have it, the last option was pretty straightforward and
       I hope this can be of some use to someone out there.</p>\r\n\r\n<p>Links that
-      helped with the migration:</p>\r\n\r\n<ul> 1- <a href=\"http://stackoverflow.com/questions/1670154/convert-a-ruby-on-rails-app-from-sqlite-to-mysql\">StackOverflow</a></ul>\r\n<ul>
-      2- <a href=\"http://stackoverflow.com/questions/7975556/how-to-start-postgresql-server-on-mac-os-x\">StackOverflow</a></ul>\r\n<ul>
-      3- <a href=\"http://stackoverflow.com/questions/8465508/can-not-connect-to-local-postgresql\">StackOverflow</a><br
-      /></ul>\r\n\r\n<p>Other ways of migrating from one database to another:</p>\r\n\r\n<ul>
-      1- <a href=\"https://github.com/ddollar/valkyrie\">valkyrie</a></ul>\r\n<ul>
-      2- <a href=\"https://github.com/ricardochimal/taps\">taps</a> </ul>\r\n<ul>
-      3- <a href=\"http://railscasts.com/episodes/342-migrating-to-postgresql\">Railscats
-      # 342</a> </ul>       \r\n\r\n"
+      helped with the migration:</p>\r\n\r\n<ul> 1- <a href=\"http://stackoverflow.com/questions/1670154/convert-a-ruby-on-rails-app-from-sqlite-to-mysql\"
+      target=\"_blank\">StackOverflow</a></ul>\r\n<ul> 2- <a href=\"http://stackoverflow.com/questions/7975556/how-to-start-postgresql-server-on-mac-os-x\"
+      target=\"_blank\">StackOverflow</a></ul>\r\n<ul> 3- <a href=\"http://stackoverflow.com/questions/8465508/can-not-connect-to-local-postgresql\"
+      target=\"_blank\">StackOverflow</a><br /></ul>\r\n\r\n<p>Other ways of migrating
+      from one database to another:</p>\r\n\r\n<ul> 1- <a href=\"https://github.com/ddollar/valkyrie\"
+      target=\"_blank\">valkyrie</a></ul>\r\n<ul> 2- <a href=\"https://github.com/ricardochimal/taps\"
+      target=\"_blank\">taps</a> </ul>\r\n<ul> 3- <a href=\"http://railscasts.com/episodes/342-migrating-to-postgresql\"
+      target=\"_blank\">Railscats # 342</a> </ul>       "
     - '2013-12-02 04:43:01.058341'
-    - '2013-12-02 05:53:11.319662'
+    - '2013-12-02 06:31:56.969571'
 
 ---
 users:
