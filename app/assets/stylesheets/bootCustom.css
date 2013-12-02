@@ -1491,7 +1491,7 @@ body {
 .blog-container h6 {
   font-family: 'Helvetica lighter', Helvetica, Arial, sans-serif;
   text-align: center;
-  font-style: italic;
+  /*font-style: italic;*/
   color:#565656;
 }
 
