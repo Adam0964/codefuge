@@ -754,9 +754,13 @@ posts:
       1- <a href=\"https://github.com/ddollar/valkyrie\" target=\"_blank\">valkyrie</a></ul>\r\n<ul>
       2- <a href=\"https://github.com/ricardochimal/taps\" target=\"_blank\">taps</a>
       </ul>\r\n<ul> 3- <a href=\"http://railscasts.com/episodes/342-migrating-to-postgresql\"
-      target=\"_blank\">Railscats # 342</a> </ul>       "
+      target=\"_blank\">Railscats # 342</a> </ul><br />\r\n\r\n<h3>Upcoming posts</h3>
+      \ \r\n\r\n<li><p>Blocks in Ruby: What are they and why should you care? </p></li>
+      \  \r\n<li><p>Methods Aliases </p> </li>\r\n<li><p>ARGF, Splat, Tap & Freeze
+      </p></li>\r\n<li><p>Object Serialization in Ruby </p></li>\r\n<li><p>Threads,
+      Fibers & Continuations </p></li>\r\n<li><p>Structs & OpenStructs in Ruby </p></li>"
     - '2013-12-02 04:43:01.058341'
-    - '2013-12-02 06:40:28.006692'
+    - '2013-12-02 06:59:32.530288'
 
 ---
 users:
