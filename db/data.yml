@@ -597,10 +597,10 @@ posts:
       in a way that would weed out all unnecessary repetitions and rewrite your classes
       in a concise, readable and, ideally, elegant manner. Consider the following
       snippet:</p>\r\n\r\n\r\n<p>First, we have a store where our items reside:</p>\r\n\r\n<pre>\r\nclass
-      AmazonStore\r\n     def get book_info(title, author)\r\n            @title =
-      title\r\n            @author = author\r\n     end\r\n     def movie_info(title,
-      author)\r\n            @title = title\r\n            @author = author\r\n     end\r\n
-      \    def cd_info(title, author)\r\n             @title = title\r\n             @author
+      AmazonStore\r\n     def book_info(title, author)\r\n            @title = title\r\n
+      \           @author = author\r\n     end\r\n     def movie_info(title, author)\r\n
+      \           @title = title\r\n            @author = author\r\n     end\r\n     def
+      cd_info(title, author)\r\n             @title = title\r\n             @author
       = author)\r\n     end\r\nend\r\n</pre>\r\n\r\n<p>Here is our first attempt to
       extract those items from the database: </p>\r\n<pre>\r\nclass Purchase\r\n      def
       initialize(title, author, item_info)\r\n           @title = title\r\n           @author
@@ -648,7 +648,7 @@ posts:
       go even further in our quest to dry up our code even more by refactoring the
       3 define_data methods. But, that will be the subject of another post.</p>\r\n"
     - '2013-11-13 02:11:08.114803'
-    - '2013-11-16 17:12:28.970435'
+    - '2013-12-02 07:33:09.677542'
   - - '22'
     - Adam Raouki
     - Steps to migrating from Sqlite to Postgres in Rails
