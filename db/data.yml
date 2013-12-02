@@ -316,7 +316,7 @@ books:
     - '2013-09-27 03:01:35.99313'
     - '2013-09-27 03:01:35.99313'
   - - '130'
-    - ! 'Git: VC For Everyone'
+    - 'Git: VC For Everyone'
     - Ravishankar Somasundaram
     - '2013'
     - git_for_everyone.jpg
@@ -324,7 +324,7 @@ books:
     - '2013-09-27 03:01:35.997961'
     - '2013-09-27 03:01:35.997961'
   - - '131'
-    - ! 'HTML and CSS: The Good Parts'
+    - 'HTML and CSS: The Good Parts'
     - Ben Henrick
     - '2010'
     - html__css_the_good_parts.jpg
@@ -493,7 +493,7 @@ books:
     - '2013-09-27 03:01:36.10232'
   - - '152'
     - RubyMotion
-    - ! 'Clay Allsopp '
+    - 'Clay Allsopp '
     - '2012'
     - rubymotion.jpg
     - 
@@ -569,7 +569,7 @@ posts:
   - - '19'
     - Adam Raouki
     - Tables and Browser compatibility and How Browser gem came to the Rescue
-    - ! "<p>We all know that Firefox, Opera and IE suck at handling tables. With the
+    - "<p>We all know that Firefox, Opera and IE suck at handling tables. With the
       original css, my table displayed perfectly on Chrome and Safari. On Firefox,
       Opera and IE, the padding in the row where the items were displayed had almost
       tripled, which led to the overflow of 4 and a half items. The table looked terrible,
@@ -591,7 +591,7 @@ posts:
   - - '21'
     - Adam Raouki
     - Metaprogramming, a diet pill for Ruby
-    - ! "<p>In a nutshell, Metaprogramming is the art of writing code to write code
+    - "<p>In a nutshell, Metaprogramming is the art of writing code to write code
       that runs at runtime, and the repetition is intended here. In Ruby, as in other
       languages, metaprogramming is one way of DRYing your code by refactoring it
       in a way that would weed out all unnecessary repetitions and rewrite your classes
@@ -634,21 +634,129 @@ posts:
       \              result = \"#{name.to_s}: #{info}\"\r\n               result\r\n
       \      end\r\nend\r\n</pre>\r\n\r\n<p>Calls to, respectively, book_info, movie_info
       and cd_info, are delegated to data(), which triggers calls to AmazonStore#book_info,
-      AmazonStore#movie_info and AmazonStore#cd_info.<p>\r\n\r\n\r\n<p>Beside dynamic dispatch,
-      you can also generate methods dynamically:</p>\r\n\r\n<pre> class Purchase\r\n
-      \     def initialize(title, author, item_info)\r\n           @title = title\r\n
-      \          @author = author\r\n           @item_info= item_info\r\n       end\r\n\r\n
-      \      def self.define_data(name)\r\n            define_method(name) {\r\n               info
-      = @item_info.send \"get_#{name}_info\", @title, @author\r\n               result
-      = \"#{name.to_s}: #{info}\"\r\n               result\r\n            }\r\n        end\r\n\r\n
-      \       define_data :book_info\r\n        define_data :movie_info\r\n        define_data
-      :cd_info\r\nend\r\n</pre>\r\n\r\n<p>Notice that we call defne_method on self,
-      which happens to be in this case our class Purchase. That means that the method
-      is a class method.</p>\r\n\r\n<p>We can go even further in our quest to dry
-      up our code even more by refactoring the 3 define_data methods. But, that will
-      be the subject of another post.</p>\r\n"
+      AmazonStore#movie_info and AmazonStore#cd_info.<p>\r\n\r\n\r\n<p>Beside dynamic
+      dispatch, you can also generate methods dynamically:</p>\r\n\r\n<pre> class
+      Purchase\r\n      def initialize(title, author, item_info)\r\n           @title
+      = title\r\n           @author = author\r\n           @item_info= item_info\r\n
+      \      end\r\n\r\n       def self.define_data(name)\r\n            define_method(name)
+      {\r\n               info = @item_info.send \"get_#{name}_info\", @title, @author\r\n
+      \              result = \"#{name.to_s}: #{info}\"\r\n               result\r\n
+      \           }\r\n        end\r\n\r\n        define_data :book_info\r\n        define_data
+      :movie_info\r\n        define_data :cd_info\r\nend\r\n</pre>\r\n\r\n<p>Notice
+      that we call defne_method on self, which happens to be in this case our class
+      Purchase. That means that the method is a class method.</p>\r\n\r\n<p>We can
+      go even further in our quest to dry up our code even more by refactoring the
+      3 define_data methods. But, that will be the subject of another post.</p>\r\n"
     - '2013-11-13 02:11:08.114803'
     - '2013-11-16 17:12:28.970435'
+  - - '22'
+    - Adam Raouki
+    - Steps to migrating from Sqlite to Postgres in Rails
+    - "<p>One of the reasons a Rails developer would want to migrate from Rails’ default
+      database to Postgres is when he/she plans on deploying their apps to Heroku
+      because the latter supports Postgres only.</p>\r\n\r\n<p>When you create a new
+      Rails app, SQLite3 gets installed by default, unless you override it before
+      you hit the enter button after you typed in the command. Sure, once you have
+      created your app, you can still migrate to Postgres by destroying the existing
+      database and creating a new one and you can do so safely if you don’t have any
+      data stored yet in your database. But, what if you did?</p>\r\n\r\n<p>Well,
+      there are a few options out there: notably two gems, Taps and valkyrie, but,
+      sometimes, getting them to work in your specific environment could be a daunting
+      task that could set you back hours if not days. There is, however, a third option
+      that worked for me without any hiccups and here are the steps I took to implement
+      it.</p>\r\n\r\n<p>1- Make sure Postgres is installed in your system. Issue the
+      following:</p>\r\n\r\n                 <pre> postgres --version</pre><br />\r\n\r\n<p>2-
+      Make sure Postgres server is running: issue the following command to see your
+      options:</p>\r\n\r\n                  <pre> brew info postgres</pre><br />\r\n\r\n<p>Sample
+      output:</p>\r\n\r\n<pre>\r\nTo install gems without sudo, see the Homebrew wiki.\r\n
+      \          To have launchd start postgresql at login:\r\n                 ln
+      -sfv /Users/adam0964/.rvm/opt/postgresql/*.plist ~/Library/LaunchAgents\r\n
+      \         Then to load postgresql now:\r\n               launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist\r\n
+      \         Or, if you don't want/need launchctl, you can just run:\r\n               pg_ctl
+      -D /Users/adam0964/.rvm/var/postgres -l          /Users/adam0964/.rvm/var/postgres/server.log
+      start\r\n </pre><br />\r\n\r\n<p>3- Start Postgres server by typing the following:</p>\r\n
+      \   <pre>$ postgres -D /Users/adam0964/.rvm/var/postgres (your machine will
+      be different)</pre><br />\r\n\r\n<p>You notice that this a long line to start
+      the database and if you have to do it regularly, as I suspect might be the case,
+      this becomes annoying. One way to make your life a little easier is to alias
+      this command in your .bashrc file, and while you’re at it, do the same for other
+      commands that you tend to use on a regular basis. For instance, I put all my
+      Pgsql start, stop, restart, status commands in mine:</p>\r\n\r\n<pre>alias pgstr=\"pg_ctl
+      start -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgstp=\"pg_ctl stop
+      -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgrst=\"pg_ctl restart -W
+      -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgst=\"pg_ctl status -D /Users/adam0964/.rvm/var/postgres\"</pre><br
+      />\r\n\r\n<p>Now, to start PG, all I have to do is issue ‘pgstr’ instead of
+      the long line it evaluate to.</p><br />\r\n\r\n<p>4- Copy database.yml to database.yml..sql3
+      by issuing the following:</p>\r\n\r\n <pre>cp config/database.yml config/database.yml.sqlite3</pre><br
+      />\r\n\r\n<p>5- Add ‘yaml_db’ and ‘pg’ gems to the Gemfile and bundle</p>\r\n<p>6-
+      Add a new config/database.yml.pg</p><br />\r\n\r\n<p> Sample file:</p>\r\n\r\n<pre>#
+      PG 9.2\r\n#   gem install postgresql\r\n#\r\n#   Ensure the SQLite 3 gem is
+      defined in your Gemfile\r\n#   gem 'postgresql'\r\n\r\ndevelopment:\r\n  adapter:
+      postgresql\r\n  encoding: unicode\r\n  database: kodefuge_development\r\n  pool:
+      5\r\n  timeout: 5000\r\n  username: kodefuge\r\n  password:\r\n\r\n# Warning:
+      The database defined as \"test\" will be erased and\r\n# re-generated from your
+      development database when you run \"rake\".\r\n# Do not set this db to the same
+      as development or production.\r\ntest:\r\n  adapter: postgresql\r\n  encoding:
+      unicode\r\n  database: kodefuge_test\r\n  pool: 5\r\n  timeout: 5000\r\n  username:
+      adam0964\r\n  password: \r\nproduction:\r\n  adapter: postgresql\r\n  encoding:
+      unicode\r\n  database: kodefuge_production\r\n  pool: 5\r\n  timeout: 5000\r\n
+      \ username: kodefuge\r\n  password: \r\n</pre><br />\r\n\r\n\r\n<p>7- Backup
+      your SQLite data with yaml_db: </p>\r\n             <pre>rake db:data:dump</pre><br
+      />\r\n<p>8- Configure Rails to use your new PostgreSQL configuration:</p>\r\n
+      \            <pre>$ cp config/database.yml.pg config/database.yml</pre><br />\r\n<p>9-
+      Create the database and the associated tables:</p>\r\n             <pre>$ rake
+      db:create RAILS_ENV=\"production\"</pre><br />\r\n<p>10- Load your schema:</p>\r\n
+      \            <pre>$ rake db:schema:load RAILS_ENV=\"production\"</pre><br />\r\n\r\n<p>Sample
+      output:</p>\r\n\r\n<pre>-- create_table(\"admins\", {:force=>true})\r\nNOTICE:
+      \ CREATE TABLE will create implicit sequence \"admins_id_seq\" for serial column
+      \"admins.id\"\r\nNOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index
+      \"admins_pkey\" for table \"admins\"\r\n   -> 0.0537s\r\n-- add_index(\"admins\",
+      [\"email\"], {:name=>\"index_admins_on_email\", :unique=>true})\r\n   -> 0.0042s\r\n--
+      add_index(\"admins\", [\"reset_password_token\"], {:name=>\"index_admins_on_reset_password_token\",
+      :unique=>true})\r\n   -> 0.0026s\r\n-- create_table(\"books\", {:force=>true})\r\nNOTICE:
+      \ CREATE TABLE will create implicit sequence \"books_id_seq\" for serial column
+      \"books.id\"\r\nNOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index
+      \"books_pkey\" for table \"books\"\r\n   -> 0.0034s\r\n-- create_table(\"comments\",
+      {:force=>true})\r\nNOTICE:  CREATE TABLE will create implicit sequence \"comments_id_seq\"
+      for serial column \"comments.id\"\r\nNOTICE:  CREATE TABLE / PRIMARY KEY will
+      create implicit index \"comments_pkey\" for table \"comments\"\r\n   -> 0.0047s\r\n--
+      add_index(\"comments\", [\"post_id\"], {:name=>\"index_comments_on_post_id\"})\r\n
+      \  -> 0.0026s\r\n-- create_table(\"posts\", {:force=>true})\r\n </pre><br />\r\n\r\n<p>11-
+      Load your data with yaml_db:</p>\r\n               <pre>$ rake db:data:load
+      RAILS_ENV=\"production\"</pre><br />\r\n\r\n<p>12- Sample output:\r\n\r\n<pre>-
+      -- create_table(\"admins\", {:force=>true})\r\nNOTICE:  CREATE TABLE will create
+      implicit sequence \"admins_id_seq\" for serial column \"admins.id\"\r\nNOTICE:
+      \ CREATE TABLE / PRIMARY KEY will create implicit index \"admins_pkey\" for
+      table \"admins\"\r\n   -> 0.0152s\r\n-- add_index(\"admins\", [\"email\"], {:name=>\"index_admins_on_email\",
+      :unique=>true})\r\n   -> 0.0040s</pre><br />\r\n\r\n<p>[strong]Issues that might
+      arise during this process:[/strong]</p>\r\n\r\n           <pre>could not connect
+      to server: No such file or directory\r\n           Is the server running locally
+      and accepting\r\n           connections on Unix domain socket \"/var/pgsql_socket/.s.PGSQL.5432\"?</pre></br
+      />\r\n      \r\n[strong]Solution:[/strong]\r\n<p>Issue:</p>\r\n        <pre>
+      gem pristine pg</pre><br />\r\n\r\n<p>Sample output:</p>\r\n<pre>new-host-3:kodefuge
+      adam0964$ gem pristine pg\r\nRestoring gems to pristine condition...\r\nBuilding
+      native extensions with: ''\r\nThis could take a while...\r\nRestored pg-0.12.2\r\nBuilding
+      native extensions with: ''\r\nThis could take a while...\r\nRestored pg-0.15.1</pre><br
+      />\r\n         \r\n<p>Some people claim that uninstalling the ‘pg’ gem  and
+      installing it again did the trick for them. You may wanna try it if this doesn’t
+      work.</p>\r\n\r\n<p>Issue the following at the command:</p>\r\n           <pre>find
+      / -name .s.PGSQL.5432 -ls 2> /dev/null</pre><br />\r\n\r\n <p>You’ll get a similar
+      output:</p>\r\n\r\n          <pre>19649420        0 srwxrwxrwx    1 adam0964
+      \  wheel  0 Jun 25 19:19           /private/tmp/.s.PGSQL.5432</pre><br />\r\n\r\n<p>You
+      then create a symlink to point to where your postgres is:</p>\r\n\r\n          <pre>sudo
+      ln -s /private/tmp/.s.PGSQL.5432 /var/run/postgresql/.s.PGSQL.5432</pre><br
+      />\r\n\r\n<p>There you have it, the last option was pretty straightforward and
+      I hope this can be of some use to someone out there.</p>\r\n\r\n<p>Links that
+      helped with the migration:</p>\r\n\r\n<ul> 1- <a href=\"http://stackoverflow.com/questions/1670154/convert-a-ruby-on-rails-app-from-sqlite-to-mysql\">StackOverflow</a></ul>\r\n<ul>
+      2- <a href=\"http://stackoverflow.com/questions/7975556/how-to-start-postgresql-server-on-mac-os-x\">StackOverflow</a></ul>\r\n<ul>
+      3- <a href=\"http://stackoverflow.com/questions/8465508/can-not-connect-to-local-postgresql\">StackOverflow</a><br
+      /></ul>\r\n\r\n<p>Other ways of migrating from one database to another:</p>\r\n\r\n<ul>
+      1- <a href=\"https://github.com/ddollar/valkyrie\">valkyrie</a></ul>\r\n<ul>
+      2- <a href=\"https://github.com/ricardochimal/taps\">taps</a> </ul>\r\n<ul>
+      3- <a href=\"http://railscasts.com/episodes/342-migrating-to-postgresql\">Railscats
+      # 342</a> </ul>       \r\n\r\n"
+    - '2013-12-02 04:43:01.058341'
+    - '2013-12-02 05:53:11.319662'
 
 ---
 users:

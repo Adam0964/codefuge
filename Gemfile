@@ -6,6 +6,7 @@
 source 'https://rubygems.org'
 ruby "2.0.0"
 
+
 gem 'rails', '3.2.13'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.0.1'
@@ -13,7 +14,7 @@ gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'kaminari'
 gem 'active_link_to'
-gem "paperclip"     
+# gem "paperclip"     
 gem 'commands'
 gem "mechanize", "~> 2.6.0"
 gem "devise"
@@ -55,7 +56,7 @@ group :development do
   gem 'nokogiri'
   gem 'rb-fsevent'
   gem "capistrano"    
-  gem 'capistrano-rails'
+  # gem 'capistrano-rails'
 end
 
 # Gems used only for assets and not required
