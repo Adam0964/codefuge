@@ -16,18 +16,18 @@
                                             <%= button_to'CONTINUE READING', post, :method => "get", :id => 'readButton' %>
                                             <br /><br /><br />
                                             <hr class='straightLine'/>
-                                                 <%#<% if current_user.try(:admin?)  %>
+                                                 <% if current_user.try(:admin?)  %>
                                                         <%= link_to 'Edit', edit_post_path(post) %> 
                                                         <%= button_to 'Destroy', post, :method => :delete, data: { confirm: 'Are you sure?' } %>
-                                                 <%#<% else %>
-                                                 <%#<% end %>
+                                                 <% else %>
+                                                 <% end %>
                                   <% end %> 
                               </div>
                                             <br />
-                                            <%#<% if current_user.try(:admin?)  %>
+                                            <% if current_user.try(:admin?)  %>
                                                     <%= link_to 'New Post', new_post_path %>
-                                            <%#<% else %>
-                                            <%#<% end %>
+                                            <% else %>
+                                            <% end %>
             </div>
       </div>
 </div>
