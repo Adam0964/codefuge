@@ -246,6 +246,39 @@
             </li>     
       </ul>
       <hr class="featurette-divider">
+
+       <!-- START THE FEATURETTES -->
+
+      <div class="featurette">
+       
+        <h2 class="featurette-heading"><span class="muted">Latest Blog Post:</span> Steps to migrating from SQLite to Postgres in Rails.</h2><br />
+            <p class="lead"> 
+              One of the reasons a Rails developer would want to migrate from Rails’ default database to Postgres is when he/she plans on deploying their apps to Heroku because the latter supports Postgres only.<br />
+
+              When you create a new Rails app, SQLite3 gets installed by default, unless you override it before you...</p><br />
+              <%= button_to'Read on', '/posts/22', :method => "get", :id => 'readButtonIndx' %>
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+         
+        <h2 class="featurette-heading"><span class="muted">Some of the upcoming articles:</span><br /><br />
+          <p class="lead"><%= image_tag('blog.png', :size => '25x25') %>&nbsp&nbspCaching in Rails 3 the Rails 4 way.</p>
+          <p class="lead"><%= image_tag('blog.png', :size => '25x25') %>&nbsp&nbspBlocks in Ruby: What are they & why should you care?</p>
+          <p class="lead"><%= image_tag('blog.png', :size => '25x25') %>&nbsp&nbspARGF, Splat, Tap & Freeze in Ruby.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <h2 class="featurette-heading"><span class="muted">And lastly, one of the projects that's being worked on:</span> <br /><br />
+          <h3><%= image_tag('new.png', :size => '55x55') %>&nbsp&nbspEmbevium</h3>
+        <p class="lead">An emberjs Application that's using Ruby on Rails framework as a backend.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
       
 </div>
 

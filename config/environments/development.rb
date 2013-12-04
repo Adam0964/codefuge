@@ -36,5 +36,7 @@ Kodefuge::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = false
 
-  config.serve_static_assets = true
+  # Don't precompile assets unless I do manually
+  config.serve_static_assets = false
 end
+

@@ -626,19 +626,27 @@ body {
   margin: 20px 0; /* Space out the Bootstrap <hr> more */
 }
 .featurette {
-  padding-top: 50px; /* Vertically center images part 1: add padding above and below text. */
+  padding-top: 5px; /* Vertically center images part 1: add padding above and below text. */
   overflow: hidden; /* Vertically center images part 2: clear their floats. */
+  /*background-color: #494949;*/
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 200;
   line-height: 1;
   letter-spacing: -1px;
 }
 
+.featurette-heading h4 {
+   font-family: Helvetica, sans-serif;
+}
 
+.lead {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px
+}
 
 /**
 ---------------------------------------------------
@@ -763,6 +771,25 @@ body {
             .ads4 > h3 > a:hover {
     text-decoration: none;
     background-color: inherit;
+}
+
+#readButtonIndx {
+  width: 70px;
+  height:70px;
+  margin-top: -10px;
+  border: solid 1px #43c83c;
+  text-align: center;
+  /*padding-top: -17px;*/
+  float: right;
+  color: white;
+  background-color: #43c83c;
+  -webkit-border-radius: 50%;
+  -moz-border-radius:    50%;
+  border-radius:         50%;
+}
+
+#readButtonIndx:hover {
+  opacity: 0.3;
 }
 
 /**
@@ -2952,5 +2979,7 @@ body {
     padding-left: 1115px;
   }
 }
+
+
 
 

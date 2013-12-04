@@ -195,6 +195,8 @@ bgd47.jpg: bgd47-4cb5ee34a6dfed5a244d1489652d3901.jpg
 bgd47/index.jpg: bgd47-4cb5ee34a6dfed5a244d1489652d3901.jpg
 bitbucket.png: bitbucket-e6776de4da5c736e99b6a28248f08b3e.png
 bitbucket/index.png: bitbucket-e6776de4da5c736e99b6a28248f08b3e.png
+blog.png: blog-66637dd4c2837aa715e4a547c3902ac4.png
+blog/index.png: blog-66637dd4c2837aa715e4a547c3902ac4.png
 books/adaptive.jpg: books/adaptive-00b3fb3e8bc6ca0abc3a57da6c82013f.jpg
 books/adaptive/index.jpg: books/adaptive-00b3fb3e8bc6ca0abc3a57da6c82013f.jpg
 books/advanced_rails.jpg: books/advanced_rails-c5634e764fd22bbf74bdcacbad53bbfc.jpg
@@ -1617,6 +1619,8 @@ mute.png: mute-09870aa9102fb757c16c4dd6f6fcb935.png
 mute/index.png: mute-09870aa9102fb757c16c4dd6f6fcb935.png
 nemo.jpg: nemo-c7b367baffa43394f2880fe3dbb3bb36.jpg
 nemo/index.jpg: nemo-c7b367baffa43394f2880fe3dbb3bb36.jpg
+new.png: new-35e1aace7986309b0a85d4e10fa6d813.png
+new/index.png: new-35e1aace7986309b0a85d4e10fa6d813.png
 newrelic.jpg: newrelic-3bc854735bd0b1d2003d7545ea399077.jpg
 newrelic/index.jpg: newrelic-3bc854735bd0b1d2003d7545ea399077.jpg
 newrelic.png: newrelic-31dce3cf2a03af55ba1d48954672d2c2.png
@@ -1855,10 +1859,10 @@ webdesign.jpg: webdesign-30528349fa2bb171fb5f821856dbd9c2.jpg
 webdesign/index.jpg: webdesign-30528349fa2bb171fb5f821856dbd9c2.jpg
 zurb.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
 zurb/index.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
-application.js: application-80fe288184683483746a5df89223a077.js
-application/index.js: application-80fe288184683483746a5df89223a077.js
-application.css: application-49dc999c9641758fd06071d739fd5c36.css
-application/index.css: application-49dc999c9641758fd06071d739fd5c36.css
+application.js: application-19234df8ea59c90cc87dd1d5cede4f50.js
+application/index.js: application-19234df8ea59c90cc87dd1d5cede4f50.js
+application.css: application-d271582125b0f961d2761603d8c0b941.css
+application/index.css: application-d271582125b0f961d2761603d8c0b941.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 fontawesome-webfont.eot: fontawesome-webfont-009f6d1f667cc42c25e712ab3429cbc7.eot
