@@ -98,6 +98,8 @@ bgd36.jpg: 72dabd7a71d428e652d2c6d07f41bb07
 bgd47.jpg: 4cb5ee34a6dfed5a244d1489652d3901
 bitbucket.png: e6776de4da5c736e99b6a28248f08b3e
 blog.png: 66637dd4c2837aa715e4a547c3902ac4
+blog2.png: b6693df4087475fdd232d389250c4a4b
+blog3.png: 44817003cbc500ebdbd18b4b24771e29
 books/adaptive.jpg: 00b3fb3e8bc6ca0abc3a57da6c82013f
 books/advanced_rails.jpg: c5634e764fd22bbf74bdcacbad53bbfc
 books/agile.jpg: 07afe98c19387675d93b0121ffc7875c
@@ -930,7 +932,7 @@ webd1.jpg: d707ddc9c557ced7bf4f15d63a446f6f
 webdesign.jpg: 30528349fa2bb171fb5f821856dbd9c2
 zurb.png: f4079d8b89f4b55313d0f716e710c778
 application.js: 60094b4e1db24fb0220091f1fc0d8c17
-application.css: 2d3b4edff4517405793b80c73f46f899
+application.css: bae8091261ae28fa98e66072a907a56d
 jquery.min.map: 6336c5bca4c709e809647cdfcb484d0a
 fontawesome-webfont.eot: 009f6d1f667cc42c25e712ab3429cbc7
 fontawesome-webfont.svg: f1c2889911d212e1403b68eabc1a3a56

@@ -197,6 +197,10 @@ bitbucket.png: bitbucket-e6776de4da5c736e99b6a28248f08b3e.png
 bitbucket/index.png: bitbucket-e6776de4da5c736e99b6a28248f08b3e.png
 blog.png: blog-66637dd4c2837aa715e4a547c3902ac4.png
 blog/index.png: blog-66637dd4c2837aa715e4a547c3902ac4.png
+blog2.png: blog2-b6693df4087475fdd232d389250c4a4b.png
+blog2/index.png: blog2-b6693df4087475fdd232d389250c4a4b.png
+blog3.png: blog3-44817003cbc500ebdbd18b4b24771e29.png
+blog3/index.png: blog3-44817003cbc500ebdbd18b4b24771e29.png
 books/adaptive.jpg: books/adaptive-00b3fb3e8bc6ca0abc3a57da6c82013f.jpg
 books/adaptive/index.jpg: books/adaptive-00b3fb3e8bc6ca0abc3a57da6c82013f.jpg
 books/advanced_rails.jpg: books/advanced_rails-c5634e764fd22bbf74bdcacbad53bbfc.jpg
@@ -1861,8 +1865,8 @@ zurb.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
 zurb/index.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
 application.js: application-19234df8ea59c90cc87dd1d5cede4f50.js
 application/index.js: application-19234df8ea59c90cc87dd1d5cede4f50.js
-application.css: application-d271582125b0f961d2761603d8c0b941.css
-application/index.css: application-d271582125b0f961d2761603d8c0b941.css
+application.css: application-4fffbc664f72f41f446248a7ca533952.css
+application/index.css: application-4fffbc664f72f41f446248a7ca533952.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 fontawesome-webfont.eot: fontawesome-webfont-009f6d1f667cc42c25e712ab3429cbc7.eot

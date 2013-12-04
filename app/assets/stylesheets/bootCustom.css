@@ -792,6 +792,20 @@ body {
   opacity: 0.3;
 }
 
+#blogButton {
+  width: 60px;
+  height:60px;
+  border: solid 1px #43c83c;
+  text-align: center;
+  /*padding-top: -17px;*/
+  float: left;
+  color: white;
+  background-color: orange-red;
+  -webkit-border-radius: 50%;
+  -moz-border-radius:    50%;
+  border-radius:         50%;
+}
+
 /**
 ------------------------------------------------------------
 |                        ABOUT PAGE                        | 
