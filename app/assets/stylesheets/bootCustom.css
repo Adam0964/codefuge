@@ -628,7 +628,7 @@ body {
 .featurette {
   padding-top: 5px; /* Vertically center images part 1: add padding above and below text. */
   overflow: hidden; /* Vertically center images part 2: clear their floats. */
-  /*background-color: #494949;*/
+  /*background-color: #777777;*/
 }
 
 /* Thin out the marketing headings */
@@ -806,6 +806,16 @@ body {
   -moz-border-radius:    50%;
   border-radius:         50%;
 }
+
+.dashed2 {
+  width: 50%;
+  height: 0;
+  margin-top: -15px;
+  border:dashed #aaa; 
+  border-width:1px 0 0 0; 
+ 
+}
+
 
 /**
 ------------------------------------------------------------
