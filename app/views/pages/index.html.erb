@@ -252,10 +252,11 @@
       <div class="featurette">
        
         <h2 class="featurette-heading"><%= image_tag('blog3.png', :size => '55x55') %>&nbsp&nbsp<span class="muted">Latest Blog Post:</span> Steps to migrating from SQLite to Postgres in Rails.</h2><br />
-            <p class="lead"> 
-              One of the reasons a Rails developer would want to migrate from Rails’ default database to Postgres is when he/she plans on deploying their apps to Heroku because the latter supports Postgres only.<br />
+            <div class="lead"> 
+                    <p>One of the reasons a Rails developer would want to migrate from Rails’ default database to Postgres is when he/she plans on deploying their apps to Heroku because the latter supports Postgres only.</p>
 
-              When you create a new Rails app, SQLite3 gets installed by default, unless you override it before you...</p><br />
+                    <p>When you create a new Rails app, SQLite3 gets installed by default, unless you override it before you...</p>
+            </div>
               <%= button_to 'Read on', '/posts/22', :method => "get", :id => 'readButtonIndx' %>
       </div>
       <hr class="featurette-divider">
@@ -273,7 +274,9 @@
       <div class="featurette">
         <h2 class="featurette-heading"><span class="muted">And lastly, one of the projects that's being worked on:</span> <br /><br />
           <h3><%= image_tag('new.png', :size => '55x55') %>&nbsp&nbspEmbevium</h3>
-        <p class="lead">Another ambitious application built with emberjs in the frontend and Rails framework in the backend.</p>
+        <div class="lead">
+                    <p>Another ambitious application built with emberjs in the frontend and Rails framework in the backend.</p>
+        </div>
       </div>
 
       <hr class="featurette-divider">

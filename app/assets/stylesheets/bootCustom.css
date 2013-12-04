@@ -643,9 +643,10 @@ body {
    font-family: Helvetica, sans-serif;
 }
 
-.lead {
+.lead p {
   font-family: Helvetica, sans-serif;
-  font-size: 12px
+  font-size: 18px;
+  line-height: 22px;
 }
 
 /**
