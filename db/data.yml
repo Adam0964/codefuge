@@ -676,15 +676,15 @@ posts:
       -D /Users/adam0964/.rvm/var/postgres -l          /Users/adam0964/.rvm/var/postgres/server.log
       start\r\n </pre><br />\r\n\r\n<p>3- Start Postgres server by typing the following:</p>\r\n
       \   <pre>$ postgres -D /Users/adam0964/.rvm/var/postgres (your machine will
-      be different)</pre><br />\r\n\r\n<p>You notice that this a long line to start
-      the database and if you have to do it regularly, as I suspect might be the case,
-      this becomes annoying. One way to make your life a little easier is to alias
-      this command in your .bashrc file, and while you’re at it, do the same for other
-      commands that you tend to use on a regular basis. For instance, I put all my
-      Pgsql start, stop, restart, status commands in mine:</p>\r\n\r\n<pre>alias pgstr=\"pg_ctl
-      start -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgstp=\"pg_ctl stop
-      -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgrst=\"pg_ctl restart -W
-      -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgst=\"pg_ctl status -D /Users/adam0964/.rvm/var/postgres\"</pre><br
+      be different)</pre><br />\r\n\r\n<p>You must admit that this a long line to
+      start the database and if you have to do this regularly, as I suspect it might
+      be often the case, this might becomes a bit annoying. One way to make your life
+      a little easier is to alias this command in your .bashrc file, and while you’re
+      at it, do the same for other commands that you tend to use on a regular basis.
+      For instance, I put all my Pgsql start, stop, restart, status commands in mine:</p>\r\n\r\n<pre>alias
+      pgstr=\"pg_ctl start -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgstp=\"pg_ctl
+      stop -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgrst=\"pg_ctl restart
+      -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgst=\"pg_ctl status -D /Users/adam0964/.rvm/var/postgres\"</pre><br
       />\r\n\r\n<p>Now, to start PG, all I have to do is issue ‘pgstr’ instead of
       the long line it evaluate to.</p><br />\r\n\r\n<p>4- Copy database.yml to database.yml..sql3
       by issuing the following:</p>\r\n\r\n <pre>cp config/database.yml config/database.yml.sqlite3</pre><br
@@ -762,7 +762,7 @@ posts:
       </p></li>\r\n<li><p>Caching in Rails 3 the Rails 4 way</p></li>\r\n<li><p>Metaprogramming:
       A diet pill for Ruby Part II</p></li>"
     - '2013-12-02 04:43:01.058341'
-    - '2013-12-02 07:46:26.69871'
+    - '2013-12-04 03:34:29.374181'
 
 ---
 users:
