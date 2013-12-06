@@ -678,72 +678,72 @@ posts:
       \   <pre>$ postgres -D /Users/adam0964/.rvm/var/postgres (your machine will
       be different)</pre><br />\r\n\r\n<p>You must admit that this a long line to
       start the database and if you have to do this regularly, as I suspect it might
-      be often the case, this might becomes a bit annoying. One way to make your life
+      be often the case, this might become a bit annoying. One way to make your life
       a little easier is to alias this command in your .bashrc file, and while you’re
-      at it, do the same for other commands that you tend to use on a regular basis.
-      For instance, I put all my Pgsql start, stop, restart, status commands in mine:</p>\r\n\r\n<pre>alias
-      pgstr=\"pg_ctl start -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgstp=\"pg_ctl
-      stop -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgrst=\"pg_ctl restart
-      -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgst=\"pg_ctl status -D /Users/adam0964/.rvm/var/postgres\"</pre><br
-      />\r\n\r\n<p>Now, to start PG, all I have to do is issue ‘pgstr’ instead of
-      the long line it evaluate to.</p><br />\r\n\r\n<p>4- Copy database.yml to database.yml.sql3
-      by issuing the following:</p>\r\n\r\n <pre>cp config/database.yml config/database.yml.sqlite3</pre><br
-      />\r\n\r\n<p>5- Add ‘yaml_db’ and ‘pg’ gems to the Gemfile and bundle</p>\r\n<p>6-
-      Add a new config/database.yml.pg</p><br />\r\n\r\n<p> Sample file:</p>\r\n\r\n<pre>#
-      PG 9.2\r\n#   gem install postgresql\r\n#\r\n#   Ensure the SQLite 3 gem is
-      defined in your Gemfile\r\n#   gem 'postgresql'\r\n\r\ndevelopment:\r\n  adapter:
-      postgresql\r\n  encoding: unicode\r\n  database: kodefuge_development\r\n  pool:
-      5\r\n  timeout: 5000\r\n  username: kodefuge\r\n  password:\r\n\r\n# Warning:
-      The database defined as \"test\" will be erased and\r\n# re-generated from your
-      development database when you run \"rake\".\r\n# Do not set this db to the same
-      as development or production.\r\ntest:\r\n  adapter: postgresql\r\n  encoding:
-      unicode\r\n  database: kodefuge_test\r\n  pool: 5\r\n  timeout: 5000\r\n  username:
-      adam0964\r\n  password: \r\nproduction:\r\n  adapter: postgresql\r\n  encoding:
-      unicode\r\n  database: kodefuge_production\r\n  pool: 5\r\n  timeout: 5000\r\n
-      \ username: kodefuge\r\n  password: \r\n</pre><br />\r\n\r\n\r\n<p>7- Backup
-      your SQLite data with yaml_db: </p>\r\n             <pre>rake db:data:dump</pre><br
-      />\r\n<p>8- Configure Rails to use your new PostgreSQL configuration:</p>\r\n
-      \            <pre>$ cp config/database.yml.pg config/database.yml</pre><br />\r\n<p>9-
-      Create the database and the associated tables:</p>\r\n             <pre>$ rake
-      db:create RAILS_ENV=\"production\"</pre><br />\r\n<p>10- Load your schema:</p>\r\n
-      \            <pre>$ rake db:schema:load RAILS_ENV=\"production\"</pre><br />\r\n\r\n<p>Sample
-      output:</p>\r\n\r\n<pre>-- create_table(\"admins\", {:force=>true})\r\nNOTICE:
-      \ CREATE TABLE will create implicit sequence \"admins_id_seq\" for serial column
-      \"admins.id\"\r\nNOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index
-      \"admins_pkey\" for table \"admins\"\r\n   -> 0.0537s\r\n-- add_index(\"admins\",
-      [\"email\"], {:name=>\"index_admins_on_email\", :unique=>true})\r\n   -> 0.0042s\r\n--
-      add_index(\"admins\", [\"reset_password_token\"], {:name=>\"index_admins_on_reset_password_token\",
-      :unique=>true})\r\n   -> 0.0026s\r\n-- create_table(\"books\", {:force=>true})\r\nNOTICE:
-      \ CREATE TABLE will create implicit sequence \"books_id_seq\" for serial column
-      \"books.id\"\r\nNOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index
-      \"books_pkey\" for table \"books\"\r\n   -> 0.0034s\r\n-- create_table(\"comments\",
-      {:force=>true})\r\nNOTICE:  CREATE TABLE will create implicit sequence \"comments_id_seq\"
-      for serial column \"comments.id\"\r\nNOTICE:  CREATE TABLE / PRIMARY KEY will
-      create implicit index \"comments_pkey\" for table \"comments\"\r\n   -> 0.0047s\r\n--
-      add_index(\"comments\", [\"post_id\"], {:name=>\"index_comments_on_post_id\"})\r\n
-      \  -> 0.0026s\r\n-- create_table(\"posts\", {:force=>true})\r\n </pre><br />\r\n\r\n<p>11-
-      Load your data with yaml_db:</p>\r\n               <pre>$ rake db:data:load
-      RAILS_ENV=\"production\"</pre><br />\r\n\r\n<p>12- Sample output:\r\n\r\n<pre>-
-      -- create_table(\"admins\", {:force=>true})\r\nNOTICE:  CREATE TABLE will create
+      at it, do the same the for other commands that you tend to use on a regular
+      basis. For instance, I put all my Pgsql start, stop, restart, status commands
+      in mine:</p>\r\n\r\n<pre>alias pgstr=\"pg_ctl start -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias
+      pgstp=\"pg_ctl stop -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgrst=\"pg_ctl
+      restart -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgst=\"pg_ctl status
+      -D /Users/adam0964/.rvm/var/postgres\"</pre><br />\r\n\r\n<p>Now, to start PG,
+      all I have to do is issue ‘pgstr’ instead of the long line it evaluate to.</p><br
+      />\r\n\r\n<p>4- Copy database.yml to database.yml.sql3 by issuing the following:</p>\r\n\r\n
+      <pre>cp config/database.yml config/database.yml.sqlite3</pre><br />\r\n\r\n<p>5-
+      Add ‘yaml_db’ and ‘pg’ gems to the Gemfile and bundle</p>\r\n<p>6- Add a new
+      config/database.yml.pg</p><br />\r\n\r\n<p> Sample file:</p>\r\n\r\n<pre># PG
+      9.2\r\n#   gem install postgresql\r\n#\r\n#   Ensure the SQLite 3 gem is defined
+      in your Gemfile\r\n#   gem 'postgresql'\r\n\r\ndevelopment:\r\n  adapter: postgresql\r\n
+      \ encoding: unicode\r\n  database: kodefuge_development\r\n  pool: 5\r\n  timeout:
+      5000\r\n  username: kodefuge\r\n  password:\r\n\r\n# Warning: The database defined
+      as \"test\" will be erased and\r\n# re-generated from your development database
+      when you run \"rake\".\r\n# Do not set this db to the same as development or
+      production.\r\ntest:\r\n  adapter: postgresql\r\n  encoding: unicode\r\n  database:
+      kodefuge_test\r\n  pool: 5\r\n  timeout: 5000\r\n  username: adam0964\r\n  password:
+      \r\nproduction:\r\n  adapter: postgresql\r\n  encoding: unicode\r\n  database:
+      kodefuge_production\r\n  pool: 5\r\n  timeout: 5000\r\n  username: kodefuge\r\n
+      \ password: \r\n</pre><br />\r\n\r\n\r\n<p>7- Backup your SQLite data with yaml_db:
+      </p>\r\n             <pre>rake db:data:dump</pre><br />\r\n<p>8- Configure Rails
+      to use your new PostgreSQL configuration:</p>\r\n             <pre>$ cp config/database.yml.pg
+      config/database.yml</pre><br />\r\n<p>9- Create the database and the associated
+      tables:</p>\r\n             <pre>$ rake db:create RAILS_ENV=\"production\"</pre><br
+      />\r\n<p>10- Load your schema:</p>\r\n             <pre>$ rake db:schema:load
+      RAILS_ENV=\"production\"</pre><br />\r\n\r\n<p>Sample output:</p>\r\n\r\n<pre>--
+      create_table(\"admins\", {:force=>true})\r\nNOTICE:  CREATE TABLE will create
       implicit sequence \"admins_id_seq\" for serial column \"admins.id\"\r\nNOTICE:
       \ CREATE TABLE / PRIMARY KEY will create implicit index \"admins_pkey\" for
-      table \"admins\"\r\n   -> 0.0152s\r\n-- add_index(\"admins\", [\"email\"], {:name=>\"index_admins_on_email\",
-      :unique=>true})\r\n   -> 0.0040s</pre><br />\r\n\r\n<p><strong>Issues that might
-      arise during this process:</strong></p>\r\n\r\n           <pre>could not connect
-      to server: No such file or directory\r\n           Is the server running locally
-      and accepting\r\n           connections on Unix domain socket \"/var/pgsql_socket/.s.PGSQL.5432\"?</pre></br
-      />\r\n      \r\n<p>Solution:</p>\r\n        <pre> gem pristine pg</pre><br />\r\n\r\n<p>Sample
-      output:</p>\r\n<pre>new-host-3:kodefuge adam0964$ gem pristine pg\r\nRestoring
-      gems to pristine condition...\r\nBuilding native extensions with: ''\r\nThis
-      could take a while...\r\nRestored pg-0.12.2\r\nBuilding native extensions with:
-      ''\r\nThis could take a while...\r\nRestored pg-0.15.1</pre><br />\r\n         \r\n<p>Some
-      people claim that uninstalling the ‘pg’ gem  and installing it again did the
-      trick for them. You may wanna try it if this doesn’t work.</p>\r\n\r\n<p>Issue
-      the following at the command:</p>\r\n           <pre>find / -name .s.PGSQL.5432
-      -ls 2> /dev/null</pre><br />\r\n\r\n <p>You’ll get a similar output:</p>\r\n\r\n
-      \         <pre>19649420        0 srwxrwxrwx    1 adam0964   wheel  0 Jun 25
-      19:19           /private/tmp/.s.PGSQL.5432</pre><br />\r\n\r\n<p>You then create
-      a symlink to point to where your postgres is:</p>\r\n\r\n          <pre>sudo
+      table \"admins\"\r\n   -> 0.0537s\r\n-- add_index(\"admins\", [\"email\"], {:name=>\"index_admins_on_email\",
+      :unique=>true})\r\n   -> 0.0042s\r\n-- add_index(\"admins\", [\"reset_password_token\"],
+      {:name=>\"index_admins_on_reset_password_token\", :unique=>true})\r\n   -> 0.0026s\r\n--
+      create_table(\"books\", {:force=>true})\r\nNOTICE:  CREATE TABLE will create
+      implicit sequence \"books_id_seq\" for serial column \"books.id\"\r\nNOTICE:
+      \ CREATE TABLE / PRIMARY KEY will create implicit index \"books_pkey\" for table
+      \"books\"\r\n   -> 0.0034s\r\n-- create_table(\"comments\", {:force=>true})\r\nNOTICE:
+      \ CREATE TABLE will create implicit sequence \"comments_id_seq\" for serial
+      column \"comments.id\"\r\nNOTICE:  CREATE TABLE / PRIMARY KEY will create implicit
+      index \"comments_pkey\" for table \"comments\"\r\n   -> 0.0047s\r\n-- add_index(\"comments\",
+      [\"post_id\"], {:name=>\"index_comments_on_post_id\"})\r\n   -> 0.0026s\r\n--
+      create_table(\"posts\", {:force=>true})\r\n </pre><br />\r\n\r\n<p>11- Load
+      your data with yaml_db:</p>\r\n               <pre>$ rake db:data:load RAILS_ENV=\"production\"</pre><br
+      />\r\n\r\n<p>12- Sample output:\r\n\r\n<pre>- -- create_table(\"admins\", {:force=>true})\r\nNOTICE:
+      \ CREATE TABLE will create implicit sequence \"admins_id_seq\" for serial column
+      \"admins.id\"\r\nNOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index
+      \"admins_pkey\" for table \"admins\"\r\n   -> 0.0152s\r\n-- add_index(\"admins\",
+      [\"email\"], {:name=>\"index_admins_on_email\", :unique=>true})\r\n   -> 0.0040s</pre><br
+      />\r\n\r\n<p><strong>Issues that might arise during this process:</strong></p>\r\n\r\n
+      \          <pre>could not connect to server: No such file or directory\r\n           Is
+      the server running locally and accepting\r\n           connections on Unix domain
+      socket \"/var/pgsql_socket/.s.PGSQL.5432\"?</pre></br />\r\n      \r\n<p>Solution:</p>\r\n
+      \       <pre> gem pristine pg</pre><br />\r\n\r\n<p>Sample output:</p>\r\n<pre>new-host-3:kodefuge
+      adam0964$ gem pristine pg\r\nRestoring gems to pristine condition...\r\nBuilding
+      native extensions with: ''\r\nThis could take a while...\r\nRestored pg-0.12.2\r\nBuilding
+      native extensions with: ''\r\nThis could take a while...\r\nRestored pg-0.15.1</pre><br
+      />\r\n         \r\n<p>Some people claim that uninstalling the ‘pg’ gem  and
+      installing it again did the trick for them. You may wanna try it if this doesn’t
+      work.</p>\r\n\r\n<p>Issue the following at the command:</p>\r\n           <pre>find
+      / -name .s.PGSQL.5432 -ls 2> /dev/null</pre><br />\r\n\r\n <p>You’ll get a similar
+      output:</p>\r\n\r\n          <pre>19649420        0 srwxrwxrwx    1 adam0964
+      \  wheel  0 Jun 25 19:19           /private/tmp/.s.PGSQL.5432</pre><br />\r\n\r\n<p>You
+      then create a symlink to point to where your postgres is:</p>\r\n\r\n          <pre>sudo
       ln -s /private/tmp/.s.PGSQL.5432 /var/run/postgresql/.s.PGSQL.5432</pre><br
       />\r\n\r\n<p>There you have it, the last option was pretty straightforward and
       I hope this can be of some use to someone out there.</p>\r\n\r\n<p>Links that
@@ -762,7 +762,7 @@ posts:
       </p></li>\r\n<li><p>Caching in Rails 3 the Rails 4 way</p></li>\r\n<li><p>Metaprogramming:
       A diet pill for Ruby Part II</p></li>"
     - '2013-12-02 04:43:01.058341'
-    - '2013-12-06 17:26:58.630355'
+    - '2013-12-06 18:10:13.871889'
 
 ---
 users:
