@@ -76,8 +76,6 @@ body {
   margin-bottom: auto;
   padding-top: 50px;
   *zoom: 1;
-  /*background: #333333;
-  background: rgba(0, 0, 0, 0.75);*/
   background-image: url(bgd/bgd46.jpg);
   -webkit-box-shadow: -1px -4px 20px rgba(118, 123, 134, 0.47);
   -moz-box-shadow:    -1px -4px 20px rgba(118, 123, 134, 0.47);
