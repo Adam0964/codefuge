@@ -1576,9 +1576,9 @@ body {
   float: left;
   color: white;
   background-image: url(bgd/bgd17.jpg);
-  -webkit-border-radius: 4px 4px 4px 4px;
-  -moz-border-radius:    4px 4px 4px 4px;
-  border-radius:         4px 4px 4px 4px;
+  -webkit-border-radius:  4px;
+  -moz-border-radius:     4px;
+  border-radius:          4px;
 }
 
 #readButton:hover {
@@ -1593,9 +1593,9 @@ body {
   border: solid 3px #87CEFA;
   float: left;
   background-image: url(adam.jpg);
-  -webkit-border-radius: 4px;
-  -moz-border-radius:    4px;
-  border-radius:         4px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius:    8px;
+  border-radius:         8px;
 
 }
 /**
