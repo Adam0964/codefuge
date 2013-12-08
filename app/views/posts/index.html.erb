@@ -9,7 +9,7 @@
                                             <h3><%= post.title.upcase %></h3>
                                             <h6>
                                               <%= post.created_at.strftime("Published %b %d, %Y  by ")%><%= post.name.capitalize %>
-                                            </h6>
+                                            </h6></span>
                                             <br />
                                             <p><%= raw post.content.split[0..50].join(" ") %></p>
                                             <br />

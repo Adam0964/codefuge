@@ -9,9 +9,11 @@
 									    <h3>
 									  	  <%= @post.title.upcase %>
 									    </h3>
+									        <span>
+                                              <%= image_tag 'adam4.jpg', :id => 'adam' %>
 									  	    <h6>
 									  	    	<%= @post.created_at.strftime("Published %b %d, %Y by ")%><%= @post.name.capitalize %>
-									  	    </h6> 
+									  	    </h6></span><br /><br />
 		                                <hr /><br />
 									         <p> 
 									         	<%= @post.content.html_safe %>

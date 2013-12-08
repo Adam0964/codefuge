@@ -1585,6 +1585,19 @@ body {
   opacity: 0.3;
 }
 
+
+#adam  {
+  width: 90px;
+  height:90px;
+  margin-top: -20px;
+  border: solid 3px #87CEFA;
+  float: left;
+  background-image: url(adam.jpg);
+  -webkit-border-radius: 4px;
+  -moz-border-radius:    4px;
+  border-radius:         4px;
+
+}
 /**
 *****************************************************
 |            Media queries for Posts                |
