@@ -676,11 +676,11 @@ posts:
       -D /Users/adam0964/.rvm/var/postgres -l          /Users/adam0964/.rvm/var/postgres/server.log
       start\r\n </pre><br />\r\n\r\n<p>3- Start Postgres server by typing the following:</p>\r\n
       \   <pre>$ postgres -D /Users/adam0964/.rvm/var/postgres (your machine will
-      be different)</pre><br />\r\n\r\n<p>You must admit that this a long line to
-      start the database and if you have to do this regularly, as I suspect it might
-      be often the case, this might become a bit annoying. One way to make your life
-      a little easier is to alias this command in your .bashrc file, and while you’re
-      at it, do the same the for other commands that you tend to use on a regular
+      be different)</pre><br />\r\n\r\n<p>You must admit that this is a long line
+      to start the database and if you have to do this regularly, as I suspect it
+      might be often the case, this might become a bit annoying. One way to make your
+      life a little easier is to alias this command in your .bashrc file, and while
+      you’re at it, do the same for the other commands that you tend to use on a regular
       basis. For instance, I put all my Pgsql start, stop, restart, status commands
       in mine:</p>\r\n\r\n<pre>alias pgstr=\"pg_ctl start -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias
       pgstp=\"pg_ctl stop -W -D /Users/adam0964/.rvm/var/postgres\"\r\nalias pgrst=\"pg_ctl
@@ -762,7 +762,7 @@ posts:
       </p></li>\r\n<li><p>Caching in Rails 3 the Rails 4 way</p></li>\r\n<li><p>Metaprogramming:
       A diet pill for Ruby Part II</p></li>"
     - '2013-12-02 04:43:01.058341'
-    - '2013-12-06 18:10:13.871889'
+    - '2013-12-08 23:42:11.196969'
 
 ---
 users:
