@@ -763,6 +763,72 @@ posts:
       A diet pill for Ruby Part II</p></li>"
     - '2013-12-02 04:43:01.058341'
     - '2013-12-08 23:42:11.196969'
+  - - '23'
+    - Adam Raouki
+    - Saving without Committing in Github
+    - "<p>It’s 4PM on Friday, you’ve been working on the current project for a few
+      weeks and the deadline is near by and all of sudden, a bug pops up and slows
+      things down. You decide to take care of it right away and get so deeply involved
+      that you realize, an hour later, that you lost track of time and space, for
+      it is almost 5PM and it’s time to leave if you won’t want to miss your kid’s
+      birthday, like you did last time. You can’t commit your changes because you
+      haven’t had time to find and fix the bug yet. So, what do you do?</p>\r\n\r\n<p>Assuming
+      you are working on your branch, as you should, and not your master, you can
+      save your work without having to commit any changes by issuing a stash command:\r\n
+      </p>\r\n\r\n<pre>$ git stash </pre>\r\n\r\n<p>If you don’t specify the name
+      of the stash, Git assumes that you meant the current one, otherwise, if you
+      target another stash, you have to tell git.</p>\r\n\r\n<p>Let’s call the project
+      you’ve been working on: messy_project. At this point, if you check the status
+      of your master, you realize that your branch master is still unchanged:</p>\r\n\t\r\n<pre>#
+      show the status of master after the stash \r\n$ git status\r\n\t\r\n# output:\r\n#
+      On branch master\r\nnothing to commit (working directory clean)</pre>\r\n<p>And
+      to see the list of stashes you have on your system, issue the following:\t</p>\r\n\r\n<pre>#
+      show the list of the stashes available\r\n$ git stash list:\r\n\r\n# output:\t\t\t
+      \   \r\n# stash@{0}: WIP on master: 049d078 added the index file (for  instance)\r\n</pre>\r\n\r\n<p>Everything
+      looks great. So, off you go.</p>\r\n\r\n<p>The next day, you get on your laptop,
+      spend some time working on the issue and you finally fix the bug and you want
+      to commit the new changes to you branch master. First, you need to apply the
+      stash by issuing the following:</p><br />\t\r\n\t    \r\n<pre># apply the stash
+      \            \r\n$ git stash apply\r\n\r\n# output:\t\t\t\r\n# On branch master\r\n#
+      Changes not staged for commit:\r\n#   (use \"git add <file>...\" to update what
+      will be committed)\r\n#\r\n#      modified:   index.html (for example)\r\n#
+      \     modified:   lib/simplegit.rb\r\n#\r\n</pre><br />\r\n\r\n<p>And this:</p>\r\n<pre>#
+      reapply the staged changes\r\n$ git stash apply --index\r\n\t        \r\n# output:\t\r\n#
+      On branch master\r\n# Changes to be committed:\r\n#   (use \"git reset HEAD
+      <file>...\" to unstage)\r\n#\r\n#      modified:   index.html\r\n#\r\n# Changes
+      not staged for commit:\r\n#   (use \"git add <file>...\" to update what will
+      be committed)\r\n#\r\n#      modified:   lib/simplegit.rb\r\n#</pre><br />\r\n\r\n
+      <p>If you issue the following, you’ll see that the first file has been added:</p>\r\n\r\n<pre>#
+      get the stash list\r\n$ git stash list\r\n\t\r\n# output:\r\nstash@{0}: WIP
+      on master: 049d078 added the index file\r\n</pre><br />\r\n\r\n<p>The apply
+      option only applies the stashed work. Should you feel the need to remove all
+      that work, issue the following:</p>\r\n\r\n<pre># remove stash\r\n$ git stash
+      drop\r\n \r\n# output:                 \r\nDropped stash@{0} (364e91f3f268f0900bc3ee613f9f733e82aaed43)\r\n</pre><br
+      />\r\n\r\n<p>\"In some use case scenarios you might want to apply stashed changes,
+      do some work, but then un-apply those changes that originally came \r\nfrom
+      the stash. Git does not provide such a stash unapply command, but it is possible
+      to achieve the effect by simply retrieving the patch \r\nassociated with a stash
+      and applying it in reverse:\"</p>\r\n\r\n<pre># unapply changes on the last
+      stash\r\n$ git stash show -p | git apply -R\r\n</pre><br />\r\n\r\n<p>One way
+      to simplify things is to create an alias to a stash-unapply and add it to your
+      git config file:</p>\r\n\r\n<pre># add a stash-unapply command to git\r\n$ git
+      config --global alias.stash-unapply '!git stash show -p | git apply -R'\r\n</pre><br
+      />\r\n\t\t\r\n<p>And then, issue:</p>\r\n\t\t\r\n<pre>$ git stash\r\n\r\n# output:\r\n#...
+      still working on messy_project</pre><br />\t\t\t\t\t\r\n\t\t\t\t\t\r\n<p>If
+      you stash some work, leave it there for a while, and continue on the branch
+      you stashed your work from, you will get a merge conflict because you're trying
+      to apply changes to a file has already been modified. In that case, if you create
+      a new branch by issuing the following, this will check your last commit when
+      you last stashed your work, reapplies your work on that branch and, if the operation
+      is successful, it drop will the stash.\r\n</p>\r\n\r\n<pre># create a branch
+      from stash\r\n$ git stash branch messy_project2\r\n\t\t\t\t\t\r\n# output:\r\nSwitched
+      to a new branch \"messy_project2\r\n# On branch messy_project2\r\n# Changes
+      to be committed:\r\n#  (use \"git reset HEAD <file>...\" to unstage)\r\n#\r\n#
+      \     modified:   index.html\r\n#\r\n# Changes not staged for commit:\r\n#   (use
+      \"git add <file>...\" to update what will be committed)\r\n#\r\n#      modified:
+      \  lib/simplegit.rb\r\n#</pre>\r\n\r\n"
+    - '2013-12-09 00:55:49.770007'
+    - '2013-12-09 02:18:03.938633'
 
 ---
 users:
