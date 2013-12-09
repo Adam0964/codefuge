@@ -770,7 +770,7 @@ posts:
       weeks and the deadline is near by and all of sudden, a bug pops up and slows
       things down. You decide to take care of it right away and get so deeply involved
       that you realize, an hour later, that you lost track of time and space, for
-      it is almost 5PM and it’s time to leave if you won’t want to miss your kid’s
+      it is almost 5PM and it’s time to leave if you don’t want to miss your kid’s
       birthday, like you did last time. You can’t commit your changes because you
       haven’t had time to find and fix the bug yet. So, what do you do?</p>\r\n\r\n<p>Assuming
       you are working on your branch, as you should, and not your master, you can
@@ -828,7 +828,7 @@ posts:
       \"git add <file>...\" to update what will be committed)\r\n#\r\n#      modified:
       \  lib/simplegit.rb\r\n#</pre>\r\n\r\n"
     - '2013-12-09 00:55:49.770007'
-    - '2013-12-09 02:18:03.938633'
+    - '2013-12-09 03:49:40.886595'
 
 ---
 users:
