@@ -815,20 +815,20 @@ posts:
       config --global alias.stash-unapply '!git stash show -p | git apply -R'\r\n</pre><br
       />\r\n\t\t\r\n<p>And then, issue:</p>\r\n\t\t\r\n<pre>$ git stash\r\n\r\n# output:\r\n#...
       still working on messy_project</pre><br />\t\t\t\t\t\r\n\t\t\t\t\t\r\n<p>If
-      you stash some work, leave it there for a while, and continue on the branch
-      you stashed your work from, you will get a merge conflict because you're trying
-      to apply changes to a file has already been modified. In that case, if you create
-      a new branch by issuing the following, this will check your last commit when
-      you last stashed your work, reapplies your work on that branch and, if the operation
-      is successful, it drop will the stash.\r\n</p>\r\n\r\n<pre># create a branch
-      from stash\r\n$ git stash branch messy_project2\r\n\t\t\t\t\t\r\n# output:\r\nSwitched
-      to a new branch \"messy_project2\r\n# On branch messy_project2\r\n# Changes
-      to be committed:\r\n#  (use \"git reset HEAD <file>...\" to unstage)\r\n#\r\n#
+      you stash some work, leave it there for a while and continue on the branch you
+      stashed your work from, you will get a merge conflict because you're trying
+      to apply changes to a file that has already been modified. In that case, if
+      you create a new branch by issuing the following, this will check your last
+      commit when you last stashed your work, reapply your work on that branch and,
+      if the operation is successful, drop the stash.\r\n</p>\r\n\r\n<pre># create
+      a branch from stash\r\n$ git stash branch messy_project2\r\n\t\t\t\t\t\r\n#
+      output:\r\nSwitched to a new branch \"messy_project2\r\n# On branch messy_project2\r\n#
+      Changes to be committed:\r\n#  (use \"git reset HEAD <file>...\" to unstage)\r\n#\r\n#
       \     modified:   index.html\r\n#\r\n# Changes not staged for commit:\r\n#   (use
       \"git add <file>...\" to update what will be committed)\r\n#\r\n#      modified:
       \  lib/simplegit.rb\r\n#</pre>\r\n\r\n"
     - '2013-12-09 00:55:49.770007'
-    - '2013-12-09 03:49:40.886595'
+    - '2013-12-09 17:57:07.749274'
 
 ---
 users:
