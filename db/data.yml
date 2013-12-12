@@ -841,50 +841,51 @@ posts:
       worked with recruiters in the past, the last thing I wanted to do was getting
       my next gig through a staffing agency. Granted, there are very few good ones
       out there, and I worked with a few of them, but the majority of the recruiters
-      I had to deal with had no idea what the heck I was looking for and all their
-      seemingly hard work amounted to nothing. I’ve never gotten a job through a recruiter
-      in the past and I would be surprised if that changed any time soon. However,
-      I like to keep an open mind.</p><br />\r\n\r\n<p>I don’t mind that a recruiter
+      I had to deal with had no idea what I was looking for and all their seemingly
+      hard work amounted to nothing. I’ve never gotten a job through a recruiter in
+      the past and I would be surprised if that changed any time soon. However, I
+      like to keep an open mind.</p><br />\r\n\r\n<p>I don’t mind that a recruiter
       sends me an email with what they think would be a good opportunity for me, but,
       before you do, please do your homework: \r\n </p><br />\r\n\r\n<p>1- Get familiar
       with the requirements of the job you’re trying to promote and I don’t mean just
       reading or memorizing them. Learn about the technologies that are listed in
       the job description and the targeted resume, there is a wealth of information
       about any technology you may wish to look up, and it’s all free. That way, when
-      you ask me and I tell you about what I did on my last assignment, you know what
-      the hell I’m talking about. Or you can just skip the questioning part and let
-      me know me, either by email or phone, that you are going to submit my resume
-      for the position your client is trying to fill and react to the outcome accordingly.
-      \r\n </p><br />\r\n\r\n<p>2- When you edit a job description, make sure you
-      understand every word you use. For instance, and I’ve seen this in several edited
-      job descriptions, Ruby on Rails is not an Object-oriented language, it’s a framework.
-      Ruby is the OO language and Rails is the framework.\r\nAnd please proof-read
-      what you wrote before you hit the “Send” button.\r\n<p><br />\r\n\r\n<p>3- Please,
-      don’t fast-read my resume trying to find words or sentences that you think would
-      legitimize your decision that I would be a potential candidate for the position
-      you’re promoting. Just recently, I tried to express my concerns about a position
-      that a recruiter thought I would be a good fit for, explaining why I wasn’t.
-      The recruiter’s response was: “I targeted you for the role with - company name
-      here - because of your experience with customer-facing applications and because
-      you have both RoR experience and JS experience”, the keyword here being “customer-facing
-      applications.” I used the latter in my resume because it describes one aspect
-      of what I did during that assignment. I never meant for it to be a “buzzword”,
-      but, it became one despite my best intentions.<p><br />\r\n\r\n<p>4- Please,
-      don’t edit my resume by changing the wording in any of its parts under the guise
-      of making it “more attractive.” Despite your best intentions, what you’re doing
-      is actually counterproductive: you’re destroying its very essence. Every word
-      and every sentence have been thoroughly thought out. Don’t edit. Please!</p><br
-      />\r\n\r\n<p>5- Don’t remove any links that I send you before you submit my
-      profile to your client under the pretense that you’re afraid that they might
-      bypass you and contact me without your knowledge. Those links are a big key
-      in your client’s decision on whether to move forward or not,  and by removing
-      them, you’re doing me, your client, not mention yourself, a disservice.</p><br
-      />\r\n\r\n<p>6- Unless you did for a living what I do now, and did it for a
-      while, please don’t try to assess me.*  Some agencies, which shall remain nameless,
-      that popped up in the recruiting scene just recently, do exactly that: assessing,
-      vetting the candidates that submitted their profiles. And to add insult to injury,
-      and instead of submitting those profiles to several clients and waiting for
-      their feedback, someone, who has a vague idea of what you do, what you're looking
+      you ask me and I tell you about what I did on my last assignment, we're the
+      same page. Or, if you don't want to put in the time and effort, you can just
+      skip the questioning part and let me know me, either by email or phone, that
+      you are going to submit my resume for the position your client is trying to
+      fill and react to the outcome accordingly. \r\n </p><br />\r\n\r\n<p>2- When
+      you edit a job description, make sure you understand every word you use. For
+      instance, and I’ve seen this in several edited job descriptions, Ruby on Rails
+      is not an Object-oriented language, it’s a framework. Ruby is the OO language
+      and Rails is the framework.\r\nAnd please proof-read what you wrote before you
+      hit the “Send” button.\r\n<p><br />\r\n\r\n<p>3- Please, don’t fast-read my
+      resume trying to find words or sentences that you think would legitimize your
+      decision that I would be a potential candidate for the position you’re promoting.
+      Just recently, I tried to express my concerns about a position that a recruiter
+      thought I would be a good fit for, explaining why I wasn’t. The recruiter’s
+      response was: “I targeted you for the role with - company name here - because
+      of your experience with customer-facing applications and because you have both
+      RoR experience and JS experience”, the keyword here being “customer-facing applications.”
+      I used the latter in my resume because it describes one aspect of what I did
+      during that assignment. I never meant for it to be a “buzzword”, but, it became
+      one despite my best intentions.<p><br />\r\n\r\n<p>4- Please, don’t edit my
+      resume by changing the wording in any of its parts under the guise of making
+      it “more attractive.” Despite your best intentions, what you’re doing is actually
+      counterproductive: you’re destroying its very essence. Every word and every
+      sentence have been thoroughly thought out. Don’t edit. Please!</p><br />\r\n\r\n<p>5-
+      Don’t remove any links that I send you before you submit my profile to your
+      client under the pretense that you’re afraid that they might bypass you and
+      contact me without your knowledge. Those links are a big key in your client’s
+      decision on whether to move forward or not,  and by removing them, you’re doing
+      me, your client, not mention yourself, a disservice.</p><br />\r\n\r\n<p>6-
+      Unless you did for a living what I do now, and did it for a while, please don’t
+      try to assess me.*  Some agencies, which shall remain nameless, that popped
+      up in the recruiting scene just recently, do exactly that: assessing, vetting
+      the candidates that submitted their profiles. And to add insult to injury, and
+      instead of submitting those profiles to several clients and waiting for their
+      feedback, someone, who has a vague idea of what you do, what you're looking
       for and who’s never talked to you, will alert you, months later, through an
       email, that your application has been rejected because the recruiting agency
       has “high standards”, which you didn’t meet, based on your profile.</p><br />\r\n\r\n<p>7-
@@ -912,7 +913,7 @@ posts:
       except those coming from agencies that are in my blacklist.</p><br /><br />\r\n\r\n<h7>*
       I have yet to meet a developer that became a recruiter. </h7>"
     - '2013-12-11 00:57:11.635631'
-    - '2013-12-12 20:12:12.243708'
+    - '2013-12-12 20:24:21.430489'
 
 ---
 users:
