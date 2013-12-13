@@ -597,18 +597,18 @@ body {
 
 /**
 --------------------------------------------------
-|             MARKETING CONTENT                  |
+|             ƒ CONTENT                  |
 -------------------------------------------------- 
 **/
 
 /* Center align the text within the three columns below the carousel */
-.marketing .span4 {
+.ƒ .span4 {
   text-align: center;
 }
-.marketing h2 {
+.ƒ h2 {
   font-weight: normal;
 }
-.marketing .span4 p {
+.ƒ .span4 p {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -629,7 +629,7 @@ body {
   /*background-color: #777777;*/
 }
 
-/* Thin out the marketing headings */
+/* Thin out the ƒ headings */
 .featurette-heading {
   font-size: 20px;
   font-weight: 200;
@@ -1513,7 +1513,10 @@ body {
 
 .blog-container h3 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -1px;
   color:#0066CC;
   text-align: center;
 }
@@ -2832,8 +2835,9 @@ body {
   height: 60px;
   margin-top: -15px;
   margin-bottom: -700px;
-  margin-left: -700px;
+  margin-left: -900px;
   padding-top: 25px;
+  padding-left: 200px;
   background-image: url(bgd/bgd32.jpg);
 }
 
@@ -2879,9 +2883,9 @@ body {
   height: 25px;
   margin-top: 700px;
   margin-bottom: -40px;
-  margin-left: -700px;
+  margin-left: -900px;
   padding-top: 20px;
-  padding-left: 1230px;
+  padding-left: 1430px;
   background-image: url(bgd/bgd36.jpg);
 }
 
@@ -2948,7 +2952,7 @@ body {
     width: 250px;
     font-size: 6pt;
     color: white;
-    font-family: Droid Serif;
+    font-family: 'Droid Serif';
     text-align: center;
   }
   .ads1, 
@@ -2994,7 +2998,7 @@ body {
   #footer-topper {
     font-size: 6pt;
     color: white;
-    font-family: Droid Serif;
+    font-family: 'Droid Serif';
     text-align: center;
   }
   .ads1, 

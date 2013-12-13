@@ -568,7 +568,7 @@ posts:
   records: 
   - - '19'
     - Adam Raouki
-    - Tables and Browser compatibility and How Browser gem came to the Rescue
+    - Tables and How The browser gem came to the Rescue
     - "<p>We all know that Firefox, Opera and IE suck at handling tables. With the
       original css, my table displayed perfectly on Chrome and Safari. On Firefox,
       Opera and IE, the padding in the row where the items were displayed had almost
@@ -587,7 +587,7 @@ posts:
       \                 &lt;/td&gt;\r\n              &lt;/tr&gt;\r\n        &lt;/table&gt;\r\n
       \   &lt;/div&gt;\r\n</pre>"
     - '2013-10-21 19:28:23.687046'
-    - '2013-10-21 20:54:05.079618'
+    - '2013-12-13 17:55:54.405966'
   - - '21'
     - Adam Raouki
     - Metaprogramming, a diet pill for Ruby
@@ -615,12 +615,12 @@ posts:
       copy and paste that makes the program boring and would require us to test every
       method, and there are quite a few of them if you consider the scope of a store
       like Amazon. Not exactly the best approach.</p>\r\n\r\n<p>There are two ways
-      to ways to refactor this program: <br />\r\n1- Using Dynamic methods <br />\r\n2-
-      Using method_missing.</p>\r\n\r\n<p> I will use the first one to demonstrate
-      in this post and tackle the second in an upcoming one.\r\n</p>\r\n\r\n<p>In
-      Ruby, when you call a method, you usually do so by using the dot notation: </p><br
-      />\r\n\r\n<pre>\r\nobj = Book.new\r\nobj = some_method()\r\n </pre>\r\n\r\n<p>However,
-      there is another way: you can use Object#send(), such as in:</p><br />\r\n\r\n<pre>\r\nobj.send(:some_method)
+      to refactor this program: <br />\r\n1- Using Dynamic methods <br />\r\n2- Using
+      method_missing.</p>\r\n\r\n<p> I will use the first one to demonstrate in this
+      post and tackle the second in an upcoming one.\r\n</p>\r\n\r\n<p>In Ruby, when
+      you call a method, you usually do so by using the dot notation: </p><br />\r\n\r\n<pre>\r\nobj
+      = Book.new\r\nobj = some_method()\r\n </pre>\r\n\r\n<p>However, there is another
+      way: you can use Object#send(), such as in:</p><br />\r\n\r\n<pre>\r\nobj.send(:some_method)
       \r\n</pre>\r\n\r\n<p>With send(), the method name becomes a simple argument
       that you can call at the last moment, while your program is running, if you
       so choose. This is what is referred to as Dynamic Dispatch in Ruby.</p>\r\n\r\n<p>Based
@@ -648,7 +648,7 @@ posts:
       go even further in our quest to dry up our code even more by refactoring the
       3 define_data methods. But, that will be the subject of another post.</p>\r\n"
     - '2013-11-13 02:11:08.114803'
-    - '2013-12-02 07:33:09.677542'
+    - '2013-12-13 17:50:09.560231'
   - - '22'
     - Adam Raouki
     - Steps to migrating from Sqlite to Postgres in Rails
