@@ -832,59 +832,60 @@ posts:
       then type in a message and submit. Once submitted, the form should go to an
       SMTP server like Google Gmail or Yahoo mail. Though this may seem simple, there
       are quite a few steps that are involved in the process of making this happen
-      and here they are.</p>\r\n\r\n<p>The best way to shoW this process is through
-      an example. \r\n</p><br />\r\n\r\n<font size='4' color='navy'>Building the App</font><br
-      /><br />\r\n\r\n1- Install rails:<br ><br />\r\n    <pre>gem install rails</pre>
-      <br />\r\n\r\n2- Create a new rails app:<br /><br />\r\n    <pre>Rails new contact_form
-      –database=postgresql –skip-test-unit && cd contact_form</pre><br />\r\n\r\n<p>The
-      database flag allows us to bypass rails default database ‘sqlite’ and install
-      Postgresql because we are going to deploy to heroku and we’re skipping the Test-unit
-      because we’re going to use RSpec instead. </p><br />\r\n\r\n3- Add the necessary
-      gems to the Gemfile and bundle:<br /><br />\r\n   <pre><br />\r\n       gem
-      'simple_form', '~> 3.0.0.rc'\r\n       gem 'bootstrap-sass', '~> 2.3.2.0'\r\n
-      \      gem 'haml-rails', '~> 0.4.0\r\n\r\n       # Development Guard\r\n       group
-      :development do \r\n          gem 'guard-rails'\r\n          gem 'guard-livereload'\r\n
-      \         gem 'rack-livereload'\r\n          gem 'guard-bundler'\r\n       end\r\n
-      \ </pre><br />\r\n\r\n<p> * guard is good at automating a lot of stuff. See
-      the gem’s docs on github and check out these resources: railscast, nettutt</p><br
-      />\r\n\r\n<font size='4' color='navy'>Set up guard and start the server:</font><br
-      /><br />\r\n\r\n1- Add a guard definition to your Guardfile with:<br /><br />\r\n\r\n
-      \   <pre>bundle exec guard init rails livereload</pre><br />\r\n\r\n2- Start
-      the rails server and livereload by running Guard through Bundler (to avoid getting
-      errors) with:<br /><br />\r\n   <pre>bundle exec guard</pre><br />\r\n\r\n<font
-      size='4' color='navy'>Create a pages controller</font><br /><br />\r\n\r\n1-
-      Create a controller with one page called index:<br /><br />\r\n\r\n  <pre>Rails
-      g controller pages index</pre><br />\r\n\r\n2- Edit the routes file:<br /><br
-      />\r\n\r\n<pre>ContactForm::Application.routes.draw do\r\n  root \"pages#index\"</pre><br
-      />\r\n\r\n<p>If you open your browser and go to: http://localhost:3000, you
-      should see the following:</p><br />\r\n\r\n<pre>Pages#index\r\nFind me in app/views/pages/index.html</pre><br
-      />\r\n\r\n<font size='4' color='navy'>Update the Assets folder:</font><br /><br
-      />\r\n + Add Bootstrap to both application files:<br /><br />\r\n\r\n <pre>
-      \r\n   *= require ‘bootstrap’\r\n   //= require ‘bootstrap’\r\n </pre><br />\r\n\r\n<font
-      size='4' color='navy'>Update the views:</font><br /><br />\r\n\r\n1- Install
-      html2haml<br /><br />\r\n <pre>\r\n   gem install html2haml\r\n </pre><br />\r\n2-
-      Convert html to haml and remove the .erb file<br /><br />\r\n\r\n <pre>\r\n
-      \ Html2haml application.html.rb > application.html.haml && rm application.html.erb\r\n
-      </pre><br />\r\n\r\n3- Create a partial for the header in the layouts folder<br
-      /><br />\r\n\r\n<pre>\r\n.container\r\n  - flash.each do |name, msg|\r\n    -
-      if msg.is_a?(String)\r\n      %div{:class => \"alert alert-#{name == :notice
-      ? \"success\" : \"error\"}\"}\r\n        %a.close{\"data-dismiss\" => \"alert\"}\r\n
-      \         &times;\r\n        = content_tag :div, msg, :id => \"flash_#{name}\"\r\n
-      \ .navbar.navbar-fixed-top\r\n    .navbar-inner\r\n      .container\r\n        .nav-collapse.collapse\r\n
-      \         %ul.nav\r\n            %li\r\n              = link_to t('home'), root_url\r\n
-      \           %li\r\n              = link_to t('contact'), new_contact_path  \r\n</pre><br
-      />\r\n\r\n4- Update the application.html.haml by adding the following right
-      after yield:<br /><br />\r\n<pre>\r\n= render :partial => 'layouts/header'\r\n</pre><br
-      />\r\n\r\n<font size='4' color='navy'>Create the Contact Form:</font><br /><br
-      />\r\n\r\n1- Run the simple_form  generator and add bootstrap styling to it:<br
-      ><br />\r\n       \r\n <pre>Rails g simple_form:install –bootstrap</pre><br
-      />\r\n\r\n2- Add a contacts controller:<br /><br />\r\n\r\n<pre>Rails g controller
-      contacts</pre><br />\r\n\r\n3- Edit the routes file:<br /><br />\r\n <pre>Resources
-      ‘contacts’, only [:new, :create]</pre><br />\r\n\r\n4- Edit the conatcts_controller.rb
-      file:<br /><br />\r\n\r\n<pre>\r\nclass ContactsController < ApplicationController\r\n
-      \ def new\r\n    @contact = Contact.new\r\n  end\r\n\r\n  def create\r\n    @contact
-      = Contact.new(params[:contact])\r\n    @contact.request = request\r\n    if
-      @contact.deliver\r\n      flash.now[:error]  = nil\r\n      flash.now[:notice]
+      and here they are explained through an example.</p><br />\r\n\r\n\r\n<font size='4'
+      color='navy'>Building the App</font><br /><br />\r\n\r\n1- Install rails:<br
+      ><br />\r\n    <pre>gem install rails</pre> <br />\r\n\r\n2- Create a new rails
+      app:<br /><br />\r\n    <pre>Rails new contact_form –database=postgresql –skip-test-unit
+      && cd contact_form</pre><br />\r\n\r\n<p>The database flag allows us to bypass
+      rails default database ‘sqlite’ and install Postgresql because we are going
+      to deploy to heroku and we’re skipping the Test-unit because we’re going to
+      use RSpec instead. </p><br />\r\n\r\n3- Add the necessary gems to the Gemfile
+      and bundle:<br /><br />\r\n   <pre><br />\r\n       gem 'simple_form', '~> 3.0.0.rc'\r\n
+      \      gem 'bootstrap-sass', '~> 2.3.2.0'\r\n       gem 'haml-rails', '~> 0.4.0\r\n\r\n
+      \      # Development Guard\r\n       group :development do \r\n          gem
+      'guard-rails'\r\n          gem 'guard-livereload'\r\n          gem 'rack-livereload'\r\n
+      \         gem 'guard-bundler'\r\n       end\r\n  </pre><br />\r\n\r\n<p> * guard
+      is good at automating a lot of stuff. See the gem’s docs on <a href=\"https://github.com/guard/guard\"
+      target=\"_blank\">github</a> and check out also these resources: <a href=\"http://railscasts.com/episodes/264-guard\"
+      target=\"_blank\">railscast</a>, <a href=\"http://net.tutsplus.com/tutorials/tools-and-tips/guard-is-your-best-friend/\"
+      target=\"_blank\">nettuts</a></p><br />\r\n\r\n<font size='4' color='navy'>Set
+      up guard and start the server:</font><br /><br />\r\n\r\n1- Add a guard definition
+      to your Guardfile with:<br /><br />\r\n\r\n    <pre>bundle exec guard init rails
+      livereload</pre><br />\r\n\r\n2- Start the rails server and livereload by running
+      Guard through Bundler (to avoid getting errors) with:<br /><br />\r\n   <pre>bundle
+      exec guard</pre><br />\r\n\r\n<font size='4' color='navy'>Create a pages controller</font><br
+      /><br />\r\n\r\n1- Create a controller with one page called index:<br /><br
+      />\r\n\r\n  <pre>Rails g controller pages index</pre><br />\r\n\r\n2- Edit the
+      routes file:<br /><br />\r\n\r\n<pre>ContactForm::Application.routes.draw do\r\n
+      \ root \"pages#index\"</pre><br />\r\n\r\n<p>If you open your browser and go
+      to: http://localhost:3000, you should see the following:</p><br />\r\n\r\n<pre>Pages#index\r\nFind
+      me in app/views/pages/index.html</pre><br />\r\n\r\n<font size='4' color='navy'>Update
+      the Assets folder:</font><br /><br />\r\n + Add Bootstrap to both application
+      files:<br /><br />\r\n\r\n <pre> \r\n   *= require ‘bootstrap’\r\n   //= require
+      ‘bootstrap’\r\n </pre><br />\r\n\r\n<font size='4' color='navy'>Update the views:</font><br
+      /><br />\r\n\r\n1- Install html2haml<br /><br />\r\n <pre>\r\n   gem install
+      html2haml\r\n </pre><br />\r\n2- Convert html to haml and remove the .erb file<br
+      /><br />\r\n\r\n <pre>\r\n  Html2haml application.html.rb > application.html.haml
+      && rm application.html.erb\r\n </pre><br />\r\n\r\n3- Create a partial for the
+      header in the layouts folder<br /><br />\r\n\r\n<pre>\r\n.container\r\n  - flash.each
+      do |name, msg|\r\n    - if msg.is_a?(String)\r\n      %div{:class => \"alert
+      alert-#{name == :notice ? \"success\" : \"error\"}\"}\r\n        %a.close{\"data-dismiss\"
+      => \"alert\"}\r\n          &times;\r\n        = content_tag :div, msg, :id =>
+      \"flash_#{name}\"\r\n  .navbar.navbar-fixed-top\r\n    .navbar-inner\r\n      .container\r\n
+      \       .nav-collapse.collapse\r\n          %ul.nav\r\n            %li\r\n              =
+      link_to t('home'), root_url\r\n            %li\r\n              = link_to t('contact'),
+      new_contact_path  \r\n</pre><br />\r\n\r\n4- Update the application.html.haml
+      by adding the following right after yield:<br /><br />\r\n<pre>\r\n= render
+      :partial => 'layouts/header'\r\n</pre><br />\r\n\r\n<font size='4' color='navy'>Create
+      the Contact Form:</font><br /><br />\r\n\r\n1- Run the simple_form  generator
+      and add bootstrap styling to it:<br ><br />\r\n       \r\n <pre>Rails g simple_form:install
+      –bootstrap</pre><br />\r\n\r\n2- Add a contacts controller:<br /><br />\r\n\r\n<pre>Rails
+      g controller contacts</pre><br />\r\n\r\n3- Edit the routes file:<br /><br />\r\n
+      <pre>Resources ‘contacts’, only [:new, :create]</pre><br />\r\n\r\n4- Edit the
+      conatcts_controller.rb file:<br /><br />\r\n\r\n<pre>\r\nclass ContactsController
+      < ApplicationController\r\n  def new\r\n    @contact = Contact.new\r\n  end\r\n\r\n
+      \ def create\r\n    @contact = Contact.new(params[:contact])\r\n    @contact.request
+      = request\r\n    if @contact.deliver\r\n      flash.now[:error]  = nil\r\n      flash.now[:notice]
       = 'Thank you for your message!'\r\n    else\r\n      flash.now[:error]  = Unable
       to send message.'\r\n      render :new\r\n    end\r\n  end\r\nend\r\n</pre><br
       />\r\n\r\n5- Create a contact model:<br /><br />\r\n\r\n<pre>\r\nclass Contact
@@ -896,25 +897,25 @@ posts:
       \     :from    => %(\"#{name}\" <#{email}>)\r\n    }\r\n  end\r\nend\r\n</pre><br
       />\r\n\r\n6- Create views for the form:\r\n\r\n<p>We only need two views, one
       for new and another for create:</p><br />\r\n\r\n<pre>\r\n# new.html.haml\r\n.container\r\n
-      \ %h1 Contact\r\n  = simple_form_for @contact, :html => {:class => 'form-horizontal'
-      } do |f|\r\n    = f.input :name, :required => true, :autofocus => true\r\n    =
-      f.input :email, :required => true\r\n    = f.input :message, :as => :text, :required
-      => false, :input_html => {:rows => 10, :cols => 60}, :maxlength => 300, :id
-      => 'options'\r\n    #options\r\n      = f.select :contact_method, options_for_select([\"Select
-      one\", \"iPhone\", \"iPad\", \"Universal\"], selected: \"Select one\")\r\n\r\n
-      \   .hidden\r\n      = f.input :nickname, :hint => 'Leave this field blank!'\r\n
-      \   .form-actions\r\n      = f.button :submit, 'Send message', :class=> \"btn
-      btn-primary\"\r\n</pre><br />\r\n\r\n<pre>\r\n# create.html.haml\r\n.container\r\n
-      \ %h1 #{@contact.name}, Thank you for your message. \r\n  %br\r\n  %p We'll
-      get back to you soon.\r\n</pre><br />\r\n\r\n7- Styling is a matter of taste.
-      In addition to bootstrap, I created another stylesheet to override certain styles
-      that I didn't like and customize the form to my liking:<br /><br />\r\n<pre>\r\nbody
-      {\r\n  padding-top: 45px;\r\n}\r\nh1 {\r\n\tfont-family: 'Helvetica Light';\r\n\tmargin-top:
-      50px;\r\n\tmargin-left: 350px;\r\n}\r\nh2 {\r\n\tfont-family: 'Helvetica Light';\r\n\tmargin-top:
-      50px;\r\n\tmargin-left: 470px;\r\n}\r\ninput, select {\r\n\twidth: 520px;\r\n}\r\nselect
-      {\r\n\twidth: 530px;\r\n}\r\n.nav-collapse {\r\n\tmargin-left: 450px;\r\n}\r\n.container
-      p {\r\n\tfont-size: 16px;\r\n\tfont-family: Georgia, Serif;\r\n}\r\ntextarea
-      {\r\n    resize: none;\r\n}\r\n.btn {\r\n\tbackground-color: green;\r\n}\r\n.btn-primary
+      \ %h2 Contact\r\n  = simple_form_for @contact, :html => {:class => 'well span10'
+      } do |f|\r\n    = f.input :name,  :required => true, :autofocus => true\r\n
+      \   = f.input :email, :required => true\r\n    = f.label :contact_method\r\n
+      \   = f.select :contact_method, options_for_select([\"Select one\", \"iPhone\",
+      \"iPad\", \"Universal\"]), :required => true\r\n    %br\r\n    %br\r\n    =
+      f.input :message, :as => :text, :required => false, :input_html => {:id => \"message\",
+      :class => \"input-xlarge span7\", :rows => \"10\"}, :maxlength => 300\r\n    =
+      f.button :submit, 'Send message', :class => 'btn btn-primary'\r\n</pre><br />\r\n\r\n<pre>\r\n#
+      create.html.haml\r\n.container\r\n  %h1 #{@contact.name.split.each{|i| i.capitalize!}.join('
+      ')}, Thank you for your message. \r\n  %br\r\n  %p We'll get back to you soon.\r\n</pre><br
+      />\r\n\r\n7- Styling is a matter of taste. In addition to bootstrap, I created
+      another stylesheet to override certain styles that I didn't like and customize
+      the form to my liking:<br /><br />\r\n<pre>\r\nbody {\r\n  padding-top: 45px;\r\n}\r\nh1
+      {\r\n\tfont-family: 'Helvetica Light';\r\n\tmargin-top: 50px;\r\n\tmargin-left:
+      350px;\r\n}\r\nh2 {\r\n\tfont-family: 'Helvetica Light';\r\n\tmargin-top: 50px;\r\n\tmargin-left:
+      470px;\r\n}\r\ninput, select {\r\n\twidth: 520px;\r\n}\r\nselect {\r\n\twidth:
+      530px;\r\n}\r\n.nav-collapse {\r\n\tmargin-left: 450px;\r\n}\r\n.container p
+      {\r\n\tfont-size: 16px;\r\n\tfont-family: Georgia, Serif;\r\n}\r\ntextarea {\r\n
+      \   resize: none;\r\n}\r\n.btn {\r\n\tbackground-color: green;\r\n}\r\n.btn-primary
       {\r\n\twidth: 350px;\r\n\theight: 50px;\r\n\tcolor: white;\r\n\tfont-size: 18px;\r\n\tpadding-right:
       210px;\r\n\tpadding-left:  210px;\r\n}\r\n.well {\r\n\tmargin-left: 250px;\r\n\theight:
       560px;\r\n\twidth: 550px;\r\n\tpadding: 20px;\r\n}\r\n</pre><br />\r\n\r\n8-
@@ -933,7 +934,7 @@ posts:
       \        Click to see what the form looks like live and take it for a spin!!\r\n
       \  </font>\r\n</a>\r\n</center>\r\n<br /><br />\r\n\r\n<center>\r\n       <a
       href=\"https://github.com/Adam0964/contact\" target=\"_blank\">\r\n       <font
-      size='3' color='gray' style=\"text-decoration:none\">\r\n         The app in
+      size='3' color='gray' style=\"text-decoration:none\">\r\n         The app is
       on Github\r\n   </font>\r\n</center><br ><br />\r\n\r\n<h3>Upcoming posts:</h3>
       \ \r\n\r\n<li><p>Blocks in Ruby: What are they and why should you care? </p></li>
       \  \r\n<li><p>Methods Aliases in Ruby </p> </li>\r\n<li><p>ARGF, Splat, Tap
@@ -942,7 +943,7 @@ posts:
       </p></li>\r\n<li><p>Caching in Rails 3 the Rails 4 way</p></li>\r\n<li><p>Metaprogramming:
       A diet pill for Ruby Part II</p></li>\r\n"
     - '2014-01-09 00:19:08.726414'
-    - '2014-01-10 17:33:17.098957'
+    - '2014-01-10 18:01:37.919626'
 
 ---
 users:
