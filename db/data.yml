@@ -935,7 +935,7 @@ posts:
       \  </font>\r\n</a>\r\n</center>\r\n<br /><br />\r\n\r\n<center>\r\n       <a
       href=\"https://github.com/Adam0964/contact\" target=\"_blank\">\r\n       <font
       size='3' color='gray' style=\"text-decoration:none\">\r\n         The app is
-      on Github\r\n   </font>\r\n</center><br ><br />\r\n\r\n<h3>Upcoming posts:</h3>
+      on Github\r\n   </font></a>\r\n</center><br ><br />\r\n\r\n<h3>Upcoming posts:</h3>
       \ \r\n\r\n<li><p>Blocks in Ruby: What are they and why should you care? </p></li>
       \  \r\n<li><p>Methods Aliases in Ruby </p> </li>\r\n<li><p>ARGF, Splat, Tap
       & Freeze in Ruby</p></li>\r\n<li><p>Object Serialization in Ruby </p></li>\r\n<li><p>Threads,
@@ -943,7 +943,7 @@ posts:
       </p></li>\r\n<li><p>Caching in Rails 3 the Rails 4 way</p></li>\r\n<li><p>Metaprogramming:
       A diet pill for Ruby Part II</p></li>\r\n"
     - '2014-01-09 00:19:08.726414'
-    - '2014-01-10 18:01:37.919626'
+    - '2014-01-10 18:19:03.27998'
 
 ---
 users:
