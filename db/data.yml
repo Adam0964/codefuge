@@ -928,12 +928,13 @@ posts:
       \ \"YOUR GMAIL PASSWORD\",\r\n openssl_verify_mode:  'none'\r\n}\r\n</pre><br
       />\r\n\r\n<p>It goes without saying that before you deploy your app to heroku,
       you would need to transfer these settings to your production.rb file.</p><br
-      />\r\n\r\n<center>\r\n<a href=\"http://contact-us-form.herokuapp.com/contacts/new\">\r\n
-      \  <font size='4' color='orange' style=\"text-decoration:none\">\r\n         Click
-      to see what the form looks like live and take it for a spin!!\r\n   </font>\r\n</a>\r\n</center>\r\n<br
-      /><br />\r\n\r\n<center>\r\n       <a href=\"https://github.com/Adam0964/contact\">\r\n
-      \      <font size='3' color='gray' style=\"text-decoration:none\">\r\n         The
-      app in on Github\r\n   </font>\r\n</center><br ><br />\r\n\r\n<h3>Upcoming posts:</h3>
+      />\r\n\r\n<center>\r\n<a href=\"http://contact-us-form.herokuapp.com/contacts/new\"
+      target=\"_blank\">\r\n   <font size='4' color='orange' style=\"text-decoration:none\">\r\n
+      \        Click to see what the form looks like live and take it for a spin!!\r\n
+      \  </font>\r\n</a>\r\n</center>\r\n<br /><br />\r\n\r\n<center>\r\n       <a
+      href=\"https://github.com/Adam0964/contact\" target=\"_blank\">\r\n       <font
+      size='3' color='gray' style=\"text-decoration:none\">\r\n         The app in
+      on Github\r\n   </font>\r\n</center><br ><br />\r\n\r\n<h3>Upcoming posts:</h3>
       \ \r\n\r\n<li><p>Blocks in Ruby: What are they and why should you care? </p></li>
       \  \r\n<li><p>Methods Aliases in Ruby </p> </li>\r\n<li><p>ARGF, Splat, Tap
       & Freeze in Ruby</p></li>\r\n<li><p>Object Serialization in Ruby </p></li>\r\n<li><p>Threads,
@@ -941,7 +942,7 @@ posts:
       </p></li>\r\n<li><p>Caching in Rails 3 the Rails 4 way</p></li>\r\n<li><p>Metaprogramming:
       A diet pill for Ruby Part II</p></li>\r\n"
     - '2014-01-09 00:19:08.726414'
-    - '2014-01-10 17:10:20.374653'
+    - '2014-01-10 17:33:17.098957'
 
 ---
 users:
