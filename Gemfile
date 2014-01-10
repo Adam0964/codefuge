@@ -35,15 +35,11 @@ gem 'byebug'
 # gem 'debugger', '1.6.1'
 gem 'rails_12factor'
 gem 'cache_digests'
-gem 'bootsy'
+# gem 'bootsy'
 
 
-group :test do
+group :development, :test do
   gem 'cucumber-rails', :require => false
-  gem 'rspec-rails'
-end 
-
-group :development do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'ruby_gntp'
