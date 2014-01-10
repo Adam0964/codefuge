@@ -1,5 +1,7 @@
 Kodefuge::Application.routes.draw do
 
+  mount Bootsy::Engine => '/bootsy', as: 'bootsy'
+
   devise_for :admins, :controllers => { :sessions      => 'admins/sessions' }
   devise_for :users, :controllers  => {:registrations  => 'registrations'}
   devise_for :users, :path => "auth", :path_names => { :sign_in      => 'login', 

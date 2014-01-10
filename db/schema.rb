@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130927013712) do
+ActiveRecord::Schema.define(:version => 20140108233246) do
 
   create_table "admins", :force => true do |t|
     t.string   "reset_password_token"
@@ -36,6 +36,20 @@ ActiveRecord::Schema.define(:version => 20130927013712) do
     t.text     "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "bootsy_image_galleries", :force => true do |t|
+    t.integer  "bootsy_resource_id"
+    t.string   "bootsy_resource_type"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+  end
+
+  create_table "bootsy_images", :force => true do |t|
+    t.string   "image_file"
+    t.integer  "image_gallery_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "comments", :force => true do |t|

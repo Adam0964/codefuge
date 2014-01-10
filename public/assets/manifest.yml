@@ -1869,10 +1869,10 @@ webdesign.jpg: webdesign-30528349fa2bb171fb5f821856dbd9c2.jpg
 webdesign/index.jpg: webdesign-30528349fa2bb171fb5f821856dbd9c2.jpg
 zurb.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
 zurb/index.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
-application.js: application-19234df8ea59c90cc87dd1d5cede4f50.js
-application/index.js: application-19234df8ea59c90cc87dd1d5cede4f50.js
-application.css: application-d3799c7a882975312c4d61469f26ffd4.css
-application/index.css: application-d3799c7a882975312c4d61469f26ffd4.css
+application.js: application-c523eb0f02591aad77afb291f122305a.js
+application/index.js: application-c523eb0f02591aad77afb291f122305a.js
+application.css: application-6ca833d94c896aecc14f0ffc599d36d4.css
+application/index.css: application-6ca833d94c896aecc14f0ffc599d36d4.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 fontawesome-webfont.eot: fontawesome-webfont-009f6d1f667cc42c25e712ab3429cbc7.eot
@@ -1895,6 +1895,10 @@ bootstrap/glyphicons-halflings-regular.ttf: bootstrap/glyphicons-halflings-regul
 bootstrap/glyphicons-halflings-regular/index.ttf: bootstrap/glyphicons-halflings-regular-b5577a3f3fb089369af33ce56e196d02.ttf
 bootstrap/glyphicons-halflings-regular.woff: bootstrap/glyphicons-halflings-regular-0391150c52d1f65893d1d6b0d29fd0c9.woff
 bootstrap/glyphicons-halflings-regular/index.woff: bootstrap/glyphicons-halflings-regular-0391150c52d1f65893d1d6b0d29fd0c9.woff
+bootsy/gallery-loader.gif: bootsy/gallery-loader-669d0f3219a92e8765ae1c609211e338.gif
+bootsy/gallery-loader/index.gif: bootsy/gallery-loader-669d0f3219a92e8765ae1c609211e338.gif
+bootsy/upload-loader.gif: bootsy/upload-loader-2a0ad411f71f09a0689b8848887a2250.gif
+bootsy/upload-loader/index.gif: bootsy/upload-loader-2a0ad411f71f09a0689b8848887a2250.gif
 markitup/sets/bbcode/bold.png: markitup/sets/bbcode/bold-8e349e7b3c86750f5c54f94fdae0ed39.png
 markitup/sets/bbcode/bold/index.png: markitup/sets/bbcode/bold-8e349e7b3c86750f5c54f94fdae0ed39.png
 markitup/sets/bbcode/clean.png: markitup/sets/bbcode/clean-513746bf0d87af9eec2a40f5cde29b35.png

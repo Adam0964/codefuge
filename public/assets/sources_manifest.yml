@@ -934,8 +934,8 @@ web_standards.jpg: 11e5106961c38db3180735bb54af5f18
 webd1.jpg: d707ddc9c557ced7bf4f15d63a446f6f
 webdesign.jpg: 30528349fa2bb171fb5f821856dbd9c2
 zurb.png: f4079d8b89f4b55313d0f716e710c778
-application.js: 60094b4e1db24fb0220091f1fc0d8c17
-application.css: 1dd773f9ade8f5671b59633378ea2689
+application.js: fea920bbc52739253b3598ce2c2de9e6
+application.css: 4a8208835f6743f409eadab28f1f246c
 jquery.min.map: 6336c5bca4c709e809647cdfcb484d0a
 fontawesome-webfont.eot: 009f6d1f667cc42c25e712ab3429cbc7
 fontawesome-webfont.svg: f1c2889911d212e1403b68eabc1a3a56
@@ -947,6 +947,8 @@ bootstrap/glyphicons-halflings-regular.eot: e76f5a754ccf64843a118a8706df3f8c
 bootstrap/glyphicons-halflings-regular.svg: 8a0a941aafb8c48e709ca72675344c92
 bootstrap/glyphicons-halflings-regular.ttf: b5577a3f3fb089369af33ce56e196d02
 bootstrap/glyphicons-halflings-regular.woff: 0391150c52d1f65893d1d6b0d29fd0c9
+bootsy/gallery-loader.gif: 669d0f3219a92e8765ae1c609211e338
+bootsy/upload-loader.gif: 2a0ad411f71f09a0689b8848887a2250
 markitup/sets/bbcode/bold.png: 8e349e7b3c86750f5c54f94fdae0ed39
 markitup/sets/bbcode/clean.png: 513746bf0d87af9eec2a40f5cde29b35
 markitup/sets/bbcode/code.png: ee232567dd6afaba8508b37f91aebca7
