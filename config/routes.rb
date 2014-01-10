@@ -1,7 +1,5 @@
 Kodefuge::Application.routes.draw do
 
-  mount Bootsy::Engine => '/bootsy', as: 'bootsy'
-
   devise_for :admins, :controllers => { :sessions      => 'admins/sessions' }
   devise_for :users, :controllers  => {:registrations  => 'registrations'}
   devise_for :users, :path => "auth", :path_names => { :sign_in      => 'login', 
@@ -16,8 +14,6 @@ Kodefuge::Application.routes.draw do
   authenticated :user do
      root :to => 'posts#index'
   end 
-
-  # match "/posts/:id", :to => redirect("/posts/%{id}s")
   
   match '/home',         :to => 'pages#index'
   match '/about',        :to => 'pages#about'
@@ -31,18 +27,6 @@ Kodefuge::Application.routes.draw do
   match '/testing',      :to => 'pages#testing'
   match '/mobile',       :to => 'pages#mobile'
 
-   # routes from posts as a root
-   # match "/posts/home(.:format)"        => "pages#index",         :as     => :home
-   # match "/posts/about(.:format)"       => "pages#about",         :as     => :about
-   # match "/posts/bookshelf(.:format)"   => "books#index",         :as     => :bookshelf
-   # match "/posts/blog(.:format)"        => "posts#index",         :as     => :blog
-   # match "/posts/videoshelf(.:format)"  => "pages#videoshelf",    :as     => :videoshelf
-   # match "/posts/portfolio(.:format)"   => "pages#portfolio",     :as     => :portfolio
-   # match "/posts/frontend(.:format)"    => "pages#frontend",      :as     => :frontend
-   # match "/posts/backend(.:format)"     => "pages#backend",       :as     => :backend
-   # match "/posts/responsive(.:format)"  => "pages#responsive",    :as     => :responsive
-   # match "/posts/testing(.:format)"     => "pages#testing",       :as     => :testing
-   # match "/posts/mobile(.:format)"      => "pages#mobile",        :as     => :mobile
 
    # oustside routing
    match "/posts/https://twitter.com/adam0964(.:format)"              => "pages#https://twitter.com/adam0964",     :as => :twitter
@@ -91,54 +75,8 @@ Kodefuge::Application.routes.draw do
   resources :posts do
       resources :comments
   end
-  # Sample resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Sample resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Sample resource route with more complex sub-resources
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', :on => :collection
-  #     end
-  #   end
-
-
   
-  # Sample resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
-
-  # namespace :posts do
-  #   resources :sites_pages
-  # end
-
-  # You can have the root of your site routed with "root"
-  #
-  #just remember to delete public/index.html.
    root :to => 'pages#index'
-  # See how all your routes lay out with "rake routes"
-
-  # This is a legacy wild controller route that's not recommended for RESTful applications.
-  # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
-
+  
    # mount Flog::Engine, :at => "/flog"
 end
