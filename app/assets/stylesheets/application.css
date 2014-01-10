@@ -16,7 +16,6 @@
  *= require normalize
  *= require prettify
  *= require_self
- *= require bootsy
  *= require_tree .
  *
  */

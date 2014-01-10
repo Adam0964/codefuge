@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootsy
 //= require twitter/bootstrap
 //= require jquery.cslider
 //= require jquery.gallery
