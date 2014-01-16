@@ -32,7 +32,6 @@ gem 'jbuilder'
 gem 'unicorn'
 gem 'byebug'
 # gem 'debugger', '1.6.1'
-gem 'rails_12factor'
 gem 'cache_digests'
 
 group :development, :test do
@@ -77,6 +76,7 @@ group :production, :staging do
   gem 'god'
   gem 'elif' # For Scout RoR plugin
   gem 'request-log-analyzer'
+  gem 'rails_12factor'
 end
  
 group :console do
