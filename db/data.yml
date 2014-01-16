@@ -830,7 +830,7 @@ posts:
       quite a few steps involved in that process. Following is an example explaining
       the latter. In our form, the user would enter a name, an email address and select
       from a drop down menu what device was used to send the message, and then type
-      in a message and submit. Once submitted, the form should go to an SMTP server
+      in a message and submit. Once submitted, the message should be relayed to an SMTP server
       like Google Gmail or Yahoo mail.</p><br />\r\n\r\n\r\n<font size='4' color='navy'>Create
       the App</font><br /><br />\r\n\r\n1- Install rails:<br ><br />\r\n    <pre>gem
       install rails</pre> <br />\r\n\r\n2- Create a new rails app:<br /><br />\r\n
