@@ -76,7 +76,6 @@ group :production, :staging do
   gem 'god'
   gem 'elif' # For Scout RoR plugin
   gem 'request-log-analyzer'
-  gem 'rails_12factor'
 end
  
 group :console do
