@@ -260,15 +260,15 @@ body {
   width: 100%;
   margin-top: -50px;
   background-color: #000066;
-  background-image: url(bgd/bgd46.jpg);
+  /*background-image: /*url(bgd/bgd46.jpg);*/
 }
 
 .nav > li > a {
   left: 0;
   right: 0;
-  height: 25px;
+  height: 30px;
   display: inline;
-  margin-top: 28px;
+  margin-top: 20px;
   padding-left: 50px;
   font-size:14px;
   font-family: 'Helvetica lighter';
@@ -277,7 +277,6 @@ body {
 .nav .divider-vertical {
   padding-top: 30px;
 }
-
 
 /**
 ************************************************************
@@ -625,6 +624,7 @@ body {
 .featurette-divider {
   margin: 20px 0; /* Space out the Bootstrap <hr> more */
 }
+
 .featurette {
   padding-top: 5px; /* Vertically center images part 1: add padding above and below text. */
   overflow: hidden; /* Vertically center images part 2: clear their floats. */
@@ -732,6 +732,7 @@ body {
 
 .advert .caption p {
   font-family: 'Helvetica Neue';
+  text-align: justify;
 }
 
 .advert img {

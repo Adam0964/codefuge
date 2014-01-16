@@ -826,29 +826,27 @@ posts:
   - - '26'
     - Adam Raouki
     - Building a Rails Contact Form
-    - "<p>Recently, as a side project, I was commissioned to create a contact form
-      for a small Rails app. In the form, the user would enter a name, an email address
-      and select from a drop down menu what device was used to send the message, and
-      then type in a message and submit. Once submitted, the form should go to an
-      SMTP server like Google Gmail or Yahoo mail. Though this may seem simple, there
-      are quite a few steps that are involved in the process of making this happen
-      and here they are explained through an example.</p><br />\r\n\r\n\r\n<font size='4'
-      color='navy'>Building the App</font><br /><br />\r\n\r\n1- Install rails:<br
-      ><br />\r\n    <pre>gem install rails</pre> <br />\r\n\r\n2- Create a new rails
-      app:<br /><br />\r\n    <pre>Rails new contact_form –database=postgresql –skip-test-unit
-      && cd contact_form</pre><br />\r\n\r\n<p>The database flag allows us to bypass
-      rails default database ‘sqlite’ and install Postgresql because we are going
-      to deploy to heroku and we’re skipping the Test-unit because we’re going to
-      use RSpec instead. </p><br />\r\n\r\n3- Add the necessary gems to the Gemfile
-      and bundle:<br /><br />\r\n   <pre><br />\r\n       gem 'simple_form', '~> 3.0.0.rc'\r\n
-      \      gem 'bootstrap-sass', '~> 2.3.2.0'\r\n       gem 'haml-rails', '~> 0.4.0\r\n\r\n
-      \      # Development Guard\r\n       group :development do \r\n          gem
-      'guard-rails'\r\n          gem 'guard-livereload'\r\n          gem 'rack-livereload'\r\n
-      \         gem 'guard-bundler'\r\n       end\r\n  </pre><br />\r\n\r\n<p> * guard
-      is good at automating a lot of stuff. See the gem’s docs on <a href=\"https://github.com/guard/guard\"
-      target=\"_blank\"><font color='blue'>github</font></a> and check out also these
-      resources: <a href=\"http://railscasts.com/episodes/264-guard\" target=\"_blank\"><font
-      color='blue'>railscasts</font></a>, <a href=\"http://net.tutsplus.com/tutorials/tools-and-tips/guard-is-your-best-friend/\"
+    - "<p>Creating a contact form for a Rails app may seem simple, but, there are
+      quite a few steps involved in that process. Following is an example explaining
+      the latter. In our form, the user would enter a name, an email address and select
+      from a drop down menu what device was used to send the message, and then type
+      in a message and submit. Once submitted, the form should go to an SMTP server
+      like Google Gmail or Yahoo mail.</p><br />\r\n\r\n\r\n<font size='4' color='navy'>Create
+      the App</font><br /><br />\r\n\r\n1- Install rails:<br ><br />\r\n    <pre>gem
+      install rails</pre> <br />\r\n\r\n2- Create a new rails app:<br /><br />\r\n
+      \   <pre>Rails new contact_form –database=postgresql –skip-test-unit && cd contact_form</pre><br
+      />\r\n\r\n<p>The database flag allows us to bypass rails default database ‘sqlite’
+      and install Postgresql because we are going to deploy to heroku and we’re skipping
+      the Test-unit because we’re going to use RSpec instead. </p><br />\r\n\r\n3-
+      Add the necessary gems to the Gemfile and bundle:<br /><br />\r\n   <pre><br
+      />\r\n       gem 'simple_form', '~> 3.0.0.rc'\r\n       gem 'bootstrap-sass',
+      '~> 2.3.2.0'\r\n       gem 'haml-rails', '~> 0.4.0\r\n\r\n       # Development
+      Guard\r\n       group :development do \r\n          gem 'guard-rails'\r\n          gem
+      'guard-livereload'\r\n          gem 'rack-livereload'\r\n          gem 'guard-bundler'\r\n
+      \      end\r\n  </pre><br />\r\n\r\n<p> * guard is good at automating a lot
+      of stuff. See the gem’s docs on <a href=\"https://github.com/guard/guard\" target=\"_blank\"><font
+      color='blue'>github</font></a> and check out also these resources: <a href=\"http://railscasts.com/episodes/264-guard\"
+      target=\"_blank\"><font color='blue'>railscasts</font></a>, <a href=\"http://net.tutsplus.com/tutorials/tools-and-tips/guard-is-your-best-friend/\"
       target=\"_blank\"><font color='blue'>nettuts</font></a></p><br />\r\n\r\n<font
       size='4' color='navy'>Set up guard and start the server:</font><br /><br />\r\n\r\n1-
       Add a guard definition to your Guardfile with:<br /><br />\r\n\r\n    <pre>bundle
@@ -944,7 +942,7 @@ posts:
       </p></li>\r\n<li><p>Caching in Rails 3 the Rails 4 way</p></li>\r\n<li><p>Metaprogramming:
       A diet pill for Ruby Part II</p></li>\r\n"
     - '2014-01-09 00:19:08.726414'
-    - '2014-01-10 18:27:29.77156'
+    - '2014-01-16 21:37:50.948264'
 
 ---
 users:
