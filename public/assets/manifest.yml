@@ -1559,6 +1559,14 @@ kf.png: kf-22768467f8f0d364f631b25ec9328ff5.png
 kf/index.png: kf-22768467f8f0d364f631b25ec9328ff5.png
 kode.png: kode-31c22f39c81fbd98eb21d0f219687fc4.png
 kode/index.png: kode-31c22f39c81fbd98eb21d0f219687fc4.png
+kodefuge-logo2.png: kodefuge-logo2-fbc3e23d077bf0c3061e75b6be627d81.png
+kodefuge-logo2/index.png: kodefuge-logo2-fbc3e23d077bf0c3061e75b6be627d81.png
+kodefuge-logo3.png: kodefuge-logo3-5d10c781859b076068d0100f7934ae76.png
+kodefuge-logo3/index.png: kodefuge-logo3-5d10c781859b076068d0100f7934ae76.png
+kodefuge-logo4.png: kodefuge-logo4-b14786267535e74fe37d67c833fe06f8.png
+kodefuge-logo4/index.png: kodefuge-logo4-b14786267535e74fe37d67c833fe06f8.png
+kodefuge-logo5.png: kodefuge-logo5-6a74b74d0162b4f44b378e6c319366f0.png
+kodefuge-logo5/index.png: kodefuge-logo5-6a74b74d0162b4f44b378e6c319366f0.png
 kodefuge.png: kodefuge-b054e1d6d2ad262a3b3d16772eb079f6.png
 kodefuge/index.png: kodefuge-b054e1d6d2ad262a3b3d16772eb079f6.png
 kodefuge1.png: kodefuge1-510a8e6cbc6304622ca2fa92c65a0d44.png
@@ -1871,8 +1879,8 @@ zurb.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
 zurb/index.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
 application.js: application-19234df8ea59c90cc87dd1d5cede4f50.js
 application/index.js: application-19234df8ea59c90cc87dd1d5cede4f50.js
-application.css: application-30a780b412cf4c212dfbe9405301df38.css
-application/index.css: application-30a780b412cf4c212dfbe9405301df38.css
+application.css: application-71d2b422261f34b19780fea428edc7e2.css
+application/index.css: application-71d2b422261f34b19780fea428edc7e2.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 fontawesome-webfont.eot: fontawesome-webfont-009f6d1f667cc42c25e712ab3429cbc7.eot

@@ -14,15 +14,16 @@
 				            </button>
 				            <div class="nav-collapse collapse">
 					                <ul class="nav">
-					                	  <li><%= link_to 'KODEFUGE', '/home',        :class => 'navtitle' %></li>
-				                          <li><%= link_to 'ABOUT', '/about',          :class => 'navtitle' %></li>
-				                          <li><%= link_to 'BLOG', '/blog',            :class => 'navtitle' %></li>
-				                          <li><%= link_to 'BOOKSHELF', '/bookshelf',  :class => 'navtitle' %></li>
-				                          <li><%= link_to 'VIDEOSHELF','/videoshelf', :class => 'navtitle' %></li>
+					                	  <li><%= link_to image_tag('kodefuge-logo5.png'), '/', :class => 'navtitle' %>&nbsp</li>
+					                	  <!-- <li>&nbsp<%= link_to 'KODEFUGE', '/home',        :class => 'navtitle' %></li> -->
+				                          <li>&nbsp<%= link_to 'ABOUT', '/about',          :class => 'navtitle' %></li>
+				                          <li>&nbsp<%= link_to 'BLOG', '/blog',            :class => 'navtitle' %></li>
+				                          <li>&nbsp<%= link_to 'BOOKSHELF', '/bookshelf',  :class => 'navtitle' %></li>
+				                          <li>&nbsp<%= link_to 'VIDEOSHELF','/videoshelf', :class => 'navtitle' %></li>
 				                          <% if user_signed_in? %>    
 		                                      <li><%= link_to 'ADMIN OUT', '/logout', :class => 'navtitle' %></li> 
 		                                  <% else %>         
-		                                      <li><%= link_to 'ADMIN IN', '/login2',  :class => 'navtitle'  %></li>
+		                                      <li>&nbsp<%= link_to 'ADMIN IN', '/login2',  :class => 'navtitle'  %></li>
 		                                  <% end %>
 					                </ul>
 			                </div>

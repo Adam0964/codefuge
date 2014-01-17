@@ -257,8 +257,10 @@ body {
 
 .nav {
   padding-left: 38%;
+  padding-bottom: 15px;
+  padding-top: -35px;
   width: 100%;
-  margin-top: -50px;
+  margin-top: -60px;
   background-color: #000066;
   /*background-image: /*url(bgd/bgd46.jpg);*/
 }
@@ -266,16 +268,25 @@ body {
 .nav > li > a {
   left: 0;
   right: 0;
-  height: 25px;
+  height: 20px;
   display: inline;
-  margin-top: 20px;
-  padding-left: 50px;
+  padding-left: 70px;
   font-size:14px;
   font-family: 'Helvetica lighter';
 }
 
 .nav .divider-vertical {
   padding-top: 30px;
+}
+
+.nav > li > a > img {
+  margin-left: -50px;
+  margin-top: 13px;
+  margin-right: 120px;
+}
+
+.nav > li > a > img:hover {
+ color: orange;
 }
 
 /**
@@ -323,7 +334,7 @@ body {
     padding-left: 10px;
     padding-right: 20px;
     font-size: 6pt;
-    border: solid 5px blue;
+    /*border: solid 5px green;*/
   }
   .navbar .btn-navbar {
     margin-left: -500px;
@@ -1529,6 +1540,7 @@ body {
   font-size: 16px;
   line-height: 28px;
   color:#565656;
+  text-align: center;
 }
 
 .blog-container h4  {
@@ -1545,8 +1557,8 @@ body {
 
 .blog-container h6 {
   font-family: 'Helvetica lighter', Helvetica, Arial, sans-serif;
-  text-align: center;
   color: gray;
+  text-align: center;
 }
 
 .straightLine {
