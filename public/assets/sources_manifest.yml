@@ -779,6 +779,8 @@ jscript.png: 95a4e751cfd3a61d758f00c590a91c9d
 kf.jpg: 1b0246d9894d55209640c8721091512c
 kf.png: 22768467f8f0d364f631b25ec9328ff5
 kode.png: 31c22f39c81fbd98eb21d0f219687fc4
+kodefuge-logo00.png: 5b0a38c60c5325b5bef2a7376da66782
+kodefuge-logo01.png: 082e77fa81d49ff0ca6d4cf52f47fb51
 kodefuge-logo2.png: fbc3e23d077bf0c3061e75b6be627d81
 kodefuge-logo3.png: 5d10c781859b076068d0100f7934ae76
 kodefuge-logo4.png: b14786267535e74fe37d67c833fe06f8
@@ -805,6 +807,7 @@ list-view-active.png: 93ee505b7ca9228c601e1593a8f272cc
 loader.gif: e6c3a0b324539c02fd9259fe24fbcfcd
 logo.ico: c710e5030391af57222ea684ba38c977
 logo.png: d17d7a702829583b0b825d875349c293
+logo6.png: e093aff888503e99b8d06265ac1ee25b
 lucene_in_action_2nd_edition.jpg: 50f90aebb3aa1b061a24c205a7054b63
 member.png: ae7457b975f0dff5763e5bef2f13ac52
 member2.png: bdb76183e4dfcf4e02f5033ccc30ee0f
@@ -939,7 +942,7 @@ webd1.jpg: d707ddc9c557ced7bf4f15d63a446f6f
 webdesign.jpg: 30528349fa2bb171fb5f821856dbd9c2
 zurb.png: f4079d8b89f4b55313d0f716e710c778
 application.js: 60094b4e1db24fb0220091f1fc0d8c17
-application.css: 8135b1f3e6fb3caf18b93801cc5ed32f
+application.css: 47a8ad3e7f0c6d4f9317539fe926a3e6
 jquery.min.map: 6336c5bca4c709e809647cdfcb484d0a
 fontawesome-webfont.eot: 009f6d1f667cc42c25e712ab3429cbc7
 fontawesome-webfont.svg: f1c2889911d212e1403b68eabc1a3a56
