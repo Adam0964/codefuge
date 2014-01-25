@@ -736,6 +736,9 @@ body {
 
 /* end @media */
 
+.thumbnail {
+  height: 450px;
+}
 
 .advert .caption h4 {
   font-family: 'Bank Gothic';
