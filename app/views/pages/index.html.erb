@@ -83,122 +83,26 @@
 <div class="container marketing">
       <ul class="thumbnails">
               <li class="span3">
-                <div class="thumbnail">
                   <div class="advert">
-                    <%= link_to image_tag('github2.png', :alt => ""), 'http://github.com', :target => '_blank' %> 
-               
-                   <div class="caption">
-                                 <h4>
-                                    Github is our favorite code's Hub
-                                 </h4>
-                                 <br />
-                                  <p>
-                                     Of all the version control systems, we prefer Github because it’s efficient, easy to use, not to mention free. Additionally, we use it to share our concerns and views on a variety of issues related to tools, gems that we use. Often times, we get instant feedback from their owners. 
-                                  </p>
-                  </div>
+                    <h3> Some of the Tools used</h3>
+                    <span>
+                      <%= link_to image_tag('GitHub-Logo.png', :alt => ""), 'http://github.com', :target => '_blank' %>&nbsp&nbsp
+                      <%= link_to image_tag('travis-ci-logo.jpg', :alt => ""), 'https://travis-ci.org/', :target => '_blank' %>
+                      <%= link_to image_tag('trello-logo.png', :alt => ""), 'https://trello.com/', :target => '_blank' %>&nbsp&nbsp
+                      <%= link_to image_tag('heroku-logo.png', :alt => ""), 'https://www.heroku.com/', :target => '_blank' %></span>
                 </div>
               </li>
-                 <li class="span3">
-                <div class="thumbnail">
-                  <div class="advert">
-                    <%= link_to image_tag('travis.jpg', :alt => ""), 'http://travis-ci.org', :target => '_blank' %> 
-                 
-                  <div class="caption">
-                                <h4>
-                                   Travis is our test environment
-                                </h4>
-                                <br />
-                                  <p>
-                                     Though we do our own integration tests, there are misses here and there. That’s where Travis-Ci comes in. Once you hook up your Github repos, and soon as you do your first push to git, it takes it from there and alerts you wether your build succeded or not.
-                                  </p>
-                        </div>
-              </div>
-              </li>
-                <li class="span3">
-                  <div class="thumbnail">
-                        <div class="advert">
-                             <%= link_to image_tag('trello_icon.png', :alt => ""), 'http://trello.com', :target => '_blank' %>  
-                        <div class="caption">
-                          <h4>Trello is our collaboration platform.</h4><br />
-                                <p>
-                                  Trello is a free collaboration tool that uses a simple interface that allows us to organize our projects into boards to tell the stories. That way, we can keep track of what's being worked on, what’s currently in process and what's done.
-                          </p>
-                        </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="span3">
-                    <div class="thumbnail">
-                      <div class="advert">
-                      <%= link_to image_tag('heroku.png', :alt => ""), 'https://www.heroku.com', :target => '_blank' %>                                 
-                        <div class="caption">
-                            <h4>Heroku is our primary deployment platform</h4><br />
-                                  <p>
-                                    With Heroku, deploying our apps has almost always been a breeze. It is as easy as issuing ‘git push heroku'. And voila! Your app goes 'live' in minutes. The service is free as long as long as you don’t feel the need to purchase extras.
-                                  </p>
-                        </div>
-                     </div>
-                    </div>
-                </li>   
-      </ul> 
-      <hr class="featurette-divider"><br /><br />
+      </ul>
       <ul class="thumbnails">
-            <li class="span3">
-                <div class="thumbnail">      
-                  <div class="advert">    
-                    <%= link_to image_tag("stack.jpg", :alt => ""), 'http://stackoverflow.com', :target => '_blank' %> 
-
-                      <div class="caption">
-                                  <h4>
-                                      Stackoverflow is our Friend
-                                  </h4>
-                                  <br />
-                                    <p>
-                                       When we have an issue we can’t resolve, we seek help from the community on Stackoverflow. When no one comes up with an answer and we do, we post it for the benefit for everyone. Moreover, we answer some of the  questions posted by the community.
-                                    </p>
-                            </div>
+              <li class="span3">
+                  <div class="advert">
+                    <span>
+                      <%= link_to image_tag('so-logo.png', :alt => ""), 'http://stackoverflow.com/', :target => '_blank' %>&nbsp&nbsp
+                      <%= link_to image_tag('bit-logo.png', :alt => ""), 'https://bitbucket.org/', :target => '_blank' %>&nbsp&nbsp
+                      <%= link_to image_tag('aws-logo.png', :alt => ""), 'http://aws.amazon.com/', :target => '_blank' %>&nbsp&nbsp
+                      <%= link_to image_tag('pivotal-labs-logo.png', :alt => ""), 'http://pivotallabs.com/', :target => '_blank' %></span>
                 </div>
-            </li>
-            <li class="span3">
-                  <div class="thumbnail">
-                   <div class="advert">
-                     <%= link_to image_tag('bitbucket.png', :size => '280x280', :alt => ""), 'http://bitbucket.org', :target => '_blank' %> 
-                       <div class="caption">
-                                       <h4>
-                                             Bitbucket is our code's bucket
-                                       </h4>
-                                       <br />
-                                      <p>
-                                         Both BitBucket & Github offer public and private repos, but while public ones are free on both, only Bitbucket offers free private repos. We don’t have any code on it yet because we like being open-source, but, we might use it if we feel we need to.
-                                      </p>
-                          </div>
-                  </div>
-            </li>
-            <li class="span3">
-                  <div class="thumbnail">
-                        <div class="advert">
-                             <%= link_to image_tag('openshift.png', :alt => ""), 'http://www.linode.com', :target => '_blank' %> 
-                            <div class="caption">
-                              <h4>Openshift is another of our deloyment platforms</h4><br />
-                                  <p>
-                                      Host your applications and scale them in the public cloud. OpenShift Online, made by Redhat,  automates the provisioning, management and scaling of applications so that you can focus on development and creativity.
-                                         </p>
-                    </div>
-                  </div>
-                </li>
-
-            <li class="span3">
-                  <div class="thumbnail">
-                        <div class="advert">
-                           <%= link_to image_tag('aws.png', :alt => ""), 'http://newrelic.com', :target => '_blank' %> 
-                        <div class="caption">
-                                <h4>AWS is our hosting platform</h4><br />
-                                <p>
-                                    We like AWS because of 4 things: EC2, S3, AWS Elastic Beanstalk and its seamless integration with Git. But, there are other goodies that can sweeten the deal if you know how to fiddle with them, not to mention the free basic hosting for a year for new comers.
-                                </p>
-                        </div>
-                  </div>
-                </li>     
+              </li>
       </ul>
       <hr class="featurette-divider"><br /><br />
       <ul class="thumbnails">

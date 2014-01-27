@@ -736,27 +736,27 @@ body {
 
 /* end @media */
 
-.thumbnail {
-  height: 450px;
+.thumbnail  {
+  height: 245px;
 }
 
-.advert .caption h4 {
+.advert {
+  width: 1150px;
+  margin-left: 50px;
+  display: inline-block;
+}
+
+.thumbnails .span3 .advert img:hover {
+  background-color: white;
+  background-repeat: none;
+}
+
+.advert h3 {
+  margin-left: 350px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: block;
   font-family: 'Bank Gothic';
-}
-
-.advert .caption p {
-  font-family: 'Helvetica Neue';
-  text-align: justify;
-}
-
-.advert img {
-  -webkit-border-radius: 5px 5px 5px 5px;
-  -moz-border-radius:    5px 5px 5px 5px;
-  border-radius:         5px 5px 5px 5px;
-}
-
-.advert  img:hover {
-  border: 5px solid #008080;
 }
 
 .thumbnail2 {
@@ -2048,7 +2048,7 @@ body {
   padding-top: 50px;
   margin-bottom: 0;
   font-size: 30px;
-  font-family: 'Helvetica Neue', Serif;
+  font-family: 'Bank Gothic', Serif;
   color: #FDFDF0;
   line-height: 1;
   letter-spacing: -1px; 
@@ -2107,14 +2107,16 @@ body {
   border-radius:         7px 7px 7px 7px;
 }
 
-.videos .caption p {
- font-family: Droid Serif, serif;
- color: white;
-}
-
 .videos .caption h5 {
  font-family: Droid Serif, serif;
  color: white;
+ display: none;
+}
+
+.videos .caption p {
+ font-family: Droid Serif, serif;
+ color: white;
+ display: none;
 }
 
 .portfolio .caption p {
