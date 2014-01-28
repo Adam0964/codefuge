@@ -36,7 +36,7 @@ class User < ActiveRecord::Base
 
   def grant_access
       admin_user = User.new( :email    => 'admin@kodefuge.com', 
-                             :password => 'KREISLERIANA', 
+                             :password => 'XXXXXXXXXXX', 
                              :name     => 'Admin' 
                            )
       admin_user.update_attribute :admin, true 
