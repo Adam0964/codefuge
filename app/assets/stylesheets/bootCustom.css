@@ -1019,6 +1019,7 @@ body {
 .ads1:hover {
  opacity: 1;
  height: 250px;
+ transition: 1.5s
 }
 
 .ads1 h3 {
@@ -1054,6 +1055,7 @@ body {
 .ads2:hover {
  opacity: 1;
  height: 250px;
+ transition: 1.5s
 }
 
 .ads2 a:hover {
@@ -1093,6 +1095,7 @@ body {
 .ads3:hover {
  opacity: 1;
  height: 250px;
+ transition: 1.5s
 }
 
 .ads3 a:hover {
@@ -1132,6 +1135,7 @@ body {
 .ads4:hover {
  opacity: 1;
  height: 250px;
+ transition: 1.5s
 }
 
 .ads4 a:hover {
