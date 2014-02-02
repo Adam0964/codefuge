@@ -830,23 +830,24 @@ posts:
       quite a few steps involved in that process. Following is an example explaining
       the latter. In our form, the user would enter a name, an email address and select
       from a drop down menu what device was used to send the message, and then type
-      in a message and submit. Once submitted, the message should be relayed to an SMTP server
-      like Google Gmail or Yahoo mail.</p><br />\r\n\r\n\r\n<font size='4' color='navy'>Create
-      the App</font><br /><br />\r\n\r\n1- Install rails:<br ><br />\r\n    <pre>gem
-      install rails</pre> <br />\r\n\r\n2- Create a new rails app:<br /><br />\r\n
-      \   <pre>Rails new contact_form –database=postgresql –skip-test-unit && cd contact_form</pre><br
-      />\r\n\r\n<p>The database flag allows us to bypass rails default database ‘sqlite’
-      and install Postgresql because we are going to deploy to heroku and we’re skipping
-      the Test-unit because we’re going to use RSpec instead. </p><br />\r\n\r\n3-
-      Add the necessary gems to the Gemfile and bundle:<br /><br />\r\n   <pre><br
-      />\r\n       gem 'simple_form', '~> 3.0.0.rc'\r\n       gem 'bootstrap-sass',
-      '~> 2.3.2.0'\r\n       gem 'haml-rails', '~> 0.4.0\r\n\r\n       # Development
-      Guard\r\n       group :development do \r\n          gem 'guard-rails'\r\n          gem
-      'guard-livereload'\r\n          gem 'rack-livereload'\r\n          gem 'guard-bundler'\r\n
-      \      end\r\n  </pre><br />\r\n\r\n<p> * guard is good at automating a lot
-      of stuff. See the gem’s docs on <a href=\"https://github.com/guard/guard\" target=\"_blank\"><font
-      color='blue'>github</font></a> and check out also these resources: <a href=\"http://railscasts.com/episodes/264-guard\"
-      target=\"_blank\"><font color='blue'>railscasts</font></a>, <a href=\"http://net.tutsplus.com/tutorials/tools-and-tips/guard-is-your-best-friend/\"
+      in a message and submit. Once submitted, the message should be relayed to an
+      SMTP server like Google Gmail or Yahoo mail.</p><br />\r\n\r\n\r\n<font size='4'
+      color='navy'>Create the App</font><br /><br />\r\n\r\n1- Install rails:<br ><br
+      />\r\n    <pre>gem install rails</pre> <br />\r\n\r\n2- Create a new rails app:<br
+      /><br />\r\n    <pre>Rails new contact_form –database=postgresql –skip-test-unit
+      && cd contact_form</pre><br />\r\n\r\n<p>The database flag allows us to bypass
+      rails default database ‘sqlite’ and install Postgresql because we are going
+      to deploy to heroku and we’re skipping the Test-unit because we’re going to
+      use RSpec instead. </p><br />\r\n\r\n3- Add the necessary gems to the Gemfile
+      and bundle:<br /><br />\r\n   <pre><br />\r\n       gem 'simple_form', '~> 3.0.0.rc'\r\n
+      \      gem 'bootstrap-sass', '~> 2.3.2.0'\r\n       gem 'haml-rails', '~> 0.4.0\r\n\r\n
+      \      # Development Guard\r\n       group :development do \r\n          gem
+      'guard-rails'\r\n          gem 'guard-livereload'\r\n          gem 'rack-livereload'\r\n
+      \         gem 'guard-bundler'\r\n       end\r\n  </pre><br />\r\n\r\n<p> * guard
+      is good at automating a lot of stuff. See the gem’s docs on <a href=\"https://github.com/guard/guard\"
+      target=\"_blank\"><font color='blue'>github</font></a> and check out also these
+      resources: <a href=\"http://railscasts.com/episodes/264-guard\" target=\"_blank\"><font
+      color='blue'>railscasts</font></a>, <a href=\"http://net.tutsplus.com/tutorials/tools-and-tips/guard-is-your-best-friend/\"
       target=\"_blank\"><font color='blue'>nettuts</font></a></p><br />\r\n\r\n<font
       size='4' color='navy'>Set up guard and start the server:</font><br /><br />\r\n\r\n1-
       Add a guard definition to your Guardfile with:<br /><br />\r\n\r\n    <pre>bundle
@@ -934,15 +935,44 @@ posts:
       \  </font>\r\n</a>\r\n</center>\r\n<br /><br />\r\n\r\n<center>\r\n       <a
       href=\"https://github.com/Adam0964/contact\" target=\"_blank\">\r\n       <font
       size='3' color='gray' style=\"text-decoration:none\">\r\n         The app is
-      on Github\r\n   </font></a>\r\n</center><br ><br />\r\n\r\n<h3>Upcoming posts:</h3>
-      \ \r\n\r\n<li><p>Blocks in Ruby: What are they and why should you care? </p></li>
-      \  \r\n<li><p>Methods Aliases in Ruby </p> </li>\r\n<li><p>ARGF, Splat, Tap
-      & Freeze in Ruby</p></li>\r\n<li><p>Object Serialization in Ruby </p></li>\r\n<li><p>Threads,
-      Fibers & Continuations in Ruby</p></li>\r\n<li><p>Structs & OpenStructs in Ruby
-      </p></li>\r\n<li><p>Caching in Rails 3 the Rails 4 way</p></li>\r\n<li><p>Metaprogramming:
-      A diet pill for Ruby Part II</p></li>\r\n"
+      on Github\r\n   </font></a>\r\n</center><br ><br />\r\n\r\n"
     - '2014-01-09 00:19:08.726414'
-    - '2014-01-16 21:37:50.948264'
+    - '2014-02-02 23:29:30.151187'
+  - - '27'
+    - Adam Raouki
+    - How 2 Rails apps using different versions of Ruby/Rails can coexist on the same  machine.
+    - "<p>Suppose that you need to develop simultaneously two rails applications that
+      use two different versions of Ruby, Rails, and different sets of gems. How would
+      you go about implementing a solution that would allow both applications to coexist
+      in your development environment without conflict? </p>\r\n\r\n<p>As per the
+      documentation, \"RVM gives you compartmentalized independent ruby setups. This
+      means that ruby, gems and irb are all separate and self-contained - from the
+      system, and from each other. You may even have separate named gemsets.\"</p><br
+      />\r\n\r\n<pre>\r\n# this would be the default, for instance\r\n$ rvm install
+      ruby-1.9.3-head\r\n\t\t\t\t\t\r\n# switch to this version\r\n$ rvm 1.9.3-head\r\n\t\t\t\t\t\r\n#
+      install rails -v 3.2.13 for this version of ruby - If it’s not already installed\r\n$
+      gem install rails -v 3.2.13\r\n\t\t\t\t\t\r\n# create a gemset for this version\r\n$
+      rvm gemset create rails3213\r\n\r\n#output\t\t\t\t\t\r\ngemset created rails3213\r\n\t\t\t\t\r\n#
+      this one would be for other applications (you can create more than one if you
+      wish)\r\n$ rvm install ruby-2.0.0-head\r\n\t\t\t\t\t\r\n# switch to this version
+      of ruby\r\n$ rvm 2.0.0-head\r\n\t\t\t\t\t\r\n# install rails -v 4.0.0 for this
+      version of ruby\r\n$ gem install rails -v 4.0.0\r\n\t\t\t\t\t\r\n# create a
+      gemset for this version\r\n$ rvm gemset create rails400\r\n\r\n#output\t\t\t\t\t\t\r\ngemset
+      created rails400\t\r\n\r\nTo switch between versions of ruby and rails:\r\n\t\t\t\t\t\r\n$
+      ruby-1.9.3-head@rails3213; rails --version\r\nrails 3.2.13\r\n\t\t\t\t\t\r\n$
+      ruby-2.0.0-head@rails400; rails --version\r\nrails 4.00\r\n</pre><br />\r\n\r\n\t\t\t\t\t\t\t\t\t\t\r\n<p>Again,
+      as per the documentation, \"RVM gives you a separate gem directory for each
+      and every Ruby version and gemset. * This means that gems must be explicitly
+      installed \r\nfor each revision and gemset,\" which is exactly what we did.</p><br
+      />\r\n\r\n<h3>Upcoming posts:</h3>  \r\n\r\n<li><p>Blocks in Ruby: What are
+      they and why should you care? </p></li>   \r\n<li><p>Methods Aliases in Ruby
+      </p> </li>\r\n<li><p>ARGF, Splat, Tap & Freeze in Ruby</p></li>\r\n<li><p>Object
+      Serialization in Ruby </p></li>\r\n<li><p>Threads, Fibers & Continuations in
+      Ruby</p></li>\r\n<li><p>Structs & OpenStructs in Ruby </p></li>\r\n<li><p>Caching
+      in Rails 3 the Rails 4 way</p></li>\r\n<li><p>Metaprogramming: A diet pill for
+      Ruby Part II</p></li>\t\t\t\t"
+    - '2014-02-02 23:24:17.053919'
+    - '2014-02-02 23:30:08.290718'
 
 ---
 users:
