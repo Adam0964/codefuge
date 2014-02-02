@@ -213,6 +213,8 @@ blog2.png: blog2-b6693df4087475fdd232d389250c4a4b.png
 blog2/index.png: blog2-b6693df4087475fdd232d389250c4a4b.png
 blog3.png: blog3-44817003cbc500ebdbd18b4b24771e29.png
 blog3/index.png: blog3-44817003cbc500ebdbd18b4b24771e29.png
+blueprint-logo.png: blueprint-logo-97ae571ada22037edce722c45d92a858.png
+blueprint-logo/index.png: blueprint-logo-97ae571ada22037edce722c45d92a858.png
 books/adaptive.jpg: books/adaptive-00b3fb3e8bc6ca0abc3a57da6c82013f.jpg
 books/adaptive/index.jpg: books/adaptive-00b3fb3e8bc6ca0abc3a57da6c82013f.jpg
 books/advanced_rails.jpg: books/advanced_rails-c5634e764fd22bbf74bdcacbad53bbfc.jpg
@@ -433,6 +435,8 @@ books/web_standards.jpg: books/web_standards-11e5106961c38db3180735bb54af5f18.jp
 books/web_standards/index.jpg: books/web_standards-11e5106961c38db3180735bb54af5f18.jpg
 books/webdesign.jpg: books/webdesign-30528349fa2bb171fb5f821856dbd9c2.jpg
 books/webdesign/index.jpg: books/webdesign-30528349fa2bb171fb5f821856dbd9c2.jpg
+bootstrap-logo.png: bootstrap-logo-31f10d27640a2a29e271a58913e77376.png
+bootstrap-logo/index.png: bootstrap-logo-31f10d27640a2a29e271a58913e77376.png
 bootstrap.png: bootstrap-dc5724c5586d9acc6f4c6c2baa8d3f49.png
 bootstrap/index.png: bootstrap-dc5724c5586d9acc6f4c6c2baa8d3f49.png
 bootstrap2.png: bootstrap2-c72ea585abb2b8a4b7cc3e3533ef739a.png
@@ -559,6 +563,8 @@ favicon4.ico: favicon4-42b73c8196afe58cfe72a502230aa1b5.ico
 favicon4/index.ico: favicon4-42b73c8196afe58cfe72a502230aa1b5.ico
 faviconold.ico: faviconold-42b73c8196afe58cfe72a502230aa1b5.ico
 faviconold/index.ico: faviconold-42b73c8196afe58cfe72a502230aa1b5.ico
+foundation-logo.jpg: foundation-logo-2b3a621f26db8010ae03d839efdfde72.jpg
+foundation-logo/index.jpg: foundation-logo-2b3a621f26db8010ae03d839efdfde72.jpg
 front.png: front-92cc9389480518833ea4b8c07a316a3f.png
 front/index.png: front-92cc9389480518833ea4b8c07a316a3f.png
 front2.png: front2-ac70691e54529692c75261ea741c3ee8.png
@@ -1835,6 +1841,8 @@ shell.jpg: shell-3aa103028769b740ad7d0862809a617e.jpg
 shell/index.jpg: shell-3aa103028769b740ad7d0862809a617e.jpg
 single_bird.png: single_bird-15154569fb93aec90ff7f327d30f97b0.png
 single_bird/index.png: single_bird-15154569fb93aec90ff7f327d30f97b0.png
+skeleton-logo.png: skeleton-logo-6c207a11c247bda631914853e337b18a.png
+skeleton-logo/index.png: skeleton-logo-6c207a11c247bda631914853e337b18a.png
 smashing_css.jpg: smashing_css-5df53f27d5de319b733fe7bbd79b45c2.jpg
 smashing_css/index.jpg: smashing_css-5df53f27d5de319b733fe7bbd79b45c2.jpg
 so-logo.png: so-logo-2201945c5b8385ce9ed50c60a9cf26f9.png
@@ -1907,8 +1915,8 @@ zurb.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
 zurb/index.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
 application.js: application-19234df8ea59c90cc87dd1d5cede4f50.js
 application/index.js: application-19234df8ea59c90cc87dd1d5cede4f50.js
-application.css: application-52878e1407946bc4922e9ae74f6f7eec.css
-application/index.css: application-52878e1407946bc4922e9ae74f6f7eec.css
+application.css: application-9bca27a7041ad245766d1bf1c158b346.css
+application/index.css: application-9bca27a7041ad245766d1bf1c158b346.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 fontawesome-webfont.eot: fontawesome-webfont-009f6d1f667cc42c25e712ab3429cbc7.eot

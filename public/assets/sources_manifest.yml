@@ -106,6 +106,7 @@ bitbucket.png: e6776de4da5c736e99b6a28248f08b3e
 blog.png: 66637dd4c2837aa715e4a547c3902ac4
 blog2.png: b6693df4087475fdd232d389250c4a4b
 blog3.png: 44817003cbc500ebdbd18b4b24771e29
+blueprint-logo.png: 97ae571ada22037edce722c45d92a858
 books/adaptive.jpg: 00b3fb3e8bc6ca0abc3a57da6c82013f
 books/advanced_rails.jpg: c5634e764fd22bbf74bdcacbad53bbfc
 books/agile.jpg: 07afe98c19387675d93b0121ffc7875c
@@ -216,6 +217,7 @@ books/version_control_with_git.gif: f6c21656707e94c76fc4591e232e2202
 books/web_design_for_developers.jpg: 1a122620d7abbe21c76642a034ad0e6b
 books/web_standards.jpg: 11e5106961c38db3180735bb54af5f18
 books/webdesign.jpg: 30528349fa2bb171fb5f821856dbd9c2
+bootstrap-logo.png: 31f10d27640a2a29e271a58913e77376
 bootstrap.png: dc5724c5586d9acc6f4c6c2baa8d3f49
 bootstrap2.png: c72ea585abb2b8a4b7cc3e3533ef739a
 boutique.jpg: 7c7436684fba504dea969e960c787b1b
@@ -279,6 +281,7 @@ favicon2.psd: c710e5030391af57222ea684ba38c977
 favicon3.ico: db5c945183004e9590b578fcb77e9217
 favicon4.ico: 42b73c8196afe58cfe72a502230aa1b5
 faviconold.ico: 42b73c8196afe58cfe72a502230aa1b5
+foundation-logo.jpg: 2b3a621f26db8010ae03d839efdfde72
 front.png: 92cc9389480518833ea4b8c07a316a3f
 front2.png: ac70691e54529692c75261ea741c3ee8
 front2.psd: dfa74f121b5a40d8ececdc8412dc0de3
@@ -917,6 +920,7 @@ selectors_specificity_and_the_cascade.jpg: f2371ff1bc7157c827c2d808a5b78b2b
 service_oriented_design.jpg: fe060eab6f443c5396e79d1e17805a4c
 shell.jpg: 3aa103028769b740ad7d0862809a617e
 single_bird.png: 15154569fb93aec90ff7f327d30f97b0
+skeleton-logo.png: 6c207a11c247bda631914853e337b18a
 smashing_css.jpg: 5df53f27d5de319b733fe7bbd79b45c2
 so-logo.png: 2201945c5b8385ce9ed50c60a9cf26f9
 speaking_in_style.jpg: 910e5dbbe49d6cd1d55b3c0dadb96624
@@ -953,7 +957,7 @@ webd1.jpg: d707ddc9c557ced7bf4f15d63a446f6f
 webdesign.jpg: 30528349fa2bb171fb5f821856dbd9c2
 zurb.png: f4079d8b89f4b55313d0f716e710c778
 application.js: 60094b4e1db24fb0220091f1fc0d8c17
-application.css: 028d34105d6ce3d01f5e48ad2e2d2389
+application.css: 8e051d8efb93945adbff09ddbecfdb10
 jquery.min.map: 6336c5bca4c709e809647cdfcb484d0a
 fontawesome-webfont.eot: 009f6d1f667cc42c25e712ab3429cbc7
 fontawesome-webfont.svg: f1c2889911d212e1403b68eabc1a3a56

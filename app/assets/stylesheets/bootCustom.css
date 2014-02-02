@@ -749,6 +749,16 @@ body {
 .thumbnails .span3 .advert img:hover {
   background-color: white;
   background-repeat: none;
+
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale   (1.2);
+  -o-transform: scale     (1.2);
+  transform: scale        (1.2);
+  -webkit-transition:     height 0.35s ease;
+  -moz-transition:        height 0.35s ease;
+  -ms-transition:         height 0.35s ease;
+  -o-transition:          height 0.35s ease;
+  transition:             height 0.35s ease;
 }
 
 .advert h3 {
@@ -1558,7 +1568,7 @@ body {
 }
 
 .blog-container h3 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Georgia';
   font-weight: 300;
   font-size: 36px;
   line-height: 120%;
@@ -1572,12 +1582,11 @@ body {
   font-size: 16px;
   line-height: 28px;
   color:#565656;
-  text-align: center;
 }
 
 .blog-container h4  {
-  color: #565656;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color:#0066CC;
+  font-family: 'Georgia';
   text-align: center;
 }
 
