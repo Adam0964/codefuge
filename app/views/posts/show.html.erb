@@ -9,11 +9,12 @@
 									    <h4>
 									  	  <%= @post.title %>
 									    </h4>
-									        <span>
-                                              <%= image_tag 'adam4.jpg', :id => 'adam' %>
+									   
+                                             
 									  	    <h6>
 									  	    	<%= @post.created_at.strftime("Published %b %d, %Y by ")%><%= @post.name %>
-									  	    </h6></span><br /><br />
+									  	    </h6>
+									  	     <%= image_tag 'adam4.jpg', :id => 'adam' %><br /><br />
 		                                <hr /><br />
 									         <p> 
 									         	<%= @post.content.html_safe %>
