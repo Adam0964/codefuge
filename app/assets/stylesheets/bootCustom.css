@@ -345,6 +345,19 @@ body {
   .navbar .nav {
     padding-left: 30%;
   }
+
+  .span3 .advert {
+    width: 1150px;
+    margin-left: -50px;
+  }
+
+  .span3 .advert h3 {
+    margin-left: 200px;
+  }
+
+  .span3 .advert img {
+    width: 180px;
+  }
 }
 
 /**
@@ -767,10 +780,6 @@ body {
   padding-bottom: 50px;
   display: block;
   font-family: 'Bank Gothic';
-}
-
-.thumbnail2 {
-  
 }
 
 .thumbnail2 {
