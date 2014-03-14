@@ -730,6 +730,7 @@ glyphicons_155_show_thumbnails.png: 1419f452964d3640b276fdfb20079689
 glyphicons_163_iphone.png: 5b3133964a78d1e7e65c1b399ed10c59
 glyphicons_214_resize_small.png: 72cd63e81cf36496b928fae3c2136520
 glyphicons_266_book_open.png: 2d20b1bb911b1a70152364e3803acc62
+goog.jpg: 0d64244ef1b7bd25c99d82f208692bf6
 grid-18px-masked.png: 2000a5113565314617cbf633816a73b7
 grid-view.png: a8dac22f8b1f7bd6df7ad3cbe180f595
 hello_html5__css3.jpg: 36cccc2fc9d721c77acfb72d0e368604
@@ -763,6 +764,7 @@ ico/github-8-xxl-1.png: e011d5835fd8cb37489ab9ab90822af3
 ico/github-8-xxl.png: 26e829f37dda43a2a32e72948924eba4
 ico/github-round.png: bbedaebc8be60b62617ae8231c8f3699
 ico/github.png: a6297a7c6d9f068e1d140659c3137b34
+ico/goog-round.jpg: 0d64244ef1b7bd25c99d82f208692bf6
 ico/grid-18px-masked.png: 2000a5113565314617cbf633816a73b7
 ico/icon-lab.png: baef12d13f9a2ad2045c770d2153e70d
 ico/icon-lab2.png: a50419b16bc6ef9055b5476f9ef8c17f
@@ -957,7 +959,7 @@ webd1.jpg: d707ddc9c557ced7bf4f15d63a446f6f
 webdesign.jpg: 30528349fa2bb171fb5f821856dbd9c2
 zurb.png: f4079d8b89f4b55313d0f716e710c778
 application.js: 60094b4e1db24fb0220091f1fc0d8c17
-application.css: ab281138a615775d3a8531356c63bc17
+application.css: d60a860797f7a7c8149954f6133c05aa
 jquery.min.map: 6336c5bca4c709e809647cdfcb484d0a
 fontawesome-webfont.eot: 009f6d1f667cc42c25e712ab3429cbc7
 fontawesome-webfont.svg: f1c2889911d212e1403b68eabc1a3a56

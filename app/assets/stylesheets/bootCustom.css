@@ -622,7 +622,7 @@ body {
 
 /**
 --------------------------------------------------
-|             ƒ CONTENT                  |
+|                .f  CONTENT                     |
 -------------------------------------------------- 
 **/
 
@@ -745,6 +745,41 @@ body {
   .headers p {
     height: auto;
   }
+
+ .thumbnails .span3 .advert {
+    margin-left: 70px;
+  }
+
+  .advert img {
+    display: block;
+  }
+
+  .span3 .advert h3 {
+    margin-left: -20px;
+  }
+
+  /*#readButtonIndx {
+    float:left;
+  }*/
+}
+
+@media only screen and (max-width: 768px) {
+
+  .span3 .advert {
+    margin-left: 200px;
+  }
+  .advert img {
+    display: block;
+  }
+
+  .span3 .advert h3 {
+    margin-left: -40px;
+  }
+
+  #readButtonIndx {
+    float: left;
+  }
+
 }
 
 /* end @media */
@@ -833,7 +868,7 @@ body {
   border: solid 1px #43c83c;
   text-align: center;
   /*padding-top: -17px;*/
-  float: right;
+  float: left;
   color: white;
   background-color: #43c83c;
   -webkit-border-radius: 50%;
@@ -2985,7 +3020,7 @@ body {
      display: none;
    }
    .social-wrapper {
-    margin-left: -1070px;
+    margin-left: -600px;
   }
   .signature-wrapper {
     display: none;
@@ -3001,7 +3036,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 608px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .wrapper {
     width: 1300px;
     background-color: #fff;
@@ -3031,12 +3066,51 @@ body {
   }
 
   .social-wrapper {
-    margin-left: -1070px;
+    margin-left: -1250px;
   }
+
   .signature-wrapper {
     display: none;
   }
 }
+
+/*@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 1300px;
+    background-color: #fff;
+  }
+  .thumbnail2 {
+    width: 260px;
+    display: block;
+    background-color: #000;
+  }
+  .footer-links {
+    width: 250px;
+  }
+  
+  #footer-topper {
+    width: 250px;
+    font-size: 6pt;
+    color: white;
+    font-family: 'Droid Serif';
+    text-align: center;
+  }
+  .ads1, 
+  .ads2,
+  .ads3, 
+  .ads4 {
+    width: 260px;
+    background-color: #fff;
+  }
+
+  .social-wrapper {
+    margin-left: -1250px;
+  }
+
+  .signature-wrapper {
+    display: none;
+  }
+}*/
 
 @media only screen and (min-width: 770px) and (max-width: 800px) {
   .social-wrapper {

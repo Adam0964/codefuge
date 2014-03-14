@@ -1461,6 +1461,8 @@ glyphicons_214_resize_small.png: glyphicons_214_resize_small-72cd63e81cf36496b92
 glyphicons_214_resize_small/index.png: glyphicons_214_resize_small-72cd63e81cf36496b928fae3c2136520.png
 glyphicons_266_book_open.png: glyphicons_266_book_open-2d20b1bb911b1a70152364e3803acc62.png
 glyphicons_266_book_open/index.png: glyphicons_266_book_open-2d20b1bb911b1a70152364e3803acc62.png
+goog.jpg: goog-0d64244ef1b7bd25c99d82f208692bf6.jpg
+goog/index.jpg: goog-0d64244ef1b7bd25c99d82f208692bf6.jpg
 grid-18px-masked.png: grid-18px-masked-2000a5113565314617cbf633816a73b7.png
 grid-18px-masked/index.png: grid-18px-masked-2000a5113565314617cbf633816a73b7.png
 grid-view.png: grid-view-a8dac22f8b1f7bd6df7ad3cbe180f595.png
@@ -1527,6 +1529,8 @@ ico/github-round.png: ico/github-round-bbedaebc8be60b62617ae8231c8f3699.png
 ico/github-round/index.png: ico/github-round-bbedaebc8be60b62617ae8231c8f3699.png
 ico/github.png: ico/github-a6297a7c6d9f068e1d140659c3137b34.png
 ico/github/index.png: ico/github-a6297a7c6d9f068e1d140659c3137b34.png
+ico/goog-round.jpg: ico/goog-round-0d64244ef1b7bd25c99d82f208692bf6.jpg
+ico/goog-round/index.jpg: ico/goog-round-0d64244ef1b7bd25c99d82f208692bf6.jpg
 ico/grid-18px-masked.png: ico/grid-18px-masked-2000a5113565314617cbf633816a73b7.png
 ico/grid-18px-masked/index.png: ico/grid-18px-masked-2000a5113565314617cbf633816a73b7.png
 ico/icon-lab.png: ico/icon-lab-baef12d13f9a2ad2045c770d2153e70d.png
@@ -1915,8 +1919,8 @@ zurb.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
 zurb/index.png: zurb-f4079d8b89f4b55313d0f716e710c778.png
 application.js: application-19234df8ea59c90cc87dd1d5cede4f50.js
 application/index.js: application-19234df8ea59c90cc87dd1d5cede4f50.js
-application.css: application-5563fa822c9cd5d92c74b78917d61b17.css
-application/index.css: application-5563fa822c9cd5d92c74b78917d61b17.css
+application.css: application-f47d53e7ea7efd003eda3ebcece77456.css
+application/index.css: application-f47d53e7ea7efd003eda3ebcece77456.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 fontawesome-webfont.eot: fontawesome-webfont-009f6d1f667cc42c25e712ab3429cbc7.eot
